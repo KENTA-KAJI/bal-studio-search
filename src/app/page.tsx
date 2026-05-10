@@ -86,6 +86,7 @@ function SearchContent() {
 
   const handleTagClick = (tag: string) => {
     setQuery(tag);
+    setIsTagsExpanded(false);
   };
 
   return (
