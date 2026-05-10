@@ -43,6 +43,7 @@ const TAG_CATEGORIES = [
 
 function SearchContent() {
   const [query, setQuery] = useState("");
+  const [isTagsExpanded, setIsTagsExpanded] = useState(false);
   const searchParams = useSearchParams();
   const isEmbed = searchParams.get("embed") === "true";
 
@@ -74,6 +75,13 @@ function SearchContent() {
       // All keywords must be found in the combined text (AND search)
       return keywords.every(keyword => combinedText.includes(keyword));
     });
+  }, [query]);
+
+  // Reset tag expansion when query is cleared
+  useMemo(() => {
+    if (!query.trim()) {
+      setIsTagsExpanded(false);
+    }
   }, [query]);
 
   const handleTagClick = (tag: string) => {
@@ -109,12 +117,48 @@ function SearchContent() {
           className="mb-8"
         />
 
-        <SearchTags 
-          categories={TAG_CATEGORIES} 
-          selectedTag={query} 
-          onTagClick={handleTagClick}
-          isEmbed={isEmbed}
-        />
+        {query.trim() ? (
+          <div className="mb-8 flex flex-col gap-4">
+            <div className="flex items-center justify-between">
+              <div className="text-sm md:text-base text-foreground font-medium">
+                「<span className="text-accent">{query}</span>」の検索結果：
+                <span className="text-accent font-bold ml-1">{filteredVideos.length}</span>件
+              </div>
+              <button
+                onClick={() => setIsTagsExpanded(!isTagsExpanded)}
+                className="text-[10px] md:text-xs text-muted hover:text-accent flex items-center gap-1.5 transition-colors border border-border/50 px-3 py-1.5 rounded-lg bg-card/30"
+              >
+                {isTagsExpanded ? "検索タグを閉じる" : "検索タグを表示"}
+                <svg
+                  className={`w-3 h-3 transition-transform duration-300 ${isTagsExpanded ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </div>
+            
+            {isTagsExpanded && (
+              <div className="pt-2 animate-in fade-in slide-in-from-top-2 duration-300 border-t border-border/30">
+                <SearchTags 
+                  categories={TAG_CATEGORIES} 
+                  selectedTag={query} 
+                  onTagClick={handleTagClick}
+                  isEmbed={isEmbed}
+                />
+              </div>
+            )}
+          </div>
+        ) : (
+          <SearchTags 
+            categories={TAG_CATEGORIES} 
+            selectedTag={query} 
+            onTagClick={handleTagClick}
+            isEmbed={isEmbed}
+          />
+        )}
 
         {filteredVideos.length === 0 ? (
           <div className="text-center text-muted mt-16 py-12 bg-card rounded-2xl border border-border">
