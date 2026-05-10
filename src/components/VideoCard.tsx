@@ -47,13 +47,23 @@ export default function VideoCard({ video, course }: { video: VideoData; course:
 
   return (
     <div className="flex flex-col overflow-hidden bg-card rounded-2xl border border-border group hover:border-accent transition-colors duration-300">
-      <div className="relative aspect-video w-full flex flex-col items-center justify-center bg-gradient-to-br from-[#050505] to-[#1a1a1a] border-b border-border">
-        <span className="text-xl font-bold tracking-widest text-accent/80 group-hover:scale-105 transition-transform duration-500">
-          BAL STUDIO
-        </span>
-        <span className="text-[10px] font-medium tracking-[0.2em] text-muted/60 mt-1">
-          VIDEO LESSON
-        </span>
+      <div className="relative aspect-video w-full flex flex-col items-center justify-center bg-gradient-to-br from-[#050505] to-[#1a1a1a] border-b border-border overflow-hidden">
+        {video.thumbnailUrl ? (
+          <img 
+            src={video.thumbnailUrl} 
+            alt={video.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <>
+            <span className="text-xl font-bold tracking-widest text-accent/80 group-hover:scale-105 transition-transform duration-500">
+              BAL STUDIO
+            </span>
+            <span className="text-[10px] font-medium tracking-[0.2em] text-muted/60 mt-1">
+              VIDEO LESSON
+            </span>
+          </>
+        )}
         <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs font-mono text-white">
           {video.duration}
         </div>

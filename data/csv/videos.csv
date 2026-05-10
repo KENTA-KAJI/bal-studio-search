@@ -1,5 +1,5 @@
 id,courseId,title,duration,videoDescription,individualTags,thumbnailUrl,videogUrl,status
-V001,C001,Anatomy Driven 運動器「骨学」,,Anatomy Driven 運動器「骨学」の講座視聴ページです。,"骨学,解剖学,運動器,基礎",,https://vdg.jp/g19286vj/adbone,
+V001,C001,Anatomy Driven 運動器「骨学」,,Anatomy Driven 運動器「骨学」の講座視聴ページです。,"骨学,解剖学,運動器,基礎",/thumbnails/C001.png,https://vdg.jp/g19286vj/adbone,
 V002,C002,ESSENTIAL50,,ESSENTIAL50の講座視聴ページです。,"解剖学,筋肉,50筋,基礎",,https://vdg.jp/g19286vj/essential50,
 V003,C003,The Professional,,The Professionalの講座視聴ページです。,"解剖学,筋肉,100筋,中級",,https://vdg.jp/g19286vj/thepro,
 V004,C004,トップトレーナー・テンプレート,,トップトレーナー・テンプレートの講座視聴ページです。,"セッション設計,テンプレート,プログラム設計",,,
