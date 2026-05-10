@@ -1,97 +1,912 @@
 [
   {
-    "id": "video-anatomy-001",
-    "courseId": "course-anatomy-001",
-    "title": "ANATOMY DRIVEN 運動器「骨学」 講義本編",
-    "duration": "00:00",
-    "videoDescription": "骨格系の基礎理解から評価・動作分析・運動指導に活かすための解剖学の土台を学ぶ動画です。",
+    "id": "V001",
+    "courseId": "C001",
+    "title": "Anatomy Driven 運動器「骨学」",
+    "duration": "",
+    "videoDescription": "Anatomy Driven 運動器「骨学」の講座視聴ページです。",
     "individualTags": [
       "骨学",
-      "骨格系",
+      "解剖学",
       "運動器",
-      "基礎",
-      "評価",
-      "動作分析",
-      "運動指導"
+      "基礎"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": "公開"
+    "videogUrl": "https://vdg.jp/g19286vj/adbone",
+    "status": ""
   },
   {
-    "id": "video-anatomy-002",
-    "courseId": "course-anatomy-002",
-    "title": "ESSENTIAL50 講義本編",
-    "duration": "00:00",
-    "videoDescription": "現場で必要不可欠な50筋の機能と支配神経を体系的に学び評価・指導・セッション設計に活かすための動画です。",
+    "id": "V002",
+    "courseId": "C002",
+    "title": "ESSENTIAL50",
+    "duration": "",
+    "videoDescription": "ESSENTIAL50の講座視聴ページです。",
     "individualTags": [
-      "50筋",
+      "解剖学",
       "筋肉",
-      "支配神経",
-      "筋機能",
-      "評価",
-      "運動指導",
-      "セッション設計"
+      "50筋",
+      "基礎"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": "公開"
+    "videogUrl": "https://vdg.jp/g19286vj/essential50",
+    "status": ""
   },
   {
-    "id": "video-anatomy-003",
-    "courseId": "course-anatomy-003",
-    "title": "The Professional 講義本編",
-    "duration": "00:00",
-    "videoDescription": "ESSENTIAL50の発展として計100筋の理解と運用を深め不調改善・姿勢改善・ボディメイク・パフォーマンスアップへ応用する動画です。",
+    "id": "V003",
+    "courseId": "C003",
+    "title": "The Professional",
+    "duration": "",
+    "videoDescription": "The Professionalの講座視聴ページです。",
     "individualTags": [
+      "解剖学",
+      "筋肉",
       "100筋",
-      "筋機能",
-      "不調改善",
-      "姿勢改善",
-      "ボディメイク",
-      "パフォーマンスアップ",
-      "評価"
+      "中級"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/g19286vj/thepro",
+    "status": ""
+  },
+  {
+    "id": "V004",
+    "courseId": "C004",
+    "title": "トップトレーナー・テンプレート",
+    "duration": "",
+    "videoDescription": "トップトレーナー・テンプレートの講座視聴ページです。",
+    "individualTags": [
+      "セッション設計",
+      "テンプレート",
+      "プログラム設計"
     ],
     "thumbnailUrl": "",
     "videogUrl": "",
-    "status": "公開"
+    "status": ""
   },
   {
-    "id": "video-anatomy-004",
-    "courseId": "course-anatomy-004",
-    "title": "筋膜連結マスター 講義本編",
-    "duration": "00:00",
-    "videoDescription": "筋膜・筋連結の視点から身体を部分ではなく全身のつながりとして捉え評価・運動指導・コンディショニングに活かす動画です。",
+    "id": "V005",
+    "courseId": "C005",
+    "title": "超栄養学",
+    "duration": "",
+    "videoDescription": "超栄養学の講座視聴ページです。",
+    "individualTags": [
+      "栄養学",
+      "食事指導",
+      "食品学",
+      "調理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V006",
+    "courseId": "C006",
+    "title": "UNLOCK ANATOMY SKILL",
+    "duration": "",
+    "videoDescription": "UNLOCK ANATOMY SKILLの講座視聴ページです。",
+    "individualTags": [
+      "解剖学",
+      "コンディショニング",
+      "セラピスト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V007",
+    "courseId": "C007",
+    "title": "きほんの呼吸 ESSENTIAL",
+    "duration": "",
+    "videoDescription": "きほんの呼吸 ESSENTIALの講座視聴ページです。",
+    "individualTags": [
+      "呼吸",
+      "胸郭",
+      "横隔膜",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V008",
+    "courseId": "C008",
+    "title": "筋膜連結マスター",
+    "duration": "",
+    "videoDescription": "筋膜連結マスターの講座視聴ページです。",
     "individualTags": [
       "筋膜連結",
-      "筋連結",
       "筋膜",
-      "全身連動",
-      "コンディショニング",
-      "ストレッチ",
+      "全身連動"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V009",
+    "courseId": "C009",
+    "title": "栄養を武器にする10時間。",
+    "duration": "",
+    "videoDescription": "栄養を武器にする10時間。の講座視聴ページです。",
+    "individualTags": [
+      "栄養学",
+      "食事指導",
+      "五大栄養素",
+      "科学的思考法"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V010",
+    "courseId": "C010",
+    "title": "系統解剖学－リンパ系の解剖学・マッサージ実技－",
+    "duration": "",
+    "videoDescription": "系統解剖学－リンパ系の解剖学・マッサージ実技－の講座視聴ページです。",
+    "individualTags": [
+      "リンパ系",
+      "浮腫み",
+      "むくみ",
+      "免疫",
+      "マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V011",
+    "courseId": "C011",
+    "title": "系統解剖学－皮膚科学の解剖学と美肌アプローチー",
+    "duration": "",
+    "videoDescription": "系統解剖学－皮膚科学の解剖学と美肌アプローチーの講座視聴ページです。",
+    "individualTags": [
+      "皮膚科学",
+      "美肌",
+      "外皮系",
+      "美容"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V012",
+    "courseId": "C012",
+    "title": "系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－",
+    "duration": "",
+    "videoDescription": "系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－の講座視聴ページです。",
+    "individualTags": [
+      "心臓血管系",
+      "泌尿器系",
+      "生殖系",
+      "尿漏れ",
+      "男性機能"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V013",
+    "courseId": "C013",
+    "title": "機能的歩行学",
+    "duration": "",
+    "videoDescription": "機能的歩行学の講座視聴ページです。",
+    "individualTags": [
+      "歩行",
+      "歩行指導",
+      "姿勢",
+      "呼吸",
+      "胸郭"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V014",
+    "courseId": "C014",
+    "title": "身体操作 虎ノ巻",
+    "duration": "",
+    "videoDescription": "身体操作 虎ノ巻の講座視聴ページです。",
+    "individualTags": [
+      "身体操作",
+      "体芯力",
+      "脳",
+      "神経",
+      "大腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V015",
+    "courseId": "C015",
+    "title": "姿勢改善2.0",
+    "duration": "",
+    "videoDescription": "姿勢改善2.0の講座視聴ページです。",
+    "individualTags": [
+      "姿勢改善",
+      "重心",
+      "感覚器",
+      "足圧感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V016",
+    "courseId": "C016",
+    "title": "美脚の方程式",
+    "duration": "",
+    "videoDescription": "美脚の方程式の講座視聴ページです。",
+    "individualTags": [
+      "美脚",
+      "下半身痩せ",
+      "呼吸",
+      "脊柱",
+      "自律神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V017",
+    "courseId": "C017",
+    "title": "ANATOMY CONDITIONING（上肢編）",
+    "duration": "",
+    "videoDescription": "ANATOMY CONDITIONING（上肢編）の講座視聴ページです。",
+    "individualTags": [
+      "上肢",
+      "肩",
+      "肩甲骨",
+      "評価",
+      "スペシャルテスト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V018",
+    "courseId": "C018",
+    "title": "ANATOMY CONDITIONING（下肢編）",
+    "duration": "",
+    "videoDescription": "ANATOMY CONDITIONING（下肢編）の講座視聴ページです。",
+    "individualTags": [
+      "下肢",
+      "腰痛",
+      "股関節",
+      "膝",
+      "足部",
+      "スペシャルテスト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V019",
+    "courseId": "C019",
+    "title": "WOMAN'S BODY JOURNEY",
+    "duration": "",
+    "videoDescription": "WOMAN'S BODY JOURNEYの講座視聴ページです。",
+    "individualTags": [
+      "女性指導",
+      "フェムテック",
+      "PMS",
+      "産後",
+      "更年期"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V020",
+    "courseId": "C020",
+    "title": "BEYOND THE ERROR",
+    "duration": "",
+    "videoDescription": "BEYOND THE ERRORの講座視聴ページです。",
+    "individualTags": [
+      "代償動作",
+      "エラー",
+      "BIG3",
+      "スクワット",
+      "ベンチプレス",
+      "デッドリフト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V021",
+    "courseId": "C021",
+    "title": "BEYOND THE ERROR -COMPLETE-",
+    "duration": "",
+    "videoDescription": "BEYOND THE ERROR -COMPLETE-の講座視聴ページです。",
+    "individualTags": [
+      "代償動作",
+      "フォーム修正",
+      "コレクティブエクササイズ",
       "トレーニング"
     ],
     "thumbnailUrl": "",
     "videogUrl": "",
-    "status": "公開"
+    "status": ""
   },
   {
-    "id": "video-anatomy-005",
-    "courseId": "course-anatomy-005",
-    "title": "THE FASCIA 講義本編",
-    "duration": "00:00",
-    "videoDescription": "Fasciaと筋膜の違いを理解し可動改善・動作改善・モーターコントロールに活かすための身体の捉え方を学ぶ動画です。",
+    "id": "V022",
+    "courseId": "C022",
+    "title": "動的代謝学",
+    "duration": "",
+    "videoDescription": "動的代謝学の講座視聴ページです。",
+    "individualTags": [
+      "代謝",
+      "栄養学",
+      "ミトコンドリア",
+      "食品表示",
+      "添加物"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V023",
+    "courseId": "C023",
+    "title": "シン・コンディショニング",
+    "duration": "",
+    "videoDescription": "シン・コンディショニングの講座視聴ページです。",
+    "individualTags": [
+      "神経系",
+      "コンディショニング",
+      "感覚入力",
+      "不調改善"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V024",
+    "courseId": "C024",
+    "title": "シン・コンディショニングＺ",
+    "duration": "",
+    "videoDescription": "シン・コンディショニングＺの講座視聴ページです。",
+    "individualTags": [
+      "神経系",
+      "コンディショニング",
+      "運動制御",
+      "不調改善"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V025",
+    "courseId": "C025",
+    "title": "FACE to HEALTH",
+    "duration": "",
+    "videoDescription": "FACE to HEALTHの講座視聴ページです。",
+    "individualTags": [
+      "小顔",
+      "顔面評価",
+      "頭蓋骨",
+      "表情筋",
+      "顎関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V026",
+    "courseId": "C026",
+    "title": "ZERO BODYMAKE-0-",
+    "duration": "",
+    "videoDescription": "ZERO BODYMAKE-0-の講座視聴ページです。",
+    "individualTags": [
+      "ボディメイク",
+      "美脚",
+      "ヒップアップ",
+      "手技"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V027",
+    "courseId": "C027",
+    "title": "パフォーマンスアップの教科書",
+    "duration": "",
+    "videoDescription": "パフォーマンスアップの教科書の講座視聴ページです。",
+    "individualTags": [
+      "パフォーマンスアップ",
+      "アスリート",
+      "競技力向上"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V028",
+    "courseId": "C028",
+    "title": "TRAINER EVOLUTION",
+    "duration": "",
+    "videoDescription": "TRAINER EVOLUTIONの講座視聴ページです。",
+    "individualTags": [
+      "進化生物学",
+      "比較解剖学",
+      "身体操作",
+      "運動設計"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V029",
+    "courseId": "C029",
+    "title": "タイ古式マッサージ PERFECT INTRODUCTION",
+    "duration": "",
+    "videoDescription": "タイ古式マッサージ PERFECT INTRODUCTIONの講座視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ",
+      "手技",
+      "ストレッチ",
+      "体重移動"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V030",
+    "courseId": "C030",
+    "title": "NeuroScience-Driven",
+    "duration": "",
+    "videoDescription": "NeuroScience-Drivenの講座視聴ページです。",
+    "individualTags": [
+      "神経科学",
+      "ニューロサイエンス",
+      "神経系",
+      "運動制御"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V031",
+    "courseId": "C031",
+    "title": "PILATES RECOVERY BOOST",
+    "duration": "",
+    "videoDescription": "PILATES RECOVERY BOOSTの講座視聴ページです。",
+    "individualTags": [
+      "ピラティス",
+      "不調改善",
+      "姿勢改善",
+      "体幹"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V032",
+    "courseId": "C032",
+    "title": "LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」",
+    "duration": "",
+    "videoDescription": "LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」の講座視聴ページです。",
+    "individualTags": [
+      "ランニング",
+      "進化生物学",
+      "走り",
+      "体幹",
+      "足底アーチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V033",
+    "courseId": "C033",
+    "title": "運動指導の法則",
+    "duration": "",
+    "videoDescription": "運動指導の法則の講座視聴ページです。",
+    "individualTags": [
+      "運動指導",
+      "動作分析",
+      "評価",
+      "セッション設計"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V034",
+    "courseId": "C034",
+    "title": "再構築姿勢学",
+    "duration": "",
+    "videoDescription": "再構築姿勢学の講座視聴ページです。",
+    "individualTags": [
+      "姿勢",
+      "姿勢評価",
+      "日常動作",
+      "動作分析"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V035",
+    "courseId": "C035",
+    "title": "LOGIC RUN Vol.2「Data-Driven RUN」",
+    "duration": "",
+    "videoDescription": "LOGIC RUN Vol.2「Data-Driven RUN」の講座視聴ページです。",
+    "individualTags": [
+      "ランニング",
+      "動作分析",
+      "データ分析",
+      "筋電図"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V036",
+    "courseId": "C036",
+    "title": "Code of the Female Body",
+    "duration": "",
+    "videoDescription": "Code of the Female Bodyの講座視聴ページです。",
+    "individualTags": [
+      "女性指導",
+      "女性の身体",
+      "女性心理",
+      "プログラム設計"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V037",
+    "courseId": "C037",
+    "title": "NUTRITION GOLD",
+    "duration": "",
+    "videoDescription": "NUTRITION GOLDの講座視聴ページです。",
+    "individualTags": [
+      "栄養学",
+      "サービス化",
+      "マネタイズ",
+      "商品設計"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V038",
+    "courseId": "C038",
+    "title": "THE FASCIA",
+    "duration": "",
+    "videoDescription": "THE FASCIAの講座視聴ページです。",
     "individualTags": [
       "Fascia",
       "筋膜",
-      "可動改善",
-      "動作改善",
-      "リリース",
-      "硬さ",
+      "ファシア",
       "モーターコントロール"
     ],
     "thumbnailUrl": "",
     "videogUrl": "",
-    "status": "公開"
+    "status": ""
+  },
+  {
+    "id": "V039",
+    "courseId": "C039",
+    "title": "Neutral Kinetic Walking",
+    "duration": "",
+    "videoDescription": "Neutral Kinetic Walkingの講座視聴ページです。",
+    "individualTags": [
+      "歩行",
+      "歩行の設計図",
+      "足底8点支持",
+      "ロッカーファンクション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V040",
+    "courseId": "C040",
+    "title": "LOGIC RUN Vol.3「WALK to Faster RUN」",
+    "duration": "",
+    "videoDescription": "LOGIC RUN Vol.3「WALK to Faster RUN」の講座視聴ページです。",
+    "individualTags": [
+      "ランニング",
+      "歩行",
+      "シューズ",
+      "足部",
+      "体重移動"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V041",
+    "courseId": "C041",
+    "title": "ORIENTAL MEDICINE GATE",
+    "duration": "",
+    "videoDescription": "ORIENTAL MEDICINE GATEの講座視聴ページです。",
+    "individualTags": [
+      "東洋医学",
+      "経絡",
+      "体質",
+      "内臓"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V042",
+    "courseId": "C042",
+    "title": "男性機能のコアリカバリー",
+    "duration": "",
+    "videoDescription": "男性機能のコアリカバリーの講座視聴ページです。",
+    "individualTags": [
+      "男性機能",
+      "ED",
+      "勃起不全",
+      "呼吸",
+      "内臓"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V043",
+    "courseId": "C043",
+    "title": "運動指導者のためのMEO完全攻略法",
+    "duration": "",
+    "videoDescription": "運動指導者のためのMEO完全攻略法の講座視聴ページです。",
+    "individualTags": [
+      "MEO",
+      "Googleマップ",
+      "地域集客",
+      "マーケティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V044",
+    "courseId": "C044",
+    "title": "Special Test & New Conditioning（下肢編 / 評価法パターン集）",
+    "duration": "",
+    "videoDescription": "Special Test & New Conditioning（下肢編 / 評価法パターン集）の講座視聴ページです。",
+    "individualTags": [
+      "Special Test",
+      "下肢",
+      "評価法",
+      "スペシャルテスト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V045",
+    "courseId": "C045",
+    "title": "Special Test & New Conditioning（下肢編 / 問題集）",
+    "duration": "",
+    "videoDescription": "Special Test & New Conditioning（下肢編 / 問題集）の講座視聴ページです。",
+    "individualTags": [
+      "Special Test",
+      "下肢",
+      "問題集",
+      "評価",
+      "判断力"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V046",
+    "courseId": "C046",
+    "title": "Special Test & New Conditioning（下肢編 / 手技一覧）",
+    "duration": "",
+    "videoDescription": "Special Test & New Conditioning（下肢編 / 手技一覧）の講座視聴ページです。",
+    "individualTags": [
+      "Special Test",
+      "下肢",
+      "手技",
+      "コンディショニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V047",
+    "courseId": "C047",
+    "title": "PRIMAL MOVE",
+    "duration": "",
+    "videoDescription": "PRIMAL MOVEの講座視聴ページです。",
+    "individualTags": [
+      "PRIMAL MOVE",
+      "身体操作",
+      "動きで鍛える",
+      "進化生物学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V048",
+    "courseId": "C048",
+    "title": "MEDICAL FITNESS",
+    "duration": "",
+    "videoDescription": "MEDICAL FITNESSの講座視聴ページです。",
+    "individualTags": [
+      "医学",
+      "メディカルフィットネス",
+      "医療連携",
+      "予防医療"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V049",
+    "courseId": "C049",
+    "title": "CORE ERECTION",
+    "duration": "",
+    "videoDescription": "CORE ERECTIONの講座視聴ページです。",
+    "individualTags": [
+      "男性機能",
+      "CORE ERECTION",
+      "ED",
+      "コア",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V050",
+    "courseId": "C050",
+    "title": "運動指導者のためのポスティング完全攻略法",
+    "duration": "",
+    "videoDescription": "運動指導者のためのポスティング完全攻略法の講座視聴ページです。",
+    "individualTags": [
+      "ポスティング",
+      "チラシ",
+      "地域集客",
+      "マーケティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V051",
+    "courseId": "C051",
+    "title": "構造美ボディメイク",
+    "duration": "",
+    "videoDescription": "構造美ボディメイクの講座視聴ページです。",
+    "individualTags": [
+      "ボディメイク",
+      "解剖学",
+      "バイオメカニクス",
+      "生理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V052",
+    "courseId": "C052",
+    "title": "FEMTEC FOR TRAINERS",
+    "duration": "",
+    "videoDescription": "FEMTEC FOR TRAINERSの講座視聴ページです。",
+    "individualTags": [
+      "フェムテック",
+      "女性指導",
+      "女性ヘルスケア",
+      "収益化"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V053",
+    "courseId": "C053",
+    "title": "MOVEMENT DESIGN",
+    "duration": "",
+    "videoDescription": "MOVEMENT DESIGNの講座視聴ページです。",
+    "individualTags": [
+      "MOVEMENT DESIGN",
+      "運動設計",
+      "動作分析",
+      "セッション設計"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V054",
+    "courseId": "C054",
+    "title": "Special Test & New Conditioning（上肢編 / 評価法パターン集）",
+    "duration": "",
+    "videoDescription": "Special Test & New Conditioning（上肢編 / 評価法パターン集）の講座視聴ページです。",
+    "individualTags": [
+      "Special Test",
+      "上肢",
+      "評価法",
+      "スペシャルテスト"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V055",
+    "courseId": "C055",
+    "title": "内臓調整学",
+    "duration": "",
+    "videoDescription": "内臓調整学の講座視聴ページです。",
+    "individualTags": [
+      "内臓調整",
+      "内臓",
+      "コンディショニング",
+      "不調改善"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
+  },
+  {
+    "id": "V056",
+    "courseId": "C056",
+    "title": "THE BIOMECHANICS",
+    "duration": "",
+    "videoDescription": "THE BIOMECHANICSの講座視聴ページです。",
+    "individualTags": [
+      "バイオメカニクス",
+      "生体力学",
+      "運動指導",
+      "動作分析"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "",
+    "status": ""
   }
 ]

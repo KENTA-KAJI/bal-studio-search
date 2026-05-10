@@ -22,7 +22,28 @@ export interface VideoData {
 }
 
 export default function VideoCard({ video, course }: { video: VideoData; course: CourseData }) {
-  const mergedTags = Array.from(new Set([...(course?.commonTags || []), ...(video?.individualTags || [])]));
+  // Tag Priority Logic:
+  // 1. category
+  // 2. level
+  // 3. individualTags (max 3)
+  // 4. commonTags (max 3)
+  const displayTags: string[] = [];
+  if (course?.category) displayTags.push(course.category);
+  if (course?.level) displayTags.push(course.level);
+  
+  const iTags = (video?.individualTags || []).filter(t => !displayTags.includes(t));
+  displayTags.push(...iTags.slice(0, 3));
+  
+  const cTags = (course?.commonTags || []).filter(t => !displayTags.includes(t));
+  displayTags.push(...cTags.slice(0, 3));
+
+  // Final limit (though priority logic already caps it around 8)
+  const finalDisplayTags = displayTags.slice(0, 8);
+
+  // Calculate hidden count (from unique pool of individual + common tags)
+  const allUniqueTags = Array.from(new Set([...(video?.individualTags || []), ...(course?.commonTags || [])]));
+  const hiddenCount = allUniqueTags.filter(t => !finalDisplayTags.includes(t)).length;
+
 
   return (
     <div className="flex flex-col overflow-hidden bg-card rounded-2xl border border-border group hover:border-accent transition-colors duration-300">
@@ -54,15 +75,20 @@ export default function VideoCard({ video, course }: { video: VideoData; course:
           <span className="w-1 h-1 bg-muted rounded-full"></span>
           <span>{course?.category || "未分類"}</span>
         </div>
-        <div className="mt-auto flex flex-wrap gap-2 mb-4">
-          {mergedTags.map((tag) => (
+        <div className="mt-auto flex flex-wrap gap-1.5 mb-2 overflow-hidden max-h-[64px]">
+          {finalDisplayTags.map((tag) => (
             <span
               key={tag}
-              className="text-[10px] px-2 py-1 bg-background text-muted rounded-md border border-border"
+              className="text-[10px] px-2 py-0.5 bg-background text-muted rounded border border-border whitespace-nowrap"
             >
               {tag}
             </span>
           ))}
+          {hiddenCount > 0 && (
+            <span className="text-[10px] px-1.5 py-0.5 bg-background text-accent/70 rounded border border-accent/20 whitespace-nowrap font-medium">
+              +{hiddenCount}
+            </span>
+          )}
         </div>
         {video.videogUrl ? (
           <a

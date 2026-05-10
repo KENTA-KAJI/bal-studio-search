@@ -3,11 +3,43 @@
 import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
+import SearchTags from "@/components/SearchTags";
 import VideoCard, { VideoData, CourseData } from "@/components/VideoCard";
 
 // Import dummy data
 import coursesData from "@/data/courses.json";
 import videosData from "@/data/videos.json";
+
+const TAG_CATEGORIES = [
+  {
+    title: "分野から探す",
+    tags: [
+      "解剖学", "運動器以外の系統解剖学", "栄養学", "医学", "神経科学", 
+      "進化生物学", "東洋医学", "呼吸", "バイオメカニクス", "コンディショニング", 
+      "筋膜連結", "ファシア", "評価", "姿勢", "動作分析", 
+      "歩行", "ランニング", "身体操作", "トレーニング", "パフォーマンスアップ", 
+      "ピラティス", "女性指導", "フェムテック", "男性機能改善", "ボディメイク", 
+      "マーケティング"
+    ]
+  },
+  {
+    title: "目的から探す",
+    tags: [
+      "はじめての方へ｜まず見るべき動画", "明日の現場で使いたい", "初回評価の精度を上げたい", 
+      "継続される指導を作りたい", "不調相談に強くなりたい", "見た目の変化まで出したい", 
+      "食事まで提案できるようになりたい", "自分だけの専門性を作りたい", "集客・売上につなげたい"
+    ]
+  },
+  {
+    title: "部位・テーマから探す",
+    tags: [
+      "肩こり", "腰痛", "股関節", "膝", "足部", 
+      "足関節", "肩", "肩甲骨", "胸郭", "脊柱", 
+      "骨盤", "呼吸", "筋肉", "骨学", "筋膜", 
+      "Fascia", "内臓", "女性リズム", "美脚", "小顔"
+    ]
+  }
+];
 
 function SearchContent() {
   const [query, setQuery] = useState("");
@@ -21,54 +53,73 @@ function SearchContent() {
 
     if (!query.trim()) return publicVideos as VideoData[];
 
-    const lowerQuery = query.toLowerCase();
+    const keywords = query.toLowerCase().split(/\s+/).filter(Boolean);
+    
     return (publicVideos as VideoData[]).filter((video) => {
       const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
       
-      const courseText = [
+      const combinedText = [
         course?.title,
         course?.instructor,
         course?.category,
         course?.level,
         course?.description,
         ...(course?.commonTags || []),
-        course?.recommendedFor
-      ].filter(Boolean).join(" ").toLowerCase();
-
-      const videoText = [
+        course?.recommendedFor,
         video.title,
         video.videoDescription,
         ...(video.individualTags || [])
       ].filter(Boolean).join(" ").toLowerCase();
 
-      return courseText.includes(lowerQuery) || videoText.includes(lowerQuery);
+      // All keywords must be found in the combined text (AND search)
+      return keywords.every(keyword => combinedText.includes(keyword));
     });
   }, [query]);
 
+  const handleTagClick = (tag: string) => {
+    setQuery(tag);
+  };
+
   return (
     <div className={`min-h-screen bg-background text-foreground ${isEmbed ? "px-4 pt-2 pb-6" : "p-8 md:p-12"}`}>
-      {!isEmbed && (
+      {!isEmbed ? (
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             BAL STUDIO <span className="text-accent">Search</span>
           </h1>
-          <p className="text-muted text-lg max-w-2xl mx-auto">
-            BAL STUDIO内の講義・動画を、分野・目的・キーワードから検索できます。
-          </p>
+          <div className="text-muted text-sm md:text-base max-w-3xl mx-auto space-y-1 leading-relaxed">
+            <p>この検索ページでは、BALで配信している講義・動画を分野・目的・キーワードから検索できます。</p>
+            <p>BAL STUDIO会員の方は、対象講義をすべて視聴できます。</p>
+            <p>単品購入・過去購入済みの方は、ご自身の視聴権限がある講義のみ視聴できます。</p>
+            <p>動画の視聴にはVideogへのログインが必要です。</p>
+          </div>
         </header>
+      ) : (
+        <div className="mb-6 text-muted text-[10px] leading-tight space-y-0.5 opacity-80">
+          <p>この検索ページでは、BALの講義・動画を検索できます。</p>
+          <p>BAL STUDIO会員の方は全視聴可。単品購入者は権限がある動画のみ可。</p>
+          <p>視聴にはVideogログインが必要です。</p>
+        </div>
       )}
 
       <main className="max-w-7xl mx-auto">
         <SearchBar 
           value={query} 
           onChange={(e) => setQuery(e.target.value)} 
-          className={isEmbed ? "mb-4" : "mb-8"}
+          className="mb-8"
+        />
+
+        <SearchTags 
+          categories={TAG_CATEGORIES} 
+          selectedTag={query} 
+          onTagClick={handleTagClick}
+          isEmbed={isEmbed}
         />
 
         {filteredVideos.length === 0 ? (
           <div className="text-center text-muted mt-16 py-12 bg-card rounded-2xl border border-border">
             <p className="text-lg">「{query}」に一致する動画は見つかりませんでした。</p>
-            <p className="mt-2 text-sm">別のキーワードをお試しください。</p>
+            <p>別のキーワードをお試しください。</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
