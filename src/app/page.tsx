@@ -175,6 +175,7 @@ function SearchContent() {
                   key={video.id}
                   video={video}
                   course={course}
+                  onTagClick={handleTagClick}
                 />
               );
             })}

@@ -29,7 +29,7 @@ export default function SearchBar({
       <input
         type="search"
         className="block w-full p-4 pl-12 text-base text-foreground bg-card border border-border rounded-full focus:ring-accent focus:border-accent outline-none transition-all placeholder-muted"
-        placeholder="例：解剖学、肩こり、初回評価の精度を上げたい、ピラティス"
+        placeholder="例：解剖学、栄養学、コンディショニング"
         value={value}
         onChange={onChange}
         required

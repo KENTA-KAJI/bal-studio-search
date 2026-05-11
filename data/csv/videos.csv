@@ -1,57 +1,57 @@
 id,courseId,title,duration,videoDescription,individualTags,thumbnailUrl,videogUrl,status
-V001,C001,Anatomy Driven 運動器「骨学」,,Anatomy Driven 運動器「骨学」の講座視聴ページです。,"骨学,解剖学,運動器,基礎",/thumbnails/C001.png,https://vdg.jp/g19286vj/adbone,
-V002,C002,ESSENTIAL50,,ESSENTIAL50の講座視聴ページです。,"解剖学,筋肉,50筋,基礎",,https://vdg.jp/g19286vj/essential50,
-V003,C003,The Professional,,The Professionalの講座視聴ページです。,"解剖学,筋肉,100筋,中級",,https://vdg.jp/g19286vj/thepro,
-V004,C004,トップトレーナー・テンプレート,,トップトレーナー・テンプレートの講座視聴ページです。,"セッション設計,テンプレート,プログラム設計",,,
-V005,C005,超栄養学,,超栄養学の講座視聴ページです。,"栄養学,食事指導,食品学,調理学",,,
-V006,C006,UNLOCK ANATOMY SKILL,,UNLOCK ANATOMY SKILLの講座視聴ページです。,"解剖学,コンディショニング,セラピスト",,,
-V007,C007,きほんの呼吸 ESSENTIAL,,きほんの呼吸 ESSENTIALの講座視聴ページです。,"呼吸,胸郭,横隔膜,姿勢",,,
-V008,C008,筋膜連結マスター,,筋膜連結マスターの講座視聴ページです。,"筋膜連結,筋膜,全身連動",,,
-V009,C009,栄養を武器にする10時間。,,栄養を武器にする10時間。の講座視聴ページです。,"栄養学,食事指導,五大栄養素,科学的思考法",,,
-V010,C010,系統解剖学－リンパ系の解剖学・マッサージ実技－,,系統解剖学－リンパ系の解剖学・マッサージ実技－の講座視聴ページです。,"リンパ系,浮腫み,むくみ,免疫,マッサージ",,,
-V011,C011,系統解剖学－皮膚科学の解剖学と美肌アプローチー,,系統解剖学－皮膚科学の解剖学と美肌アプローチーの講座視聴ページです。,"皮膚科学,美肌,外皮系,美容",,,
-V012,C012,系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－,,系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－の講座視聴ページです。,"心臓血管系,泌尿器系,生殖系,尿漏れ,男性機能",,,
-V013,C013,機能的歩行学,,機能的歩行学の講座視聴ページです。,"歩行,歩行指導,姿勢,呼吸,胸郭",,,
-V014,C014,身体操作 虎ノ巻,,身体操作 虎ノ巻の講座視聴ページです。,"身体操作,体芯力,脳,神経,大腰筋",,,
-V015,C015,姿勢改善2.0,,姿勢改善2.0の講座視聴ページです。,"姿勢改善,重心,感覚器,足圧感覚",,,
-V016,C016,美脚の方程式,,美脚の方程式の講座視聴ページです。,"美脚,下半身痩せ,呼吸,脊柱,自律神経",,,
-V017,C017,ANATOMY CONDITIONING（上肢編）,,ANATOMY CONDITIONING（上肢編）の講座視聴ページです。,"上肢,肩,肩甲骨,評価,スペシャルテスト",,,
-V018,C018,ANATOMY CONDITIONING（下肢編）,,ANATOMY CONDITIONING（下肢編）の講座視聴ページです。,"下肢,腰痛,股関節,膝,足部,スペシャルテスト",,,
-V019,C019,WOMAN'S BODY JOURNEY,,WOMAN'S BODY JOURNEYの講座視聴ページです。,"女性指導,フェムテック,PMS,産後,更年期",,,
-V020,C020,BEYOND THE ERROR,,BEYOND THE ERRORの講座視聴ページです。,"代償動作,エラー,BIG3,スクワット,ベンチプレス,デッドリフト",,,
-V021,C021,BEYOND THE ERROR -COMPLETE-,,BEYOND THE ERROR -COMPLETE-の講座視聴ページです。,"代償動作,フォーム修正,コレクティブエクササイズ,トレーニング",,,
-V022,C022,動的代謝学,,動的代謝学の講座視聴ページです。,"代謝,栄養学,ミトコンドリア,食品表示,添加物",,,
-V023,C023,シン・コンディショニング,,シン・コンディショニングの講座視聴ページです。,"神経系,コンディショニング,感覚入力,不調改善",,,
-V024,C024,シン・コンディショニングＺ,,シン・コンディショニングＺの講座視聴ページです。,"神経系,コンディショニング,運動制御,不調改善",,,
-V025,C025,FACE to HEALTH,,FACE to HEALTHの講座視聴ページです。,"小顔,顔面評価,頭蓋骨,表情筋,顎関節",,,
-V026,C026,ZERO BODYMAKE-0-,,ZERO BODYMAKE-0-の講座視聴ページです。,"ボディメイク,美脚,ヒップアップ,手技",,,
-V027,C027,パフォーマンスアップの教科書,,パフォーマンスアップの教科書の講座視聴ページです。,"パフォーマンスアップ,アスリート,競技力向上",,,
-V028,C028,TRAINER EVOLUTION,,TRAINER EVOLUTIONの講座視聴ページです。,"進化生物学,比較解剖学,身体操作,運動設計",,,
-V029,C029,タイ古式マッサージ PERFECT INTRODUCTION,,タイ古式マッサージ PERFECT INTRODUCTIONの講座視聴ページです。,"タイ古式マッサージ,手技,ストレッチ,体重移動",,,
-V030,C030,NeuroScience-Driven,,NeuroScience-Drivenの講座視聴ページです。,"神経科学,ニューロサイエンス,神経系,運動制御",,,
-V031,C031,PILATES RECOVERY BOOST,,PILATES RECOVERY BOOSTの講座視聴ページです。,"ピラティス,不調改善,姿勢改善,体幹",,,
-V032,C032,LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」,,LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」の講座視聴ページです。,"ランニング,進化生物学,走り,体幹,足底アーチ",,,
-V033,C033,運動指導の法則,,運動指導の法則の講座視聴ページです。,"運動指導,動作分析,評価,セッション設計",,,
-V034,C034,再構築姿勢学,,再構築姿勢学の講座視聴ページです。,"姿勢,姿勢評価,日常動作,動作分析",,,
-V035,C035,LOGIC RUN Vol.2「Data-Driven RUN」,,LOGIC RUN Vol.2「Data-Driven RUN」の講座視聴ページです。,"ランニング,動作分析,データ分析,筋電図",,,
-V036,C036,Code of the Female Body,,Code of the Female Bodyの講座視聴ページです。,"女性指導,女性の身体,女性心理,プログラム設計",,,
-V037,C037,NUTRITION GOLD,,NUTRITION GOLDの講座視聴ページです。,"栄養学,サービス化,マネタイズ,商品設計",,,
-V038,C038,THE FASCIA,,THE FASCIAの講座視聴ページです。,"Fascia,筋膜,ファシア,モーターコントロール",,,
-V039,C039,Neutral Kinetic Walking,,Neutral Kinetic Walkingの講座視聴ページです。,"歩行,歩行の設計図,足底8点支持,ロッカーファンクション",,,
-V040,C040,LOGIC RUN Vol.3「WALK to Faster RUN」,,LOGIC RUN Vol.3「WALK to Faster RUN」の講座視聴ページです。,"ランニング,歩行,シューズ,足部,体重移動",,,
-V041,C041,ORIENTAL MEDICINE GATE,,ORIENTAL MEDICINE GATEの講座視聴ページです。,"東洋医学,経絡,体質,内臓",,,
-V042,C042,男性機能のコアリカバリー,,男性機能のコアリカバリーの講座視聴ページです。,"男性機能,ED,勃起不全,呼吸,内臓",,,
-V043,C043,運動指導者のためのMEO完全攻略法,,運動指導者のためのMEO完全攻略法の講座視聴ページです。,"MEO,Googleマップ,地域集客,マーケティング",,,
-V044,C044,Special Test & New Conditioning（下肢編 / 評価法パターン集）,,Special Test & New Conditioning（下肢編 / 評価法パターン集）の講座視聴ページです。,"Special Test,下肢,評価法,スペシャルテスト",,,
-V045,C045,Special Test & New Conditioning（下肢編 / 問題集）,,Special Test & New Conditioning（下肢編 / 問題集）の講座視聴ページです。,"Special Test,下肢,問題集,評価,判断力",,,
-V046,C046,Special Test & New Conditioning（下肢編 / 手技一覧）,,Special Test & New Conditioning（下肢編 / 手技一覧）の講座視聴ページです。,"Special Test,下肢,手技,コンディショニング",,,
-V047,C047,PRIMAL MOVE,,PRIMAL MOVEの講座視聴ページです。,"PRIMAL MOVE,身体操作,動きで鍛える,進化生物学",,,
-V048,C048,MEDICAL FITNESS,,MEDICAL FITNESSの講座視聴ページです。,"医学,メディカルフィットネス,医療連携,予防医療",,,
-V049,C049,CORE ERECTION,,CORE ERECTIONの講座視聴ページです。,"男性機能,CORE ERECTION,ED,コア,骨盤",,,
-V050,C050,運動指導者のためのポスティング完全攻略法,,運動指導者のためのポスティング完全攻略法の講座視聴ページです。,"ポスティング,チラシ,地域集客,マーケティング",,,
-V051,C051,構造美ボディメイク,,構造美ボディメイクの講座視聴ページです。,"ボディメイク,解剖学,バイオメカニクス,生理学",,,
-V052,C052,FEMTEC FOR TRAINERS,,FEMTEC FOR TRAINERSの講座視聴ページです。,"フェムテック,女性指導,女性ヘルスケア,収益化",,,
-V053,C053,MOVEMENT DESIGN,,MOVEMENT DESIGNの講座視聴ページです。,"MOVEMENT DESIGN,運動設計,動作分析,セッション設計",,,
-V054,C054,Special Test & New Conditioning（上肢編 / 評価法パターン集）,,Special Test & New Conditioning（上肢編 / 評価法パターン集）の講座視聴ページです。,"Special Test,上肢,評価法,スペシャルテスト",,,
-V055,C055,内臓調整学,,内臓調整学の講座視聴ページです。,"内臓調整,内臓,コンディショニング,不調改善",,,
-V056,C056,THE BIOMECHANICS,,THE BIOMECHANICSの講座視聴ページです。,"バイオメカニクス,生体力学,運動指導,動作分析",,,
+V001,C001,Anatomy Driven 運動器「骨学」,〇時間〇分,Anatomy Driven 運動器「骨学」の講座視聴ページです。,"骨,解剖学総論,作用,構造,成分,リモデリング,ランドマーク,形状,関節,可動域",,https://vdg.jp/g19286vj/adbone,/thumbnails/C001.png
+V002,C002,ESSENTIAL50,,ESSENTIAL50の講座視聴ページです。,"筋,起始,停止,作用,走行,トレーニング,トリートメント,ストレッチ,リリース",,https://vdg.jp/g19286vj/essential50,/thumbnails/C002.png
+V003,C003,The Professional,,The Professionalの講座視聴ページです。,"筋,起始,停止,作用,走行,トレーニング,トリートメント,ストレッチ,リリース,運用,健康,美容,姿勢改善,疼痛改善,スポーツパフォーマンス",,https://vdg.jp/g19286vj/thepro,/thumbnails/C003.png
+V004,C004,トップトレーナー・テンプレート,,トップトレーナー・テンプレートの講座視聴ページです。,"セッション設計,テンプレート,プログラム設計,トレーニング,ストレッチ",,https://vdg.jp/g19286vj/ttt,/thumbnails/C004.png
+V005,C005,超栄養学,,超栄養学の講座視聴ページです。,"栄養学,食事指導,五大栄養素,ファイトケミカル,食品学,調理学,食器洗い栄養学,買い物栄養学",,https://vdg.jp/g19286vj/chonutri,/thumbnails/C005.png
+V006,C006,UNLOCK ANATOMY SKILL,,UNLOCK ANATOMY SKILLの講座視聴ページです。,"コンディショニング,解剖学,マッサージ,スラスト,筋膜リリース,ストレッチ",,https://vdg.jp/g19286vj/unlock,/thumbnails/C006.png
+V007,C007,きほんの呼吸 ESSENTIAL,,きほんの呼吸 ESSENTIALの講座視聴ページです。,"呼吸,自律神経,胸郭,横隔膜,姿勢,評価,エクササイズ",,https://vdg.jp/g19286vj/breath,/thumbnails/C007.png
+V008,C008,筋膜連結マスター,,筋膜連結マスターの講座視聴ページです。,"解剖学,筋膜連結,筋膜,トレーニング,トリートメント",,https://vdg.jp/g19286vj/kinmaku,/thumbnails/C008.png
+V009,C009,栄養を武器にする10時間。,,栄養を武器にする10時間。の講座視聴ページです。,"栄養学,食事指導,五大栄養素,科学的思考法,論文,",,https://vdg.jp/g19286vj/nutri10,/thumbnails/C009.png
+V010,C010,系統解剖学－リンパ系の解剖学・マッサージ実技－,,系統解剖学－リンパ系の解剖学・マッサージ実技－の講座視聴ページです。,"リンパ系,浮腫み,むくみ,免疫,マッサージ,手技",,https://vdg.jp/g19286vj/lymph,/thumbnails/C010.png
+V011,C011,系統解剖学－皮膚科学の解剖学と美肌アプローチー,,系統解剖学－皮膚科学の解剖学と美肌アプローチーの講座視聴ページです。,"外皮系,皮膚,美肌,美容",,https://vdg.jp/g19286vj/skin,/thumbnails/C011.png
+V012,C012,系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－,,系統解剖学－心臓血管系・泌尿器系・生殖系の解剖学と現場への応用－の講座視聴ページです。,"心臓血管系,泌尿器系,生殖系,尿漏れ,男性機能,女性指導,女性ヘルスケア,免疫,",,https://vdg.jp/g19286vj/cardio,/thumbnails/C012.png
+V013,C013,機能的歩行学,,機能的歩行学の講座視聴ページです。,"歩行,歩行指導,姿勢,呼吸,ロッカーファンクション,グランドゲイトサイクル",,https://vdg.jp/g19286vj/gait,/thumbnails/C013.png
+V014,C014,身体操作 虎ノ巻,,身体操作 虎ノ巻の講座視聴ページです。,"身体操作,体芯力,脳,神経,大腰筋",,https://vdg.jp/g19286vj/bodyctrl,/thumbnails/C014.png
+V015,C015,姿勢改善2.0,,姿勢改善2.0の講座視聴ページです。,"姿勢改善,重心,感覚器,足圧感覚",,https://vdg.jp/g19286vj/posture2,/thumbnails/C015.png
+V016,C016,美脚の方程式,,美脚の方程式の講座視聴ページです。,"美脚,下半身痩せ,呼吸,脊柱,自律神経",,https://vdg.jp/g19286vj/leg,/thumbnails/C016.png
+V017,C017,ANATOMY CONDITIONING（上肢編）,,ANATOMY CONDITIONING（上肢編）の講座視聴ページです。,"コンディショニング,上肢,肩,肩甲骨,評価,スペシャルテスト",,https://vdg.jp/g19286vj/acset,/thumbnails/C017.png
+V018,C018,ANATOMY CONDITIONING（下肢編）,,ANATOMY CONDITIONING（下肢編）の講座視聴ページです。,"コンディショニング,下肢,股関節,膝,足部,評価,スペシャルテスト",,https://vdg.jp/g19286vj/acset2,/thumbnails/C018.png
+V019,C019,WOMAN'S BODY JOURNEY,,WOMAN'S BODY JOURNEYの講座視聴ページです。,"女性指導,フェムテック,PMS,産後,更年期",,https://vdg.jp/g19286vj/woman,/thumbnails/C019.png
+V020,C020,BEYOND THE ERROR,,BEYOND THE ERRORの講座視聴ページです。,"代償動作,エラー,BIG3,スクワット,ベンチプレス,デッドリフト,コレクティブエクササイズ",,https://vdg.jp/g19286vj/bte,/thumbnails/C020.png
+V021,C021,BEYOND THE ERROR -COMPLETE-,,BEYOND THE ERROR -COMPLETE-の講座視聴ページです。,"代償動作,エラー,コレクティブエクササイズ,トレーニング",,https://vdg.jp/g19286vj/btecomp,/thumbnails/C021.png
+V022,C022,動的代謝学,,動的代謝学の講座視聴ページです。,"代謝,栄養学,ミトコンドリア,食品表示,添加物",,https://vdg.jp/g19286vj/metab,/thumbnails/C022.png
+V023,C023,シン・コンディショニング,,シン・コンディショニングの講座視聴ページです。,"神経系,コンディショニング,感覚入力,運動制御,不調改善",,https://vdg.jp/g19286vj/shin,/thumbnails/C023.png
+V024,C024,シン・コンディショニングＺ,,シン・コンディショニングＺの講座視聴ページです。,"神経系,コンディショニング,感覚入力,運動制御,不調改善",,https://vdg.jp/g19286vj/shinz,/thumbnails/C024.png
+V025,C025,FACE to HEALTH,,FACE to HEALTHの講座視聴ページです。,"小顔,顔面評価,頭蓋骨,表情筋,顎関節",,https://vdg.jp/g19286vj/face,/thumbnails/C025.png
+V026,C026,ZERO BODYMAKE-0-,,ZERO BODYMAKE-0-の講座視聴ページです。,"コンディショニング,手技,ボディメイク,バストアップ,ヒップアップ,くびれ,指圧,筋膜リリース,ストレッチ",,https://vdg.jp/g19286vj/zerobody,/thumbnails/C026.png
+V027,C027,パフォーマンスアップの教科書,,パフォーマンスアップの教科書の講座視聴ページです。,"パフォーマンスアップ,アスリート,競技力向上,エクササイズ,フォースカップル,ジョイントセントレーション,S.O.A.P",,https://vdg.jp/g19286vj/perf,/thumbnails/C027.png
+V028,C028,TRAINER EVOLUTION,,TRAINER EVOLUTIONの講座視聴ページです。,"進化生物学,比較解剖学,解剖学,身体操作,運動設計,パフォーマンスアップ",,https://vdg.jp/g19286vj/trevo,/thumbnails/C028.png
+V029,C029,タイ古式マッサージ PERFECT INTRODUCTION,,タイ古式マッサージ PERFECT INTRODUCTIONの講座視聴ページです。,"タイ古式マッサージ,手技,ストレッチ,リラクゼーション",,https://vdg.jp/g19286vj/thai,/thumbnails/C029.png
+V030,C030,NeuroScience-Driven,,NeuroScience-Drivenの講座視聴ページです。,"神経科学,ニューロサイエンス,神経系,運動制御",,https://vdg.jp/g19286vj/neuro,/thumbnails/C030.png
+V031,C031,PILATES RECOVERY BOOST,,PILATES RECOVERY BOOSTの講座視聴ページです。,"ピラティス,不調改善,姿勢改善,体幹",,https://vdg.jp/g19286vj/pilates,/thumbnails/C031.png
+V032,C032,LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」,,LOGIC RUN Vol.1「進化生物学が切り開く日本の走りの未来」の講座視聴ページです。,"ランニング,進化生物学,走り",,https://vdg.jp/g19286vj/run1,/thumbnails/C032.png
+V033,C033,運動指導の法則,,運動指導の法則の講座視聴ページです。,"運動指導,動作分析,評価,セッション設計",,https://vdg.jp/g19286vj/undolaw,/thumbnails/C033.png
+V034,C034,再構築姿勢学,,再構築姿勢学の講座視聴ページです。,"姿勢,姿勢評価,日常動作,動作分析",,https://vdg.jp/g19286vj/posture,/thumbnails/C034.png
+V035,C035,LOGIC RUN Vol.2「Data-Driven RUN」,,LOGIC RUN Vol.2「Data-Driven RUN」の講座視聴ページです。,"ランニング,動作分析,データ分析,筋電図",,https://vdg.jp/g19286vj/run2,/thumbnails/C035.png
+V036,C036,Code of the Female Body,,Code of the Female Bodyの講座視聴ページです。,"女性指導,女性の身体,女性心理,プログラム設計,東洋医学,解剖学,女性周期,カウンセリング",,https://vdg.jp/g19286vj/female,/thumbnails/C036.png
+V037,C037,NUTRITION GOLD,,NUTRITION GOLDの講座視聴ページです。,"栄養学,サービス化,マネタイズ,基礎代謝,睡眠,筋肥大,パフォーマンス,骨盤底筋",,https://vdg.jp/g19286vj/nutrigold,/thumbnails/C037.png
+V038,C038,THE FASCIA,,THE FASCIAの講座視聴ページです。,"Fascia,筋膜,ファシア,リリース,モーターコントロール",,https://vdg.jp/g19286vj/fascia,/thumbnails/C038.png
+V039,C039,Neutral Kinetic Walking,,Neutral Kinetic Walkingの講座視聴ページです。,"歩行,歩行指導,歩行の設計図,アーチ,ロッカーファンクション,フットポジション",,https://vdg.jp/g19286vj/nkw,/thumbnails/C039.png
+V040,C040,LOGIC RUN Vol.3「WALK to Faster RUN」,,LOGIC RUN Vol.3「WALK to Faster RUN」の講座視聴ページです。,"ランニング,歩行,シューズ,足部,体重移動",,https://vdg.jp/g19286vj/run3,/thumbnails/C040.png
+V041,C041,ORIENTAL MEDICINE GATE,,ORIENTAL MEDICINE GATEの講座視聴ページです。,"東洋医学,経絡,体質,内臓,腹診,経路,経穴",,https://vdg.jp/g19286vj/orient,/thumbnails/C041.png
+V042,C042,男性機能のコアリカバリー,,男性機能のコアリカバリーの講座視聴ページです。,"男性機能改善,ED,勃起不全,呼吸,内臓,腹圧",,https://vdg.jp/g19286vj/male,/thumbnails/C042.png
+V043,C043,運動指導者のためのMEO完全攻略法,,運動指導者のためのMEO完全攻略法の講座視聴ページです。,"マーケティング,MEO,Googleマップ,地域集客",,https://vdg.jp/g19286vj/meo,/thumbnails/C043.png
+V044,C044,Special Test & New Conditioning（下肢編 / 評価法パターン集）,,Special Test & New Conditioning（下肢編 / 評価法パターン集）の講座視聴ページです。,"コンディショニング,スペシャルテスト,評価,手技,下肢,股関節,膝関節,足部,脊柱",,https://vdg.jp/g19286vj/st,/thumbnails/C044.png
+V045,C045,Special Test & New Conditioning（下肢編 / 問題集）,,Special Test & New Conditioning（下肢編 / 問題集）の講座視聴ページです。,"コンディショニング,スペシャルテスト,評価,手技,下肢,股関節,膝関節,足部,脊柱",,https://vdg.jp/g19286vj/st,/thumbnails/C045.png
+V046,C046,Special Test & New Conditioning（下肢編 / 手技一覧）,,Special Test & New Conditioning（下肢編 / 手技一覧）の講座視聴ページです。,"コンディショニング,スペシャルテスト,評価,手技,下肢,股関節,膝関節,足部,脊柱",,https://vdg.jp/g19286vj/st,/thumbnails/C046.png
+V047,C047,PRIMAL MOVE,,PRIMAL MOVEの講座視聴ページです。,"パフィーマンスアップ,身体操作,動きで鍛える,進化生物学",,https://vdg.jp/g19286vj/primal,/thumbnails/C047.png
+V048,C048,MEDICAL FITNESS,,MEDICAL FITNESSの講座視聴ページです。,"医学,医療連携,予防医療,睡眠,健康経営",,https://vdg.jp/g19286vj/medfit,/thumbnails/C048.png
+V049,C049,CORE ERECTION,,CORE ERECTIONの講座視聴ページです。,"男性機能改善,ED,勃起不全,体幹,腹圧,胸椎",,https://vdg.jp/g19286vj/core,/thumbnails/C049.png
+V050,C050,運動指導者のためのポスティング完全攻略法,,運動指導者のためのポスティング完全攻略法の講座視聴ページです。,"マーケティング,ポスティング,チラシ,地域集客",,https://vdg.jp/g19286vj/posting,/thumbnails/C050.png
+V051,C051,構造美ボディメイク,,構造美ボディメイクの講座視聴ページです。,"ボディメイク,解剖学,バイオメカニクス,生理学",,https://vdg.jp/g19286vj/bodymake,/thumbnails/C051.png
+V052,C052,FEMTEC FOR TRAINERS,,FEMTEC FOR TRAINERSの講座視聴ページです。,"フェムテック,女性指導,女性ヘルスケア,収益化",,https://vdg.jp/g19286vj/femtec,/thumbnails/C052.png
+V053,C053,MOVEMENT DESIGN,,MOVEMENT DESIGNの講座視聴ページです。,"パフィーマンスアップ,運動設計,動作分析,セッション設計",,https://vdg.jp/g19286vj/movdes,/thumbnails/C053.png
+V054,C054,Special Test & New Conditioning（上肢編 / 評価法パターン集）,,Special Test & New Conditioning（上肢編 / 評価法パターン集）の講座視聴ページです。,"コンディショニング,スペシャルテスト,評価,手技,上肢,肩関節,肘関節,手首",,https://vdg.jp/g19286vj/st2,/thumbnails/C054.png
+V055,C055,内臓調整学,,内臓調整学の講座視聴ページです。,"内臓調整,内臓,コンディショニング,不調改善",,https://vdg.jp/g19286vj/organ,/thumbnails/C055.png
+V056,C056,THE BIOMECHANICS,,THE BIOMECHANICSの講座視聴ページです。,"バイオメカニクス,生体力学,運動指導,動作分析",,https://vdg.jp/g19286vj/biomech,/thumbnails/C056.png

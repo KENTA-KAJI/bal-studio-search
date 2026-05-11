@@ -3,17 +3,23 @@
     "id": "V001",
     "courseId": "C001",
     "title": "Anatomy Driven 運動器「骨学」",
-    "duration": "",
+    "duration": "〇時間〇分",
     "videoDescription": "Anatomy Driven 運動器「骨学」の講座視聴ページです。",
     "individualTags": [
-      "骨学",
-      "解剖学",
-      "運動器",
-      "基礎"
+      "骨",
+      "解剖学総論",
+      "作用",
+      "構造",
+      "成分",
+      "リモデリング",
+      "ランドマーク",
+      "形状",
+      "関節",
+      "可動域"
     ],
-    "thumbnailUrl": "/thumbnails/C001.png",
+    "thumbnailUrl": "",
     "videogUrl": "https://vdg.jp/g19286vj/adbone",
-    "status": ""
+    "status": "/thumbnails/C001.png"
   },
   {
     "id": "V002",
@@ -22,14 +28,19 @@
     "duration": "",
     "videoDescription": "ESSENTIAL50の講座視聴ページです。",
     "individualTags": [
-      "解剖学",
-      "筋肉",
-      "50筋",
-      "基礎"
+      "筋",
+      "起始",
+      "停止",
+      "作用",
+      "走行",
+      "トレーニング",
+      "トリートメント",
+      "ストレッチ",
+      "リリース"
     ],
     "thumbnailUrl": "",
     "videogUrl": "https://vdg.jp/g19286vj/essential50",
-    "status": ""
+    "status": "/thumbnails/C002.png"
   },
   {
     "id": "V003",
@@ -38,14 +49,25 @@
     "duration": "",
     "videoDescription": "The Professionalの講座視聴ページです。",
     "individualTags": [
-      "解剖学",
-      "筋肉",
-      "100筋",
-      "中級"
+      "筋",
+      "起始",
+      "停止",
+      "作用",
+      "走行",
+      "トレーニング",
+      "トリートメント",
+      "ストレッチ",
+      "リリース",
+      "運用",
+      "健康",
+      "美容",
+      "姿勢改善",
+      "疼痛改善",
+      "スポーツパフォーマンス"
     ],
     "thumbnailUrl": "",
     "videogUrl": "https://vdg.jp/g19286vj/thepro",
-    "status": ""
+    "status": "/thumbnails/C003.png"
   },
   {
     "id": "V004",
@@ -56,11 +78,13 @@
     "individualTags": [
       "セッション設計",
       "テンプレート",
-      "プログラム設計"
+      "プログラム設計",
+      "トレーニング",
+      "ストレッチ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/ttt",
+    "status": "/thumbnails/C004.png"
   },
   {
     "id": "V005",
@@ -71,12 +95,16 @@
     "individualTags": [
       "栄養学",
       "食事指導",
+      "五大栄養素",
+      "ファイトケミカル",
       "食品学",
-      "調理学"
+      "調理学",
+      "食器洗い栄養学",
+      "買い物栄養学"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/chonutri",
+    "status": "/thumbnails/C005.png"
   },
   {
     "id": "V006",
@@ -85,13 +113,16 @@
     "duration": "",
     "videoDescription": "UNLOCK ANATOMY SKILLの講座視聴ページです。",
     "individualTags": [
-      "解剖学",
       "コンディショニング",
-      "セラピスト"
+      "解剖学",
+      "マッサージ",
+      "スラスト",
+      "筋膜リリース",
+      "ストレッチ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/unlock",
+    "status": "/thumbnails/C006.png"
   },
   {
     "id": "V007",
@@ -101,13 +132,16 @@
     "videoDescription": "きほんの呼吸 ESSENTIALの講座視聴ページです。",
     "individualTags": [
       "呼吸",
+      "自律神経",
       "胸郭",
       "横隔膜",
-      "姿勢"
+      "姿勢",
+      "評価",
+      "エクササイズ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/breath",
+    "status": "/thumbnails/C007.png"
   },
   {
     "id": "V008",
@@ -116,13 +150,15 @@
     "duration": "",
     "videoDescription": "筋膜連結マスターの講座視聴ページです。",
     "individualTags": [
+      "解剖学",
       "筋膜連結",
       "筋膜",
-      "全身連動"
+      "トレーニング",
+      "トリートメント"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/kinmaku",
+    "status": "/thumbnails/C008.png"
   },
   {
     "id": "V009",
@@ -134,11 +170,12 @@
       "栄養学",
       "食事指導",
       "五大栄養素",
-      "科学的思考法"
+      "科学的思考法",
+      "論文"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/nutri10",
+    "status": "/thumbnails/C009.png"
   },
   {
     "id": "V010",
@@ -151,11 +188,12 @@
       "浮腫み",
       "むくみ",
       "免疫",
-      "マッサージ"
+      "マッサージ",
+      "手技"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/lymph",
+    "status": "/thumbnails/C010.png"
   },
   {
     "id": "V011",
@@ -164,14 +202,14 @@
     "duration": "",
     "videoDescription": "系統解剖学－皮膚科学の解剖学と美肌アプローチーの講座視聴ページです。",
     "individualTags": [
-      "皮膚科学",
-      "美肌",
       "外皮系",
+      "皮膚",
+      "美肌",
       "美容"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/skin",
+    "status": "/thumbnails/C011.png"
   },
   {
     "id": "V012",
@@ -184,11 +222,14 @@
       "泌尿器系",
       "生殖系",
       "尿漏れ",
-      "男性機能"
+      "男性機能",
+      "女性指導",
+      "女性ヘルスケア",
+      "免疫"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/cardio",
+    "status": "/thumbnails/C012.png"
   },
   {
     "id": "V013",
@@ -201,11 +242,12 @@
       "歩行指導",
       "姿勢",
       "呼吸",
-      "胸郭"
+      "ロッカーファンクション",
+      "グランドゲイトサイクル"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/gait",
+    "status": "/thumbnails/C013.png"
   },
   {
     "id": "V014",
@@ -221,8 +263,8 @@
       "大腰筋"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/bodyctrl",
+    "status": "/thumbnails/C014.png"
   },
   {
     "id": "V015",
@@ -237,8 +279,8 @@
       "足圧感覚"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/posture2",
+    "status": "/thumbnails/C015.png"
   },
   {
     "id": "V016",
@@ -254,8 +296,8 @@
       "自律神経"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/leg",
+    "status": "/thumbnails/C016.png"
   },
   {
     "id": "V017",
@@ -264,6 +306,7 @@
     "duration": "",
     "videoDescription": "ANATOMY CONDITIONING（上肢編）の講座視聴ページです。",
     "individualTags": [
+      "コンディショニング",
       "上肢",
       "肩",
       "肩甲骨",
@@ -271,8 +314,8 @@
       "スペシャルテスト"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/acset",
+    "status": "/thumbnails/C017.png"
   },
   {
     "id": "V018",
@@ -281,16 +324,17 @@
     "duration": "",
     "videoDescription": "ANATOMY CONDITIONING（下肢編）の講座視聴ページです。",
     "individualTags": [
+      "コンディショニング",
       "下肢",
-      "腰痛",
       "股関節",
       "膝",
       "足部",
+      "評価",
       "スペシャルテスト"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/acset2",
+    "status": "/thumbnails/C018.png"
   },
   {
     "id": "V019",
@@ -306,8 +350,8 @@
       "更年期"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/woman",
+    "status": "/thumbnails/C019.png"
   },
   {
     "id": "V020",
@@ -321,11 +365,12 @@
       "BIG3",
       "スクワット",
       "ベンチプレス",
-      "デッドリフト"
+      "デッドリフト",
+      "コレクティブエクササイズ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/bte",
+    "status": "/thumbnails/C020.png"
   },
   {
     "id": "V021",
@@ -335,13 +380,13 @@
     "videoDescription": "BEYOND THE ERROR -COMPLETE-の講座視聴ページです。",
     "individualTags": [
       "代償動作",
-      "フォーム修正",
+      "エラー",
       "コレクティブエクササイズ",
       "トレーニング"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/btecomp",
+    "status": "/thumbnails/C021.png"
   },
   {
     "id": "V022",
@@ -357,8 +402,8 @@
       "添加物"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/metab",
+    "status": "/thumbnails/C022.png"
   },
   {
     "id": "V023",
@@ -370,11 +415,12 @@
       "神経系",
       "コンディショニング",
       "感覚入力",
+      "運動制御",
       "不調改善"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/shin",
+    "status": "/thumbnails/C023.png"
   },
   {
     "id": "V024",
@@ -385,12 +431,13 @@
     "individualTags": [
       "神経系",
       "コンディショニング",
+      "感覚入力",
       "運動制御",
       "不調改善"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/shinz",
+    "status": "/thumbnails/C024.png"
   },
   {
     "id": "V025",
@@ -406,8 +453,8 @@
       "顎関節"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/face",
+    "status": "/thumbnails/C025.png"
   },
   {
     "id": "V026",
@@ -416,14 +463,19 @@
     "duration": "",
     "videoDescription": "ZERO BODYMAKE-0-の講座視聴ページです。",
     "individualTags": [
+      "コンディショニング",
+      "手技",
       "ボディメイク",
-      "美脚",
+      "バストアップ",
       "ヒップアップ",
-      "手技"
+      "くびれ",
+      "指圧",
+      "筋膜リリース",
+      "ストレッチ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/zerobody",
+    "status": "/thumbnails/C026.png"
   },
   {
     "id": "V027",
@@ -434,11 +486,15 @@
     "individualTags": [
       "パフォーマンスアップ",
       "アスリート",
-      "競技力向上"
+      "競技力向上",
+      "エクササイズ",
+      "フォースカップル",
+      "ジョイントセントレーション",
+      "S.O.A.P"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/perf",
+    "status": "/thumbnails/C027.png"
   },
   {
     "id": "V028",
@@ -449,12 +505,14 @@
     "individualTags": [
       "進化生物学",
       "比較解剖学",
+      "解剖学",
       "身体操作",
-      "運動設計"
+      "運動設計",
+      "パフォーマンスアップ"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/trevo",
+    "status": "/thumbnails/C028.png"
   },
   {
     "id": "V029",
@@ -466,11 +524,11 @@
       "タイ古式マッサージ",
       "手技",
       "ストレッチ",
-      "体重移動"
+      "リラクゼーション"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/thai",
+    "status": "/thumbnails/C029.png"
   },
   {
     "id": "V030",
@@ -485,8 +543,8 @@
       "運動制御"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/neuro",
+    "status": "/thumbnails/C030.png"
   },
   {
     "id": "V031",
@@ -501,8 +559,8 @@
       "体幹"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/pilates",
+    "status": "/thumbnails/C031.png"
   },
   {
     "id": "V032",
@@ -513,13 +571,11 @@
     "individualTags": [
       "ランニング",
       "進化生物学",
-      "走り",
-      "体幹",
-      "足底アーチ"
+      "走り"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/run1",
+    "status": "/thumbnails/C032.png"
   },
   {
     "id": "V033",
@@ -534,8 +590,8 @@
       "セッション設計"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/undolaw",
+    "status": "/thumbnails/C033.png"
   },
   {
     "id": "V034",
@@ -550,8 +606,8 @@
       "動作分析"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/posture",
+    "status": "/thumbnails/C034.png"
   },
   {
     "id": "V035",
@@ -566,8 +622,8 @@
       "筋電図"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/run2",
+    "status": "/thumbnails/C035.png"
   },
   {
     "id": "V036",
@@ -579,11 +635,15 @@
       "女性指導",
       "女性の身体",
       "女性心理",
-      "プログラム設計"
+      "プログラム設計",
+      "東洋医学",
+      "解剖学",
+      "女性周期",
+      "カウンセリング"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/female",
+    "status": "/thumbnails/C036.png"
   },
   {
     "id": "V037",
@@ -595,11 +655,15 @@
       "栄養学",
       "サービス化",
       "マネタイズ",
-      "商品設計"
+      "基礎代謝",
+      "睡眠",
+      "筋肥大",
+      "パフォーマンス",
+      "骨盤底筋"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/nutrigold",
+    "status": "/thumbnails/C037.png"
   },
   {
     "id": "V038",
@@ -611,11 +675,12 @@
       "Fascia",
       "筋膜",
       "ファシア",
+      "リリース",
       "モーターコントロール"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/fascia",
+    "status": "/thumbnails/C038.png"
   },
   {
     "id": "V039",
@@ -625,13 +690,15 @@
     "videoDescription": "Neutral Kinetic Walkingの講座視聴ページです。",
     "individualTags": [
       "歩行",
+      "歩行指導",
       "歩行の設計図",
-      "足底8点支持",
-      "ロッカーファンクション"
+      "アーチ",
+      "ロッカーファンクション",
+      "フットポジション"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/nkw",
+    "status": "/thumbnails/C039.png"
   },
   {
     "id": "V040",
@@ -647,8 +714,8 @@
       "体重移動"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/run3",
+    "status": "/thumbnails/C040.png"
   },
   {
     "id": "V041",
@@ -660,11 +727,14 @@
       "東洋医学",
       "経絡",
       "体質",
-      "内臓"
+      "内臓",
+      "腹診",
+      "経路",
+      "経穴"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/orient",
+    "status": "/thumbnails/C041.png"
   },
   {
     "id": "V042",
@@ -673,15 +743,16 @@
     "duration": "",
     "videoDescription": "男性機能のコアリカバリーの講座視聴ページです。",
     "individualTags": [
-      "男性機能",
+      "男性機能改善",
       "ED",
       "勃起不全",
       "呼吸",
-      "内臓"
+      "内臓",
+      "腹圧"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/male",
+    "status": "/thumbnails/C042.png"
   },
   {
     "id": "V043",
@@ -690,14 +761,14 @@
     "duration": "",
     "videoDescription": "運動指導者のためのMEO完全攻略法の講座視聴ページです。",
     "individualTags": [
+      "マーケティング",
       "MEO",
       "Googleマップ",
-      "地域集客",
-      "マーケティング"
+      "地域集客"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/meo",
+    "status": "/thumbnails/C043.png"
   },
   {
     "id": "V044",
@@ -706,14 +777,19 @@
     "duration": "",
     "videoDescription": "Special Test & New Conditioning（下肢編 / 評価法パターン集）の講座視聴ページです。",
     "individualTags": [
-      "Special Test",
+      "コンディショニング",
+      "スペシャルテスト",
+      "評価",
+      "手技",
       "下肢",
-      "評価法",
-      "スペシャルテスト"
+      "股関節",
+      "膝関節",
+      "足部",
+      "脊柱"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/st",
+    "status": "/thumbnails/C044.png"
   },
   {
     "id": "V045",
@@ -722,15 +798,19 @@
     "duration": "",
     "videoDescription": "Special Test & New Conditioning（下肢編 / 問題集）の講座視聴ページです。",
     "individualTags": [
-      "Special Test",
-      "下肢",
-      "問題集",
+      "コンディショニング",
+      "スペシャルテスト",
       "評価",
-      "判断力"
+      "手技",
+      "下肢",
+      "股関節",
+      "膝関節",
+      "足部",
+      "脊柱"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/st",
+    "status": "/thumbnails/C045.png"
   },
   {
     "id": "V046",
@@ -739,14 +819,19 @@
     "duration": "",
     "videoDescription": "Special Test & New Conditioning（下肢編 / 手技一覧）の講座視聴ページです。",
     "individualTags": [
-      "Special Test",
-      "下肢",
+      "コンディショニング",
+      "スペシャルテスト",
+      "評価",
       "手技",
-      "コンディショニング"
+      "下肢",
+      "股関節",
+      "膝関節",
+      "足部",
+      "脊柱"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/st",
+    "status": "/thumbnails/C046.png"
   },
   {
     "id": "V047",
@@ -755,14 +840,14 @@
     "duration": "",
     "videoDescription": "PRIMAL MOVEの講座視聴ページです。",
     "individualTags": [
-      "PRIMAL MOVE",
+      "パフィーマンスアップ",
       "身体操作",
       "動きで鍛える",
       "進化生物学"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/primal",
+    "status": "/thumbnails/C047.png"
   },
   {
     "id": "V048",
@@ -772,13 +857,14 @@
     "videoDescription": "MEDICAL FITNESSの講座視聴ページです。",
     "individualTags": [
       "医学",
-      "メディカルフィットネス",
       "医療連携",
-      "予防医療"
+      "予防医療",
+      "睡眠",
+      "健康経営"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/medfit",
+    "status": "/thumbnails/C048.png"
   },
   {
     "id": "V049",
@@ -787,15 +873,16 @@
     "duration": "",
     "videoDescription": "CORE ERECTIONの講座視聴ページです。",
     "individualTags": [
-      "男性機能",
-      "CORE ERECTION",
+      "男性機能改善",
       "ED",
-      "コア",
-      "骨盤"
+      "勃起不全",
+      "体幹",
+      "腹圧",
+      "胸椎"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/core",
+    "status": "/thumbnails/C049.png"
   },
   {
     "id": "V050",
@@ -804,14 +891,14 @@
     "duration": "",
     "videoDescription": "運動指導者のためのポスティング完全攻略法の講座視聴ページです。",
     "individualTags": [
+      "マーケティング",
       "ポスティング",
       "チラシ",
-      "地域集客",
-      "マーケティング"
+      "地域集客"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/posting",
+    "status": "/thumbnails/C050.png"
   },
   {
     "id": "V051",
@@ -826,8 +913,8 @@
       "生理学"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/bodymake",
+    "status": "/thumbnails/C051.png"
   },
   {
     "id": "V052",
@@ -842,8 +929,8 @@
       "収益化"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/femtec",
+    "status": "/thumbnails/C052.png"
   },
   {
     "id": "V053",
@@ -852,14 +939,14 @@
     "duration": "",
     "videoDescription": "MOVEMENT DESIGNの講座視聴ページです。",
     "individualTags": [
-      "MOVEMENT DESIGN",
+      "パフィーマンスアップ",
       "運動設計",
       "動作分析",
       "セッション設計"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/movdes",
+    "status": "/thumbnails/C053.png"
   },
   {
     "id": "V054",
@@ -868,14 +955,18 @@
     "duration": "",
     "videoDescription": "Special Test & New Conditioning（上肢編 / 評価法パターン集）の講座視聴ページです。",
     "individualTags": [
-      "Special Test",
+      "コンディショニング",
+      "スペシャルテスト",
+      "評価",
+      "手技",
       "上肢",
-      "評価法",
-      "スペシャルテスト"
+      "肩関節",
+      "肘関節",
+      "手首"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/st2",
+    "status": "/thumbnails/C054.png"
   },
   {
     "id": "V055",
@@ -890,8 +981,8 @@
       "不調改善"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/organ",
+    "status": "/thumbnails/C055.png"
   },
   {
     "id": "V056",
@@ -906,7 +997,7 @@
       "動作分析"
     ],
     "thumbnailUrl": "",
-    "videogUrl": "",
-    "status": ""
+    "videogUrl": "https://vdg.jp/g19286vj/biomech",
+    "status": "/thumbnails/C056.png"
   }
 ]
