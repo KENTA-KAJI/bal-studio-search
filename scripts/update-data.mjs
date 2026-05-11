@@ -43,12 +43,17 @@ function convertCourses() {
 }
 
 function convertVideos() {
-  const csvPath = path.join(CSV_DIR, 'videos.csv');
+  let csvPath = path.join(CSV_DIR, 'videos.csv');
   const jsonPath = path.join(JSON_DIR, 'videos.json');
   
   if (!fs.existsSync(csvPath)) {
-    console.warn(`[Warning] ${csvPath} not found.`);
-    return;
+    const fallbackPath = path.join(CSV_DIR, 'videos.csv.csv');
+    if (fs.existsSync(fallbackPath)) {
+      csvPath = fallbackPath;
+    } else {
+      console.warn(`[Warning] ${csvPath} not found.`);
+      return;
+    }
   }
 
   let records = [];
