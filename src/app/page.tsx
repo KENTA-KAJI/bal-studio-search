@@ -10,6 +10,13 @@ import VideoCard, { VideoData, CourseData } from "@/components/VideoCard";
 import coursesData from "@/data/courses.json";
 import videosData from "@/data/videos.json";
 
+const ALL_INSTRUCTORS = Array.from(new Set(
+  coursesData.flatMap(c => {
+    const inst = c.instructor || "";
+    return inst.split("・").map(name => name.trim()).filter(Boolean);
+  })
+));
+
 const TAG_CATEGORIES = [
   {
     title: "分野から探す",
@@ -100,6 +107,10 @@ const CATEGORY_NAMES = [
 const matchesTag = (video: VideoData, course: CourseData, tag: string) => {
   const normalizedTag = tag.trim().toLowerCase();
   
+  if (ALL_INSTRUCTORS.includes(tag)) {
+    return course?.instructor ? course.instructor.includes(tag) : false;
+  }
+  
   if (LEVEL_NAMES.some(lvl => lvl.toLowerCase() === normalizedTag)) {
     return course?.level?.toLowerCase() === normalizedTag;
   }
@@ -156,6 +167,7 @@ function SearchContent() {
   const [isTagsExpanded, setIsTagsExpanded] = useState(false);
   const [isHowToOpen, setIsHowToOpen] = useState(false);
   const [demoStep, setDemoStep] = useState(0);
+  const [sortBy, setSortBy] = useState<"default" | "newest">("default");
   const searchParams = useSearchParams();
   const isEmbed = searchParams.get("embed") === "true";
 
@@ -174,7 +186,7 @@ function SearchContent() {
     // Filter out non-public videos
     const publicVideos = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
 
-    return publicVideos.filter((video) => {
+    const result = publicVideos.filter((video) => {
       const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
       if (!course) return false;
       
@@ -183,13 +195,34 @@ function SearchContent() {
 
       return matchesQuery(video, course, query);
     });
-  }, [query, selectedTags]);
+
+    return [...result].sort((a, b) => {
+      const courseA = coursesData.find((c) => c.id === a.courseId);
+      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
+      const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
+      
+      if (sortBy === "newest") {
+        return orderB - orderA;
+      } else {
+        return orderA - orderB;
+      }
+    });
+  }, [query, selectedTags, sortBy]);
 
   // Dynamically filter tag list based on search matches
   const availableTagCategories = useMemo(() => {
     const publicVideos = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
 
-    return TAG_CATEGORIES.map((category) => {
+    const allCategories = [
+      ...TAG_CATEGORIES,
+      {
+        title: "講師から探す",
+        tags: ALL_INSTRUCTORS
+      }
+    ];
+
+    return allCategories.map((category) => {
       const filteredTags = category.tags.filter((tag) => {
         // Do not show tags that are already selected
         if (selectedTags.includes(tag)) return false;
@@ -289,28 +322,35 @@ function SearchContent() {
                     講座の探し方
                   </h3>
                   <p className="text-xs text-muted leading-relaxed">
-                    分野・目的・シリーズ・レベル・部位テーマを組み合わせて、見たい講座を絞り込めます。
+                    分野・目的・シリーズ・レベル・部位テーマなど、気になる条件から自由に選んで講座を絞り込めます。
                   </p>
                   <div className="space-y-2.5 text-xs text-foreground/90">
                     <div className="flex gap-2">
                       <span className="text-accent font-bold">①</span>
                       <div>
-                        <p className="font-semibold">まず分野を選ぶ</p>
-                        <p className="text-muted text-[11px] mt-0.5">例：解剖学</p>
+                        <p className="font-semibold">気になる条件を選ぶ</p>
+                        <p className="text-muted text-[11px] mt-0.5">例：解剖学 / はじめての方へ / 長編コンテンツ / 初級</p>
                       </div>
                     </div>
                     <div className="flex gap-2">
                       <span className="text-accent font-bold">②</span>
                       <div>
-                        <p className="font-semibold">絞り込み条件を追加する</p>
-                        <p className="text-muted text-[11px] mt-0.5">例：はじめての方へ｜まず見るべき動画 / 初級 / 長編コンテンツ</p>
+                        <p className="font-semibold">さらに条件を追加する</p>
+                        <p className="text-muted text-[11px] mt-0.5">
+                          例：解剖学 × 初級<br />
+                          例：栄養学 × 食事まで提案できるようになりたい<br />
+                          例：長編コンテンツ × 新着順
+                        </p>
                       </div>
                     </div>
                     <div className="flex gap-2">
                       <span className="text-accent font-bold">③</span>
                       <div>
-                        <p className="font-semibold">必要ならキーワードも入力する</p>
-                        <p className="text-muted text-[11px] mt-0.5">例：骨、呼吸、歩行 など</p>
+                        <p className="font-semibold">キーワードでも検索できる</p>
+                        <p className="text-muted text-[11px] mt-0.5">
+                          例：骨、呼吸、歩行 など<br />
+                          条件と組み合わせて、さらに細かく探すこともできます。
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -328,11 +368,15 @@ function SearchContent() {
                     </div>
                     
                     {/* Simulated search box */}
-                    <div className="h-7 bg-background border border-border/60 rounded-full flex items-center px-3 text-muted/40 select-none">
-                      <svg className="w-3 h-3 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="h-7 bg-background border border-border/60 rounded-full flex items-center px-3 select-none">
+                      <svg className="w-3 h-3 mr-1.5 text-muted/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
-                      <span>キーワードを入力...</span>
+                      {demoStep >= 2 ? (
+                        <span className="text-foreground font-medium animate-in fade-in duration-200">骨</span>
+                      ) : (
+                        <span className="text-muted/40">キーワードを入力...</span>
+                      )}
                     </div>
 
                     {/* Simulated tag selection */}
@@ -345,11 +389,6 @@ function SearchContent() {
                       {demoStep >= 1 && (
                         <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-accent/20 border border-accent/40 text-[9px] text-accent font-medium animate-in zoom-in duration-300">
                           初級 <span className="opacity-60">×</span>
-                        </span>
-                      )}
-                      {demoStep >= 2 && (
-                        <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-accent/20 border border-accent/40 text-[9px] text-accent font-medium animate-in zoom-in duration-300">
-                          長編コンテンツ <span className="opacity-60">×</span>
                         </span>
                       )}
                     </div>
@@ -429,14 +468,32 @@ function SearchContent() {
 
         {query.trim() || selectedTags.length > 0 ? (
           <div className="mb-8 flex flex-col gap-4">
-            <div className="flex items-center justify-between">
-              <div className="text-sm md:text-base text-foreground font-medium">
-                「<span className="text-accent">{combinedSearchQuery}</span>」の検索結果：
-                <span className="text-accent font-bold ml-1">{filteredVideos.length}</span>件
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border/30">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <div className="text-sm md:text-base text-foreground font-medium">
+                  「<span className="text-accent">{combinedSearchQuery}</span>」の検索結果：
+                  <span className="text-accent font-bold ml-1">{filteredVideos.length}</span>件
+                </div>
+                <div className="flex items-center text-xs md:text-sm text-muted">
+                  <span className="mr-1">並び順：</span>
+                  <button 
+                    onClick={() => setSortBy("default")} 
+                    className={`font-semibold transition-colors ${sortBy === "default" ? "text-accent" : "hover:text-foreground text-muted/60"}`}
+                  >
+                    デフォルト
+                  </button>
+                  <span className="mx-1.5 opacity-40">|</span>
+                  <button 
+                    onClick={() => setSortBy("newest")} 
+                    className={`font-semibold transition-colors ${sortBy === "newest" ? "text-accent" : "hover:text-foreground text-muted/60"}`}
+                  >
+                    新着順
+                  </button>
+                </div>
               </div>
               <button
                 onClick={() => setIsTagsExpanded(!isTagsExpanded)}
-                className="text-[10px] md:text-xs text-accent hover:text-accent/80 flex items-center gap-1.5 transition-colors border border-accent/30 px-3 py-1.5 rounded-lg bg-accent/5 font-semibold"
+                className="text-[10px] md:text-xs text-accent hover:text-accent/80 flex items-center gap-1.5 transition-colors border border-accent/30 px-3 py-1.5 rounded-lg bg-accent/5 font-semibold self-end sm:self-center"
               >
                 {isTagsExpanded ? "絞り込み条件を閉じる" : "＋ 絞り込み条件を追加"}
                 <svg
@@ -480,6 +537,31 @@ function SearchContent() {
               追加できる絞り込み条件はありません
             </div>
           )
+        )}
+
+        {/* Sort order bar for default view */}
+        {!(query.trim() || selectedTags.length > 0) && (
+          <div className="mb-6 flex flex-row items-center justify-between border-b border-border/30 pb-3">
+            <div className="text-xs md:text-sm text-muted font-medium">
+              全 <span className="text-accent font-bold">{filteredVideos.length}</span>件の講座
+            </div>
+            <div className="flex items-center text-xs md:text-sm text-muted">
+              <span className="mr-1">並び順：</span>
+              <button 
+                onClick={() => setSortBy("default")} 
+                className={`font-semibold transition-colors ${sortBy === "default" ? "text-accent" : "hover:text-foreground text-muted/60"}`}
+              >
+                デフォルト
+              </button>
+              <span className="mx-1.5 opacity-40">|</span>
+              <button 
+                onClick={() => setSortBy("newest")} 
+                className={`font-semibold transition-colors ${sortBy === "newest" ? "text-accent" : "hover:text-foreground text-muted/60"}`}
+              >
+                新着順
+              </button>
+            </div>
+          </div>
         )}
 
         {filteredVideos.length === 0 ? (
