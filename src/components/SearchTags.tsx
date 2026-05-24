@@ -9,14 +9,14 @@ interface TagCategory {
 
 interface SearchTagsProps {
   categories: TagCategory[];
-  selectedTag: string;
+  selectedTags: string[];
   onTagClick: (tag: string) => void;
   isEmbed?: boolean;
 }
 
 const SearchTags: React.FC<SearchTagsProps> = ({ 
   categories, 
-  selectedTag, 
+  selectedTags = [], 
   onTagClick, 
   isEmbed = false 
 }) => {
@@ -29,11 +29,11 @@ const SearchTags: React.FC<SearchTagsProps> = ({
           </h2>
           <div className="flex flex-wrap gap-1.5 md:gap-2">
             {category.tags.map((tag) => {
-              const isActive = selectedTag === tag;
+              const isActive = selectedTags.includes(tag);
               return (
                 <button
                   key={tag}
-                  onClick={() => onTagClick(isActive ? "" : tag)}
+                  onClick={() => onTagClick(tag)}
                   className={`
                     px-2.5 py-1 rounded-md transition-all duration-200 border
                     ${isEmbed ? "text-[10px]" : "text-xs"}

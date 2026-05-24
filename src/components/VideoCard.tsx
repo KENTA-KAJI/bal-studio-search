@@ -9,6 +9,7 @@ export interface CourseData {
   description: string;
   commonTags: string[];
   recommendedFor: string;
+  series?: string;
 }
 
 export interface VideoData {
