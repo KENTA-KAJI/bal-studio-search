@@ -555,6 +555,14 @@ function SearchContent() {
 
   const [visibleCount, setVisibleCount] = useState(12);
 
+  // Helper resolver for category auto-expansion in SearchTags
+  const getCategoryTitle = (tag: string) => {
+    const cat = TAG_CATEGORIES.find(c => c.tags.includes(tag));
+    if (cat) return cat.title;
+    if (ALL_INSTRUCTORS.includes(tag)) return "講師から探す";
+    return "";
+  };
+
   // Reset visibleCount when query or selected tags change
   useEffect(() => {
     setVisibleCount(12);
@@ -936,6 +944,7 @@ function SearchContent() {
                     selectedTags={selectedTags} 
                     onTagClick={handleTagClick}
                     isEmbed={isEmbed}
+                    getCategoryTitle={getCategoryTitle}
                   />
                 ) : (
                   <div className="text-center text-muted/80 py-8 bg-card/25 rounded-2xl border border-border/30 border-dashed text-xs md:text-sm font-medium">
@@ -952,6 +961,7 @@ function SearchContent() {
               selectedTags={selectedTags} 
               onTagClick={handleTagClick}
               isEmbed={isEmbed}
+              getCategoryTitle={getCategoryTitle}
             />
           ) : (
             <div className="text-center text-muted/80 py-8 bg-card/25 rounded-2xl border border-border/30 border-dashed text-xs md:text-sm font-medium">
