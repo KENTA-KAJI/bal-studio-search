@@ -169,6 +169,14 @@ interface CarouselSectionProps {
   handleTagClick: (tag: string) => void;
 }
 
+interface CarouselSectionProps {
+  title: string;
+  badge: string;
+  videos: VideoData[];
+  coursesData: CourseData[];
+  handleTagClick: (tag: string) => void;
+}
+
 function CarouselSection({
   title,
   badge,
@@ -177,11 +185,26 @@ function CarouselSection({
   handleTagClick
 }: CarouselSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const lastVideosRef = useRef<VideoData[]>([]);
+  
   const [offsets, setOffsets] = useState<number[]>([]);
   const [activePage, setActivePage] = useState(0);
 
+  const N = videos.length;
+  const K = Math.min(4, N);
+
+  // Cloned array of videos: prepended clone + original + appended clone
+  // We only clone if N > 1 to support infinite carousel looping
+  const displayVideos = useMemo(() => {
+    if (N <= 1) return videos;
+    const prepended = videos.slice(N - K);
+    const appended = videos.slice(0, K);
+    return [...prepended, ...videos, ...appended];
+  }, [videos, N, K]);
+
   const recalculateLayout = () => {
-    if (containerRef.current) {
+    if (containerRef.current && N > 0) {
       const container = containerRef.current;
       const { scrollWidth, clientWidth } = container;
       const maxScroll = scrollWidth - clientWidth;
@@ -192,43 +215,50 @@ function CarouselSection({
         return;
       }
 
-      // Query card elements that match our wrapper class
+      // Query actual card elements in the DOM (class w-[85%])
       const cardElements = Array.from(container.children).filter(
         (el) => el.tagName === "DIV" && el.className.includes("w-[85%]")
       ) as HTMLDivElement[];
 
       if (cardElements.length === 0) return;
 
-      // Map elements to their relative offset positions
+      // Extract left offsets of each card relative to container
       const cardPositions = cardElements.map(el => el.offsetLeft - container.offsetLeft);
 
-      // Determine how many cards fit in a page
-      const cardWidth = cardElements[0].clientWidth;
-      const cardsPerPage = Math.max(1, Math.floor(clientWidth / (cardWidth || 1)));
+      // Determine step parameters
+      const firstCardWidth = cardElements[0].clientWidth;
+      const gap = 20; // gap-5 is 20px
+      const cardStep = firstCardWidth + gap;
+
+      // Determine how many cards fit fully on screen
+      const cardsPerPage = Math.max(1, Math.floor((clientWidth + gap) / cardStep));
 
       const newOffsets: number[] = [];
-      for (let i = 0; i < cardPositions.length; i += cardsPerPage) {
-        const pos = Math.min(cardPositions[i], maxScroll);
+      // Offsets start at index K (the first original card position)
+      // and step by (cardsPerPage * cardStep)
+      const startIndex = K;
+      const endIndex = K + N - 1;
+
+      // Map indices of pages
+      for (let i = 0; i < N; i += cardsPerPage) {
+        const cardIndex = Math.min(startIndex + i, endIndex);
+        const pos = Math.min(cardPositions[cardIndex], maxScroll);
         newOffsets.push(pos);
         if (pos >= maxScroll) {
           break;
         }
       }
 
-      // Ensure the last offset is maxScroll if not already present
-      if (newOffsets.length > 0 && newOffsets[newOffsets.length - 1] < maxScroll) {
-        if (maxScroll - newOffsets[newOffsets.length - 1] < cardWidth * 0.5) {
-          newOffsets[newOffsets.length - 1] = maxScroll;
-        } else {
-          newOffsets.push(maxScroll);
-        }
+      // Ensure the last original card scroll position is represented in offsets
+      const lastOriginalPos = Math.min(cardPositions[endIndex], maxScroll);
+      if (newOffsets.length === 0 || newOffsets[newOffsets.length - 1] < lastOriginalPos) {
+        newOffsets.push(lastOriginalPos);
       }
 
-      // Deduplicate and sort offsets
       const uniqueOffsets = Array.from(new Set(newOffsets)).sort((a, b) => a - b);
       setOffsets(uniqueOffsets);
 
-      // Update activePage based on current scrollLeft
+      // Update activePage or keep it aligned to current scroll position after resizing
       const scrollLeft = container.scrollLeft;
       let minDiff = Infinity;
       let activeIdx = 0;
@@ -239,11 +269,79 @@ function CarouselSection({
           activeIdx = idx;
         }
       });
-      setActivePage(activeIdx);
+      
+      const newPageIdx = Math.min(activeIdx, uniqueOffsets.length - 1);
+      setActivePage(newPageIdx);
+      
+      // If we resized, align scrollLeft to the new position of the current page to avoid cutoffs
+      if (uniqueOffsets[newPageIdx] !== undefined) {
+        container.scrollLeft = uniqueOffsets[newPageIdx];
+      }
     }
   };
 
+  const onScrollStop = () => {
+    if (!containerRef.current || N <= 1 || offsets.length === 0) return;
+    const container = containerRef.current;
+    const scrollLeft = container.scrollLeft;
+
+    const cardElements = Array.from(container.children).filter(
+      (el) => el.tagName === "DIV" && el.className.includes("w-[85%]")
+    ) as HTMLDivElement[];
+
+    if (cardElements.length === 0) return;
+
+    const cardPositions = cardElements.map(el => el.offsetLeft - container.offsetLeft);
+
+    // Find the closest card index in the cloned DOM array
+    let minDiff = Infinity;
+    let closestIdx = 0;
+    cardPositions.forEach((pos, idx) => {
+      const diff = Math.abs(scrollLeft - pos);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closestIdx = idx;
+      }
+    });
+
+    let targetIdx = closestIdx;
+    let needJump = false;
+
+    // Reposition scroll Left if inside cloned zones
+    if (closestIdx < K) {
+      targetIdx = closestIdx + N;
+      needJump = true;
+    } else if (closestIdx >= K + N) {
+      targetIdx = closestIdx - N;
+      needJump = true;
+    }
+
+    if (needJump && cardPositions[targetIdx] !== undefined) {
+      const originalSnapStyle = container.style.scrollSnapType;
+      // Disable scroll snap during jump to prevent layout shifts
+      container.style.scrollSnapType = "none";
+      container.scrollLeft = cardPositions[targetIdx];
+      setTimeout(() => {
+        container.style.scrollSnapType = originalSnapStyle;
+      }, 50);
+    }
+
+    // Recalculate closest page index to light up dots
+    const currentScroll = container.scrollLeft;
+    let minPageDiff = Infinity;
+    let activeIdx = 0;
+    offsets.forEach((offset, idx) => {
+      const diff = Math.abs(currentScroll - offset);
+      if (diff < minPageDiff) {
+        minPageDiff = diff;
+        activeIdx = idx;
+      }
+    });
+    setActivePage(activeIdx);
+  };
+
   const handleScroll = () => {
+    // 1. Sync dots active index in real-time
     if (containerRef.current && offsets.length > 0) {
       const scrollLeft = containerRef.current.scrollLeft;
       let minDiff = Infinity;
@@ -257,6 +355,14 @@ function CarouselSection({
       });
       setActivePage(activeIdx);
     }
+
+    // 2. Debounce infinite loop boundary adjustment
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
+    }
+    scrollTimeoutRef.current = setTimeout(() => {
+      onScrollStop();
+    }, 100);
   };
 
   useEffect(() => {
@@ -296,10 +402,22 @@ function CarouselSection({
     };
   }, [offsets]);
 
+  // Initial scroll positioning on new dataset loads
+  useEffect(() => {
+    if (containerRef.current && offsets.length > 0) {
+      if (lastVideosRef.current !== videos) {
+        containerRef.current.scrollLeft = offsets[0];
+        setActivePage(0);
+        lastVideosRef.current = videos;
+      }
+    }
+  }, [offsets, videos]);
+
   const scrollPrev = () => {
     if (containerRef.current && offsets.length > 0) {
       const container = containerRef.current;
       const prevIdx = (activePage - 1 + offsets.length) % offsets.length;
+      setActivePage(prevIdx);
       container.scrollTo({
         left: offsets[prevIdx],
         behavior: "smooth"
@@ -311,6 +429,7 @@ function CarouselSection({
     if (containerRef.current && offsets.length > 0) {
       const container = containerRef.current;
       const nextIdx = (activePage + 1) % offsets.length;
+      setActivePage(nextIdx);
       container.scrollTo({
         left: offsets[nextIdx],
         behavior: "smooth"
@@ -360,17 +479,18 @@ function CarouselSection({
           </button>
         )}
 
-        {/* Scrollable Container */}
+        {/* Scrollable Container (hides scrollbars in all browsers) */}
         <div
           ref={containerRef}
-          className="flex gap-5 overflow-x-auto pb-4 no-scrollbar scroll-smooth snap-x snap-mandatory px-1 select-none"
+          className="flex gap-5 overflow-x-auto pb-4 px-1 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] snap-x snap-mandatory"
         >
-          {videos.map((video) => {
+          {displayVideos.map((video, idx) => {
             const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
             return (
               <div 
-                key={video.id} 
-                className="flex-shrink-0 w-[85%] sm:w-[320px] snap-start"
+                key={`${idx}-${video.id}`}
+                className="flex-shrink-0 w-[85%] sm:w-[320px]"
+                style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}
               >
                 <VideoCard
                   video={video}
@@ -394,6 +514,7 @@ function CarouselSection({
               <button
                 key={idx}
                 onClick={() => {
+                  setActivePage(idx);
                   if (containerRef.current) {
                     containerRef.current.scrollTo({
                       left: offsets[idx],
