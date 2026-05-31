@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, Suspense, useEffect } from "react";
+import { useState, useMemo, Suspense, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
 import SearchTags from "@/components/SearchTags";
@@ -161,6 +161,139 @@ const matchesQuery = (video: VideoData, course: CourseData, queryText: string) =
   return keywords.every(keyword => combinedText.includes(keyword));
 };
 
+interface CarouselSectionProps {
+  title: string;
+  badge: string;
+  videos: VideoData[];
+  coursesData: CourseData[];
+  handleTagClick: (tag: string) => void;
+}
+
+function CarouselSection({
+  title,
+  badge,
+  videos,
+  coursesData,
+  handleTagClick
+}: CarouselSectionProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+
+  const updateArrows = () => {
+    if (containerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
+      setShowLeftArrow(scrollLeft > 5);
+      // Epsilon of 5 to account for subpixel rounding
+      setShowRightArrow(scrollLeft + clientWidth < scrollWidth - 5);
+    }
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      // Small timeout to allow layout to settle
+      const timer = setTimeout(() => {
+        updateArrows();
+      }, 100);
+      
+      container.addEventListener("scroll", updateArrows);
+      window.addEventListener("resize", updateArrows);
+      
+      return () => {
+        clearTimeout(timer);
+        container.removeEventListener("scroll", updateArrows);
+        window.removeEventListener("resize", updateArrows);
+      };
+    }
+  }, [videos]);
+
+  const scroll = (direction: "left" | "right") => {
+    if (containerRef.current) {
+      const container = containerRef.current;
+      // Scroll by 80% of clientWidth (approximately 2 cards)
+      const scrollAmount = container.clientWidth * 0.8;
+      const targetScroll = direction === "left"
+        ? container.scrollLeft - scrollAmount
+        : container.scrollLeft + scrollAmount;
+
+      container.scrollTo({
+        left: targetScroll,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  if (videos.length === 0) return null;
+
+  return (
+    <section className="mb-10 md:mb-12 relative">
+      {/* Title block */}
+      <div className="flex items-center justify-between mb-4 border-b border-border/30 pb-2">
+        <h2 className="text-lg md:text-xl font-bold tracking-tight text-foreground">
+          {title}
+        </h2>
+        <span className="text-[10px] sm:text-xs text-accent font-semibold px-2.5 py-0.5 rounded bg-accent/10 border border-accent/20">
+          {badge}
+        </span>
+      </div>
+
+      {/* Scroll area with arrows */}
+      <div className="relative group/carousel">
+        {/* Left Arrow Button (PC only, hidden on mobile) */}
+        <button
+          onClick={() => scroll("left")}
+          className={`absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm ${
+            showLeftArrow ? "opacity-100 cursor-pointer pointer-events-auto" : "opacity-0 cursor-default pointer-events-none"
+          }`}
+          aria-label="前へスクロール"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        {/* Right Arrow Button (PC only, hidden on mobile) */}
+        <button
+          onClick={() => scroll("right")}
+          className={`absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm ${
+            showRightArrow ? "opacity-100 cursor-pointer pointer-events-auto" : "opacity-0 cursor-default pointer-events-none"
+          }`}
+          aria-label="次へスクロール"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Scrollable Container */}
+        <div
+          ref={containerRef}
+          className="flex gap-5 overflow-x-auto pb-4 no-scrollbar scroll-smooth snap-x snap-mandatory px-1 select-none"
+        >
+          {videos.map((video) => {
+            const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
+            return (
+              <div 
+                key={video.id} 
+                className="flex-shrink-0 w-[85%] sm:w-[320px] snap-start"
+              >
+                <VideoCard
+                  video={video}
+                  course={course}
+                  onTagClick={handleTagClick}
+                />
+              </div>
+            );
+          })}
+          {/* Subtle spacer at the end */}
+          <div className="flex-shrink-0 w-2 md:w-8" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function SearchContent() {
   const [query, setQuery] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -170,6 +303,39 @@ function SearchContent() {
   const [sortBy, setSortBy] = useState<"default" | "newest">("default");
   const searchParams = useSearchParams();
   const isEmbed = searchParams.get("embed") === "true";
+
+  const [visibleCount, setVisibleCount] = useState(12);
+
+  // Reset visibleCount when query or selected tags change
+  useEffect(() => {
+    setVisibleCount(12);
+  }, [query, selectedTags]);
+
+  const newestVideos = useMemo(() => {
+    const publicVideos = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
+    return [...publicVideos].sort((a, b) => {
+      const courseA = coursesData.find((c) => c.id === a.courseId);
+      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
+      const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
+      return orderB - orderA;
+    }).slice(0, 10);
+  }, []);
+
+  const firstWatchVideos = useMemo(() => {
+    const publicVideos = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
+    const filtered = publicVideos.filter((video) => {
+      const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
+      return course?.commonTags?.includes("はじめての方へ｜まず見るべき動画");
+    });
+    return filtered.sort((a, b) => {
+      const courseA = coursesData.find((c) => c.id === a.courseId);
+      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
+      const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
+      return orderA - orderB;
+    }).slice(0, 10);
+  }, []);
 
   useEffect(() => {
     if (!isHowToOpen) return;
@@ -209,6 +375,12 @@ function SearchContent() {
       }
     });
   }, [query, selectedTags, sortBy]);
+
+  const isSearchActive = useMemo(() => !!(query.trim() || selectedTags.length > 0), [query, selectedTags]);
+
+  const displayedVideos = useMemo(() => {
+    return isSearchActive ? filteredVideos : filteredVideos.slice(0, visibleCount);
+  }, [filteredVideos, isSearchActive, visibleCount]);
 
   // Dynamically filter tag list based on search matches
   const availableTagCategories = useMemo(() => {
@@ -539,11 +711,34 @@ function SearchContent() {
           )
         )}
 
+        {/* 新着コンテンツ */}
+        {!isSearchActive && (
+          <CarouselSection
+            title="新着コンテンツ"
+            badge="NEW ARRIVALS"
+            videos={newestVideos}
+            coursesData={coursesData as unknown as CourseData[]}
+            handleTagClick={handleTagClick}
+          />
+        )}
+
+        {/* まず見るならこれ */}
+        {!isSearchActive && (
+          <CarouselSection
+            title="まず見るならこれ"
+            badge="RECOMMENDED"
+            videos={firstWatchVideos}
+            coursesData={coursesData as unknown as CourseData[]}
+            handleTagClick={handleTagClick}
+          />
+        )}
+
         {/* Sort order bar for default view */}
-        {!(query.trim() || selectedTags.length > 0) && (
+        {!isSearchActive && (
           <div className="mb-6 flex flex-row items-center justify-between border-b border-border/30 pb-3">
-            <div className="text-xs md:text-sm text-muted font-medium">
-              全 <span className="text-accent font-bold">{filteredVideos.length}</span>件の講座
+            <div className="text-sm md:text-base text-foreground font-bold flex items-baseline gap-1.5">
+              すべてのコンテンツ
+              <span className="text-xs text-muted font-normal">({filteredVideos.length}件)</span>
             </div>
             <div className="flex items-center text-xs md:text-sm text-muted">
               <span className="mr-1">並び順：</span>
@@ -570,19 +765,41 @@ function SearchContent() {
             <p>別のキーワードをお試しください。</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredVideos.map((video) => {
-              const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
-              return (
-                <VideoCard
-                  key={video.id}
-                  video={video}
-                  course={course}
-                  onTagClick={handleTagClick}
-                />
-              );
-            })}
-          </div>
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {displayedVideos.map((video) => {
+                const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
+                return (
+                  <VideoCard
+                    key={video.id}
+                    video={video}
+                    course={course}
+                    onTagClick={handleTagClick}
+                  />
+                );
+              })}
+            </div>
+
+            {/* Pagination control */}
+            {!isSearchActive && visibleCount < filteredVideos.length && (
+              <div className="flex justify-center mt-12 mb-6">
+                <button
+                  onClick={() => setVisibleCount(prev => prev + 12)}
+                  className="px-8 py-3.5 rounded-xl bg-card hover:bg-card/80 border border-border hover:border-accent text-sm font-bold text-foreground transition-all duration-300 shadow-md flex items-center gap-2 group hover:scale-[1.02]"
+                >
+                  もっと見る
+                  <svg 
+                    className="w-4 h-4 text-muted group-hover:text-accent group-hover:translate-y-0.5 transition-all duration-300"
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            )}
+          </>
         )}
       </main>
     </div>
