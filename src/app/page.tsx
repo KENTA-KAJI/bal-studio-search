@@ -177,48 +177,142 @@ function CarouselSection({
   handleTagClick
 }: CarouselSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(false);
+  const [offsets, setOffsets] = useState<number[]>([]);
+  const [activePage, setActivePage] = useState(0);
 
-  const updateArrows = () => {
+  const recalculateLayout = () => {
     if (containerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
-      setShowLeftArrow(scrollLeft > 5);
-      // Epsilon of 5 to account for subpixel rounding
-      setShowRightArrow(scrollLeft + clientWidth < scrollWidth - 5);
+      const container = containerRef.current;
+      const { scrollWidth, clientWidth } = container;
+      const maxScroll = scrollWidth - clientWidth;
+
+      if (maxScroll <= 0) {
+        setOffsets([]);
+        setActivePage(0);
+        return;
+      }
+
+      // Query card elements that match our wrapper class
+      const cardElements = Array.from(container.children).filter(
+        (el) => el.tagName === "DIV" && el.className.includes("w-[85%]")
+      ) as HTMLDivElement[];
+
+      if (cardElements.length === 0) return;
+
+      // Map elements to their relative offset positions
+      const cardPositions = cardElements.map(el => el.offsetLeft - container.offsetLeft);
+
+      // Determine how many cards fit in a page
+      const cardWidth = cardElements[0].clientWidth;
+      const cardsPerPage = Math.max(1, Math.floor(clientWidth / (cardWidth || 1)));
+
+      const newOffsets: number[] = [];
+      for (let i = 0; i < cardPositions.length; i += cardsPerPage) {
+        const pos = Math.min(cardPositions[i], maxScroll);
+        newOffsets.push(pos);
+        if (pos >= maxScroll) {
+          break;
+        }
+      }
+
+      // Ensure the last offset is maxScroll if not already present
+      if (newOffsets.length > 0 && newOffsets[newOffsets.length - 1] < maxScroll) {
+        if (maxScroll - newOffsets[newOffsets.length - 1] < cardWidth * 0.5) {
+          newOffsets[newOffsets.length - 1] = maxScroll;
+        } else {
+          newOffsets.push(maxScroll);
+        }
+      }
+
+      // Deduplicate and sort offsets
+      const uniqueOffsets = Array.from(new Set(newOffsets)).sort((a, b) => a - b);
+      setOffsets(uniqueOffsets);
+
+      // Update activePage based on current scrollLeft
+      const scrollLeft = container.scrollLeft;
+      let minDiff = Infinity;
+      let activeIdx = 0;
+      uniqueOffsets.forEach((offset, idx) => {
+        const diff = Math.abs(scrollLeft - offset);
+        if (diff < minDiff) {
+          minDiff = diff;
+          activeIdx = idx;
+        }
+      });
+      setActivePage(activeIdx);
+    }
+  };
+
+  const handleScroll = () => {
+    if (containerRef.current && offsets.length > 0) {
+      const scrollLeft = containerRef.current.scrollLeft;
+      let minDiff = Infinity;
+      let activeIdx = 0;
+      offsets.forEach((offset, idx) => {
+        const diff = Math.abs(scrollLeft - offset);
+        if (diff < minDiff) {
+          minDiff = diff;
+          activeIdx = idx;
+        }
+      });
+      setActivePage(activeIdx);
     }
   };
 
   useEffect(() => {
     const container = containerRef.current;
-    if (container) {
-      // Small timeout to allow layout to settle
-      const timer = setTimeout(() => {
-        updateArrows();
-      }, 100);
-      
-      container.addEventListener("scroll", updateArrows);
-      window.addEventListener("resize", updateArrows);
-      
-      return () => {
-        clearTimeout(timer);
-        container.removeEventListener("scroll", updateArrows);
-        window.removeEventListener("resize", updateArrows);
-      };
+    if (!container) return;
+
+    recalculateLayout();
+
+    const timer = setTimeout(recalculateLayout, 500);
+
+    window.addEventListener("resize", recalculateLayout);
+
+    let resizeObserver: ResizeObserver | null = null;
+    if (typeof ResizeObserver !== "undefined") {
+      resizeObserver = new ResizeObserver(() => {
+        recalculateLayout();
+      });
+      resizeObserver.observe(container);
     }
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", recalculateLayout);
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+      }
+    };
   }, [videos]);
 
-  const scroll = (direction: "left" | "right") => {
-    if (containerRef.current) {
-      const container = containerRef.current;
-      // Scroll by 80% of clientWidth (approximately 2 cards)
-      const scrollAmount = container.clientWidth * 0.8;
-      const targetScroll = direction === "left"
-        ? container.scrollLeft - scrollAmount
-        : container.scrollLeft + scrollAmount;
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
 
+    container.addEventListener("scroll", handleScroll);
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, [offsets]);
+
+  const scrollPrev = () => {
+    if (containerRef.current && offsets.length > 0) {
+      const container = containerRef.current;
+      const prevIdx = (activePage - 1 + offsets.length) % offsets.length;
       container.scrollTo({
-        left: targetScroll,
+        left: offsets[prevIdx],
+        behavior: "smooth"
+      });
+    }
+  };
+
+  const scrollNext = () => {
+    if (containerRef.current && offsets.length > 0) {
+      const container = containerRef.current;
+      const nextIdx = (activePage + 1) % offsets.length;
+      container.scrollTo({
+        left: offsets[nextIdx],
         behavior: "smooth"
       });
     }
@@ -241,30 +335,30 @@ function CarouselSection({
       {/* Scroll area with arrows */}
       <div className="relative group/carousel">
         {/* Left Arrow Button (PC only, hidden on mobile) */}
-        <button
-          onClick={() => scroll("left")}
-          className={`absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm ${
-            showLeftArrow ? "opacity-100 cursor-pointer pointer-events-auto" : "opacity-0 cursor-default pointer-events-none"
-          }`}
-          aria-label="前へスクロール"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
+        {offsets.length > 1 && (
+          <button
+            onClick={scrollPrev}
+            className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm"
+            aria-label="前へスクロール"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        )}
 
         {/* Right Arrow Button (PC only, hidden on mobile) */}
-        <button
-          onClick={() => scroll("right")}
-          className={`absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm ${
-            showRightArrow ? "opacity-100 cursor-pointer pointer-events-auto" : "opacity-0 cursor-default pointer-events-none"
-          }`}
-          aria-label="次へスクロール"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        {offsets.length > 1 && (
+          <button
+            onClick={scrollNext}
+            className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]/90 border border-border text-foreground hover:text-accent hover:border-accent shadow-lg hover:scale-110 transition-all duration-200 backdrop-blur-sm"
+            aria-label="次へスクロール"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        )}
 
         {/* Scrollable Container */}
         <div
@@ -290,6 +384,40 @@ function CarouselSection({
           <div className="flex-shrink-0 w-2 md:w-8" />
         </div>
       </div>
+
+      {/* Pagination Indicator Dots */}
+      {offsets.length > 1 && (
+        <div className="flex justify-center items-center gap-1 mt-2">
+          {offsets.map((_, idx) => {
+            const isMany = offsets.length > 8;
+            return (
+              <button
+                key={idx}
+                onClick={() => {
+                  if (containerRef.current) {
+                    containerRef.current.scrollTo({
+                      left: offsets[idx],
+                      behavior: "smooth"
+                    });
+                  }
+                }}
+                className={`${isMany ? "p-1" : "p-1.5"} focus:outline-none`}
+                aria-label={`ページ ${idx + 1} へ移動`}
+              >
+                <div
+                  className={`rounded-full transition-all duration-300 ${
+                    isMany ? "w-1.5 h-1.5" : "w-2 h-2"
+                  } ${
+                    activePage === idx 
+                      ? "bg-accent scale-125" 
+                      : "bg-muted/40 hover:bg-muted/80"
+                  }`}
+                />
+              </button>
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 }
