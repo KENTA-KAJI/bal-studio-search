@@ -10,6 +10,7 @@ export interface CourseData {
   commonTags: string[];
   recommendedFor: string;
   series?: string;
+  subSeries?: string;
   sortOrder?: string;
 }
 
@@ -37,57 +38,8 @@ export default function VideoCard({
   const [isExpanded, setIsExpanded] = useState(false);
   const [imgHasError, setImgHasError] = useState(false);
 
-  // Helper to extract lecture type (WEAPON, THINKING, BUSINESS, etc.)
-  const getLectureType = () => {
-    const lectureTypes = ["WEAPON講義", "THINKING講義", "BUSINESS講義", "外部講師講義"];
-    
-    // Check in properties
-    for (const val of Object.values(course || {})) {
-      if (typeof val === "string" && lectureTypes.includes(val)) return val;
-    }
-    for (const val of Object.values(video || {})) {
-      if (typeof val === "string" && lectureTypes.includes(val)) return val;
-    }
-
-    // Check tags
-    const foundInCourse = course?.commonTags?.find(tag => lectureTypes.includes(tag));
-    if (foundInCourse) return foundInCourse;
-
-    const foundInVideo = video?.individualTags?.find(tag => lectureTypes.includes(tag));
-    if (foundInVideo) return foundInVideo;
-
-    return undefined;
-  };
-
-  // Helper to extract series name (NEXT, LIVE SESSION, etc.)
-  const getSeriesName = () => {
-    const seriesNames = ["NEXT", "LIVE SESSION", "プロトレーナー研究所", "長編コンテンツ"];
-    
-    // Direct property check
-    if (course?.series) {
-      const match = seriesNames.find(s => course.series?.includes(s));
-      if (match) return match;
-    }
-
-    // Unknown property check
-    for (const val of Object.values(course || {})) {
-      if (typeof val === "string" && seriesNames.some(s => val.includes(s))) {
-        return seriesNames.find(s => val.includes(s));
-      }
-    }
-
-    // Tags check
-    const foundInCourse = course?.commonTags?.find(tag => seriesNames.some(s => tag.includes(s)));
-    if (foundInCourse) return seriesNames.find(s => foundInCourse.includes(s));
-
-    const foundInVideo = video?.individualTags?.find(tag => seriesNames.some(s => tag.includes(s)));
-    if (foundInVideo) return seriesNames.find(s => foundInVideo.includes(s));
-
-    return undefined;
-  };
-
-  const lectureType = getLectureType();
-  const seriesName = getSeriesName();
+  const seriesVal = course?.series || "";
+  const subSeriesVal = course?.subSeries || "";
   const showAutoThumbnail = !video.thumbnailUrl || imgHasError;
 
   // Tag display rule:
@@ -117,25 +69,34 @@ export default function VideoCard({
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-[#0b0b0b] to-[#1a1a1a] group-hover:from-[#0d0d0d] group-hover:to-[#1e1e1e] transition-all duration-500">
-            {/* Label at the top */}
-            {(lectureType || seriesName) ? (
-              <div className="absolute top-3 px-2 py-0.5 rounded border border-accent/40 bg-accent/5 text-accent text-[9px] font-bold tracking-wider uppercase">
-                {lectureType || seriesName}
+          <div className="absolute inset-0 flex flex-col justify-between p-4.5 text-left bg-gradient-to-br from-[#0b0b0b] to-[#1a1a1a] group-hover:from-[#0d0d0d] group-hover:to-[#1e1e1e] transition-all duration-500">
+            {/* Top Label Area */}
+            {(seriesVal || subSeriesVal) ? (
+              <div className="flex flex-col gap-1 items-start z-10">
+                {seriesVal && (
+                  <span className="px-2 py-0.5 rounded border border-accent/40 bg-accent/5 text-accent text-[9px] font-bold tracking-wider uppercase">
+                    {seriesVal}
+                  </span>
+                )}
+                {subSeriesVal && (
+                  <span className="px-2 py-0.5 rounded border border-border/60 bg-white/5 text-foreground/90 text-[9px] font-medium tracking-wider">
+                    {subSeriesVal}
+                  </span>
+                )}
               </div>
             ) : (
-              <div className="absolute top-3 text-[9px] font-bold tracking-[0.25em] text-muted/40 uppercase">
-                BAL STUDIO
-              </div>
+              <div />
             )}
             
-            {/* Title in the center */}
-            <div className="text-xs sm:text-sm font-bold text-foreground leading-snug max-w-full px-2 mt-4 line-clamp-3 select-none">
-              {video.title || course?.title}
-            </div>
+            {/* Bottom Title Area */}
+            <div className="flex-1 flex flex-col justify-end mt-2">
+              <div className="text-sm sm:text-base font-bold text-foreground leading-snug max-w-full line-clamp-3 select-none">
+                {video.title || course?.title}
+              </div>
 
-            {/* Decorative gold line at the bottom of the title */}
-            <div className="w-8 h-[2px] bg-accent/40 mt-3 rounded group-hover:w-12 transition-all duration-300" />
+              {/* Decorative gold line at the bottom of the title */}
+              <div className="w-8 h-[2px] bg-accent/40 mt-2.5 rounded group-hover:w-12 transition-all duration-300" />
+            </div>
           </div>
         )}
         {video.duration && (
