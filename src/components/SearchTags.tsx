@@ -69,7 +69,7 @@ const SearchTags: React.FC<SearchTagsProps> = ({
               onClick={() => toggleCategory(category.title)}
               className="w-full flex items-center justify-between py-4 px-5 text-left font-bold text-foreground focus:outline-none select-none cursor-pointer"
             >
-              <span className={isEmbed ? "text-xs text-muted" : "text-sm text-foreground/95"}>
+              <span className={isEmbed ? "text-xs text-accent" : "text-sm text-accent font-bold"}>
                 {category.title}
               </span>
               <svg 
@@ -88,12 +88,17 @@ const SearchTags: React.FC<SearchTagsProps> = ({
                 <div className="flex flex-wrap gap-2">
                   {category.tags.map((tag) => {
                     const isActive = selectedTags.includes(tag);
+                    const isLongTag = tag.length >= 10;
                     return (
                       <button
                         key={tag}
                         onClick={() => onTagClick(tag)}
                         className={`
-                          px-3 py-1.5 rounded-lg transition-all duration-200 border text-xs font-medium cursor-pointer
+                          rounded-lg transition-all duration-200 border text-xs font-medium cursor-pointer
+                          ${isLongTag 
+                            ? "w-full sm:w-auto text-center py-2.5 sm:py-1.5 px-4 sm:px-3" 
+                            : "px-3 py-1.5"
+                          }
                           ${isActive 
                             ? "bg-accent/20 border-accent text-accent font-semibold shadow-[0_0_8px_rgba(214,180,106,0.2)]" 
                             : "bg-background border-border/50 text-muted hover:border-accent/40 hover:text-foreground"
