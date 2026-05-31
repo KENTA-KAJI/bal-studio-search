@@ -88,16 +88,16 @@ const SearchTags: React.FC<SearchTagsProps> = ({
                 <div className="flex flex-wrap gap-2">
                   {category.tags.map((tag) => {
                     const isActive = selectedTags.includes(tag);
-                    const isLongTag = tag.length >= 10;
+                    const isPurposeTag = category.title === "目的から探す";
                     return (
                       <button
                         key={tag}
                         onClick={() => onTagClick(tag)}
                         className={`
                           rounded-lg transition-all duration-200 border text-xs font-medium cursor-pointer
-                          ${isLongTag 
-                            ? "w-full sm:w-auto text-center py-2.5 sm:py-1.5 px-4 sm:px-3" 
-                            : "px-3 py-1.5"
+                          ${isPurposeTag 
+                            ? "w-full sm:w-auto text-left py-2.5 sm:py-1.5 px-4 sm:px-3" 
+                            : "px-3 py-1.5 text-center"
                           }
                           ${isActive 
                             ? "bg-accent/20 border-accent text-accent font-semibold shadow-[0_0_8px_rgba(214,180,106,0.2)]" 
