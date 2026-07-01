@@ -36,3 +36,33 @@ body {
   }
 }
 
+@keyframes filterHintPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(214, 180, 92, 0);
+    background-color: transparent;
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 18px rgba(214, 180, 92, 0.28);
+    background-color: rgba(214, 180, 92, 0.08);
+    transform: scale(1.015);
+  }
+}
+
+.filter-hint-active {
+  animation: filterHintPulse 2.8s ease-in-out infinite;
+  border-color: #d6b45c !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filter-hint-active {
+    animation: none !important;
+    background-color: rgba(214, 180, 92, 0.1) !important;
+    border-color: #d6b45c !important;
+    border-width: 2px !important;
+  }
+}
+
+

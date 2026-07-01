@@ -915,5 +915,6634 @@
     "thumbnailUrl": "/thumbnails/C052.png",
     "videogUrl": "https://vdg.jp/g19286vj/biomech",
     "status": ""
+  },
+  {
+    "id": "V100",
+    "courseId": "C100",
+    "title": "大殿筋の解剖学①",
+    "duration": "13分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大殿筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/3BYa9UqZaBaT/",
+    "status": ""
+  },
+  {
+    "id": "V101",
+    "courseId": "C101",
+    "title": "筋膜連結から見た唯一の大殿筋トレーニング",
+    "duration": "13分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大殿筋",
+      "筋膜連結",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/H16jpMOVFhcO/",
+    "status": ""
+  },
+  {
+    "id": "V102",
+    "courseId": "C102",
+    "title": "前脛骨筋の解剖学①",
+    "duration": "10分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前脛骨筋",
+      "足関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/uSxDK5TvsUEr/",
+    "status": ""
+  },
+  {
+    "id": "V103",
+    "courseId": "C103",
+    "title": "足圧変化と重心移動",
+    "duration": "18分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前脛骨筋",
+      "足関節",
+      "重心",
+      "バイオメカニクス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/73qhVmGiGr81/",
+    "status": ""
+  },
+  {
+    "id": "V104",
+    "courseId": "C104",
+    "title": "大腿四頭筋の解剖学",
+    "duration": "13分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿四頭筋",
+      "膝関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/XlbIdfsKLlzH/",
+    "status": ""
+  },
+  {
+    "id": "V105",
+    "courseId": "C105",
+    "title": "Q-angleの変化と美脚の関係",
+    "duration": "12分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿四頭筋",
+      "Q-angle",
+      "美脚",
+      "膝関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Q9SEravdM-7J/",
+    "status": ""
+  },
+  {
+    "id": "V106",
+    "courseId": "C106",
+    "title": "多裂筋の解剖学",
+    "duration": "17分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "多裂筋",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/567RCaUQnh5F/",
+    "status": ""
+  },
+  {
+    "id": "V107",
+    "courseId": "C107",
+    "title": "エビデンスも交えた多裂筋の実践的トレーニング",
+    "duration": "12分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "多裂筋",
+      "腰痛",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LVY_Trmv67qL/",
+    "status": ""
+  },
+  {
+    "id": "V108",
+    "courseId": "C108",
+    "title": "前鋸筋の解剖学①",
+    "duration": "12分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前鋸筋",
+      "肩甲帯",
+      "胸郭"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Ewj4YzWHspGK/",
+    "status": ""
+  },
+  {
+    "id": "V109",
+    "courseId": "C109",
+    "title": "上肢運動連鎖を加味したトレーニング",
+    "duration": "12分17秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前鋸筋",
+      "運動連鎖",
+      "トレーニング",
+      "体幹"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/6dHn8lGPHNP8/",
+    "status": ""
+  },
+  {
+    "id": "V110",
+    "courseId": "C110",
+    "title": "腹横筋の解剖学",
+    "duration": "12分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹横筋",
+      "体幹",
+      "インナーユニット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/s1bzpfjyt-V4/",
+    "status": ""
+  },
+  {
+    "id": "V111",
+    "courseId": "C111",
+    "title": "腹横筋をユニットとして考えたトレーニング",
+    "duration": "12分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹横筋",
+      "体幹",
+      "トレーニング",
+      "ドローイン",
+      "コアスタビリティ",
+      "仙腸関節",
+      "インナーユニット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/HQgT70fNaH26/",
+    "status": ""
+  },
+  {
+    "id": "V112",
+    "courseId": "C112",
+    "title": "三角筋の解剖学",
+    "duration": "17分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "三角筋",
+      "肩甲上腕関節",
+      "サイドレイズ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tFJCUldGco1Y/",
+    "status": ""
+  },
+  {
+    "id": "V113",
+    "courseId": "C113",
+    "title": "三角筋とインピンジメント症候群",
+    "duration": "24分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "三角筋",
+      "インピンジメント",
+      "副運動",
+      "肩甲上腕関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/clHG73yRJq8E/",
+    "status": ""
+  },
+  {
+    "id": "V114",
+    "courseId": "C114",
+    "title": "上腕三頭筋の解剖学①",
+    "duration": "11分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "上腕三頭筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/eNdxNc17w88t/",
+    "status": ""
+  },
+  {
+    "id": "V115",
+    "courseId": "C115",
+    "title": "反張肘とハンドグラウンディング",
+    "duration": "12分47秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "上腕三頭筋",
+      "反張肘",
+      "ハンドグラウンディング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/oj0JoApP11o4/",
+    "status": ""
+  },
+  {
+    "id": "V116",
+    "courseId": "C116",
+    "title": "小胸筋の解剖学",
+    "duration": "13分57秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小胸筋",
+      "肩甲骨",
+      "肩甲上腕関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/x3sBqModZDsU/",
+    "status": ""
+  },
+  {
+    "id": "V117",
+    "courseId": "C117",
+    "title": "小胸筋タイトネスの評価と運動療法",
+    "duration": "12分56秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小胸筋",
+      "トレーニング",
+      "肩甲上腕関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/62krR7nUJDSD/",
+    "status": ""
+  },
+  {
+    "id": "V118",
+    "courseId": "C118",
+    "title": "下腿三頭筋の基礎ストレッチとトレーニング",
+    "duration": "23分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "下腿三頭筋",
+      "ストレッチ",
+      "トレーニング",
+      "腓腹筋",
+      "ヒラメ筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/3rU5i_djv58Q/",
+    "status": ""
+  },
+  {
+    "id": "V119",
+    "courseId": "C119",
+    "title": "初回セッションで見ないとヤバい3つのこと",
+    "duration": "24分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "セッション",
+      "トレーニング",
+      "プログラムデザイン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/O-Vv28CjSSHU/",
+    "status": ""
+  },
+  {
+    "id": "V120",
+    "courseId": "C120",
+    "title": "縫工筋の解剖学",
+    "duration": "11分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "縫工筋",
+      "鵞足",
+      "ニーイン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BGBlZqFTfU5R/",
+    "status": ""
+  },
+  {
+    "id": "V121",
+    "courseId": "C121",
+    "title": "股関節屈筋タイトネスの見分け",
+    "duration": "11分35秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "縫工筋",
+      "股関節屈筋",
+      "股関節の詰まり",
+      "腸腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8_hJr-VruuBi/",
+    "status": ""
+  },
+  {
+    "id": "V122",
+    "courseId": "C122",
+    "title": "股関節外旋筋の解剖学",
+    "duration": "12分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "股関節外旋筋",
+      "梨状筋",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Hsjq_qGspA-S/",
+    "status": ""
+  },
+  {
+    "id": "V123",
+    "courseId": "C123",
+    "title": "梨状筋症候群の病態と評価",
+    "duration": "12分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "梨状筋",
+      "股関節外旋筋",
+      "深層外旋六筋",
+      "股関節",
+      "梨状筋症候群",
+      "坐骨神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/sfYHZzRcgC20/",
+    "status": ""
+  },
+  {
+    "id": "V124",
+    "courseId": "C124",
+    "title": "腰方形筋の解剖学",
+    "duration": "18分8秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰方形筋",
+      "腎臓",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Id4txckdwAEy/",
+    "status": ""
+  },
+  {
+    "id": "V125",
+    "courseId": "C125",
+    "title": "腰方形筋と腎臓",
+    "duration": "20分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰方形筋",
+      "腎臓",
+      "腰痛",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/t2Ha8q7D5HzB/",
+    "status": ""
+  },
+  {
+    "id": "V126",
+    "courseId": "C126",
+    "title": "腹直筋の解剖学",
+    "duration": "12分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹直筋",
+      "腹圧"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/0AVTkc7iRP-t/",
+    "status": ""
+  },
+  {
+    "id": "V127",
+    "courseId": "C127",
+    "title": "上体起こしのメカニズム",
+    "duration": "13分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹直筋",
+      "上体起こし",
+      "トレーニング",
+      "バイオメカニクス",
+      "脊柱分節運動"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/A8Wk46X9L3H2/",
+    "status": ""
+  },
+  {
+    "id": "V128",
+    "courseId": "C128",
+    "title": "横隔膜の解剖学①",
+    "duration": "11分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "呼吸",
+      "体幹"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5cE-70Br989h/",
+    "status": ""
+  },
+  {
+    "id": "V129",
+    "courseId": "C129",
+    "title": "呼吸機能を取り戻す横隔膜の評価とアプローチ",
+    "duration": "13分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "呼吸",
+      "トレーニング",
+      "リブフレア",
+      "体幹"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/bBzuFXBP4JsD/",
+    "status": ""
+  },
+  {
+    "id": "V130",
+    "courseId": "C130",
+    "title": "胸鎖乳突筋の解剖学①",
+    "duration": "21分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸鎖乳突筋",
+      "首こり",
+      "ストレートネック"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/XW626kLLinPn/",
+    "status": ""
+  },
+  {
+    "id": "V131",
+    "courseId": "C131",
+    "title": "胸鎖乳突筋のセルフリリース",
+    "duration": "9分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸鎖乳突筋",
+      "首こり",
+      "ストレートネック"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vc6sGnKAKct4/",
+    "status": ""
+  },
+  {
+    "id": "V132",
+    "courseId": "C132",
+    "title": "棘上筋の解剖学①",
+    "duration": "11分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘上筋",
+      "肩関節",
+      "インピンジメント",
+      "肩甲骨",
+      "ローテーターカフ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/-ZJkjzbvuGAv/",
+    "status": ""
+  },
+  {
+    "id": "V133",
+    "courseId": "C133",
+    "title": "肩外転の力学的メカニズム",
+    "duration": "14分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘上筋",
+      "肩甲上腕リズム",
+      "バイオメカニクス",
+      "肩甲骨",
+      "前鋸筋",
+      "ローテーターカフ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/a-JVl5Sa6yAu/",
+    "status": ""
+  },
+  {
+    "id": "V134",
+    "courseId": "C134",
+    "title": "上腕二頭筋の解剖学①",
+    "duration": "12分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "上腕二頭筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xzUdKCgt2g1w/",
+    "status": ""
+  },
+  {
+    "id": "V135",
+    "courseId": "C135",
+    "title": "65歳女性 腰部脊柱管狭窄症に対する症例検討",
+    "duration": "17分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "症例検討",
+      "脊柱管狭窄症",
+      "前十字靭帯"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LzbcA-zvmI0K/",
+    "status": ""
+  },
+  {
+    "id": "V136",
+    "courseId": "C136",
+    "title": "ブレインアナトミー｜脳の基礎解剖学",
+    "duration": "17分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脳",
+      "眼球運動",
+      "バランス機能"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Y1QnbsKdtaWn/",
+    "status": ""
+  },
+  {
+    "id": "V137",
+    "courseId": "C137",
+    "title": "眼球運動から変わるバランス機能",
+    "duration": "27分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脳",
+      "眼球運動",
+      "バランス機能"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v09FXjMCrbsB/",
+    "status": ""
+  },
+  {
+    "id": "V138",
+    "courseId": "C138",
+    "title": "後脛骨筋の解剖学①",
+    "duration": "14分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "後脛骨筋",
+      "足関節",
+      "アーチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/B4WPdZ0uZlZI/",
+    "status": ""
+  },
+  {
+    "id": "V139",
+    "courseId": "C139",
+    "title": "後脛骨筋から見る背屈制限の検討",
+    "duration": "10分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "後脛骨筋",
+      "背屈制限",
+      "距腿関節",
+      "脛腓関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/36h5QLhfTday/",
+    "status": ""
+  },
+  {
+    "id": "V140",
+    "courseId": "C140",
+    "title": "腓骨筋の解剖学①",
+    "duration": "14分59秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓骨筋",
+      "足関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/z-FrGryjIyqg/",
+    "status": ""
+  },
+  {
+    "id": "V141",
+    "courseId": "C141",
+    "title": "腓骨筋トレーニング｜OKCとCKC",
+    "duration": "11分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓骨筋",
+      "足関節",
+      "OKC",
+      "CKC",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/9MNj4gY2GTM8/",
+    "status": ""
+  },
+  {
+    "id": "V142",
+    "courseId": "C142",
+    "title": "腰痛クライアントのための脊柱起立筋エクササイズ",
+    "duration": "17分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脊柱起立筋",
+      "脊柱",
+      "トレーニング",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7OP8MWMGpDRo/",
+    "status": ""
+  },
+  {
+    "id": "V143",
+    "courseId": "C143",
+    "title": "脊柱起立筋強化のためのトレーニング法",
+    "duration": "20分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脊柱起立筋",
+      "脊柱",
+      "トレーニング",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/bsDdsJKIFsyj/",
+    "status": ""
+  },
+  {
+    "id": "V144",
+    "courseId": "C144",
+    "title": "肋間筋の解剖学①",
+    "duration": "12分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋間筋",
+      "呼吸",
+      "肋骨",
+      "胸椎"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/hnWEBfWkOmd2/",
+    "status": ""
+  },
+  {
+    "id": "V145",
+    "courseId": "C145",
+    "title": "内外肋間筋の作用差の力学的理解",
+    "duration": "12分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋間筋",
+      "内肋間筋",
+      "バイオメカニクス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JBpZXh23QzDo/",
+    "status": ""
+  },
+  {
+    "id": "V146",
+    "courseId": "C146",
+    "title": "内腹斜筋の解剖学",
+    "duration": "11分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内腹斜筋",
+      "腹斜筋",
+      "体幹",
+      "仙腸関節",
+      "IAP（腹腔内圧）"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/pJUj7203hZEU/",
+    "status": ""
+  },
+  {
+    "id": "V147",
+    "courseId": "C147",
+    "title": "内腹斜筋トレーニング",
+    "duration": "9分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内腹斜筋",
+      "腹斜筋",
+      "体幹",
+      "仙腸関節",
+      "IAP（腹腔内圧）"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/SWsoMfDGM9yy/",
+    "status": ""
+  },
+  {
+    "id": "V148",
+    "courseId": "C148",
+    "title": "内転筋群の解剖学",
+    "duration": "7分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内転筋",
+      "股関節",
+      "大内転筋",
+      "薄筋",
+      "長内転筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JNp1WTVvK0Di/",
+    "status": ""
+  },
+  {
+    "id": "V149",
+    "courseId": "C149",
+    "title": "グロインペインの予防トレーニング",
+    "duration": "9分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内転筋",
+      "トレーニング",
+      "鼠径部痛症候群",
+      "鼠径部痛",
+      "グロインペイン",
+      "変形性股関節症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Hb2-xFvEx5f_/",
+    "status": ""
+  },
+  {
+    "id": "V150",
+    "courseId": "C150",
+    "title": "中臀筋の解剖学①",
+    "duration": "10分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "中臀筋",
+      "股関節",
+      "歩行",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/-8eF3ImcQQgk/",
+    "status": ""
+  },
+  {
+    "id": "V151",
+    "courseId": "C151",
+    "title": "ハイク運動での中臀筋トレーニング",
+    "duration": "10分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "中臀筋",
+      "トレーニング",
+      "トレンデレンブルグ",
+      "デュシェンヌ",
+      "ヒップハイク"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/48fG6kC8RfhK/",
+    "status": ""
+  },
+  {
+    "id": "V152",
+    "courseId": "C152",
+    "title": "大腿筋膜張筋の解剖学｜解説編",
+    "duration": "10分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿筋膜張筋",
+      "膝関節",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/KbaRx12BMcb0/",
+    "status": ""
+  },
+  {
+    "id": "V153",
+    "courseId": "C153",
+    "title": "大腿筋膜張筋の解剖学｜実践編",
+    "duration": "9分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿筋膜張筋",
+      "トレーニング",
+      "膝関節",
+      "股関節",
+      "中殿筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/j2RMEVl-quEp/",
+    "status": ""
+  },
+  {
+    "id": "V154",
+    "courseId": "C154",
+    "title": "広背筋の解剖学",
+    "duration": "7分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "広背筋",
+      "肩関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4HJ8ckjHaPPM/",
+    "status": ""
+  },
+  {
+    "id": "V155",
+    "courseId": "C155",
+    "title": "広背筋を鍛えるなら引くな！",
+    "duration": "12分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "広背筋",
+      "トレーニング",
+      "ラットプルダウン",
+      "ロウイング",
+      "肩関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/mtfmQtb-PKRy/",
+    "status": ""
+  },
+  {
+    "id": "V156",
+    "courseId": "C156",
+    "title": "菱形筋の解剖学①",
+    "duration": "8分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "菱形筋",
+      "肩甲骨",
+      "肩関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/psjwCKXtmqmc/",
+    "status": ""
+  },
+  {
+    "id": "V157",
+    "courseId": "C157",
+    "title": "菱形筋と肩関節痛",
+    "duration": "8分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "菱形筋",
+      "肩甲骨",
+      "肩関節",
+      "肩関節痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/FdIVBdubVp-R/",
+    "status": ""
+  },
+  {
+    "id": "V158",
+    "courseId": "C158",
+    "title": "棘下筋の解剖学①",
+    "duration": "10分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "肩関節",
+      "回旋筋腱板"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YWCt0TfE3e_l/",
+    "status": ""
+  },
+  {
+    "id": "V159",
+    "courseId": "C159",
+    "title": "棘下筋トレーニングの実際",
+    "duration": "12分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "肩関節",
+      "トレーニング",
+      "OKC"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/-pTvue0DiTvp/",
+    "status": ""
+  },
+  {
+    "id": "V160",
+    "courseId": "C160",
+    "title": "肩甲下筋の解剖学①",
+    "duration": "9分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩甲下筋",
+      "肩痛",
+      "腱板損傷"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7g0nZgkEjS34/",
+    "status": ""
+  },
+  {
+    "id": "V161",
+    "courseId": "C161",
+    "title": "肩甲下筋の検査法とトレーニング法",
+    "duration": "11分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩甲下筋",
+      "トレーニング",
+      "ローテーターカフ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Tc__NTHEBk8Y/",
+    "status": ""
+  },
+  {
+    "id": "V162",
+    "courseId": "C162",
+    "title": "僧帽筋の解剖学",
+    "duration": "13分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "僧帽筋",
+      "肩関節",
+      "肩甲骨"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Vd3oe-h9a1mp/",
+    "status": ""
+  },
+  {
+    "id": "V163",
+    "courseId": "C163",
+    "title": "僧帽筋下部トレーニングの検討",
+    "duration": "12分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "僧帽筋下部",
+      "僧帽筋",
+      "肩関節",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5ZkKRLrwtRir/",
+    "status": ""
+  },
+  {
+    "id": "V164",
+    "courseId": "C164",
+    "title": "小円筋の解剖学",
+    "duration": "10分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小円筋",
+      "肩関節",
+      "腱板"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/egWMng49tbzH/",
+    "status": ""
+  },
+  {
+    "id": "V165",
+    "courseId": "C165",
+    "title": "肩後方組織のストレッチの理論と実践",
+    "duration": "10分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小円筋",
+      "棘下筋",
+      "ストレッチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Kquu4akE--kK/",
+    "status": ""
+  },
+  {
+    "id": "V166",
+    "courseId": "C166",
+    "title": "骨盤底筋のこと、わかってる？",
+    "duration": "20分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "骨盤底筋",
+      "内転筋",
+      "インナーユニット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ljOBFkWYXFHn/",
+    "status": ""
+  },
+  {
+    "id": "V167",
+    "courseId": "C167",
+    "title": "筋膜連結から考える骨盤底筋群トレーニング",
+    "duration": "17分35秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "骨盤底筋",
+      "筋膜連結",
+      "トレーニング",
+      "内転筋",
+      "インナーユニット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/_G3zKLbzAP1a/",
+    "status": ""
+  },
+  {
+    "id": "V168",
+    "courseId": "C168",
+    "title": "外腹斜筋の解剖学①",
+    "duration": "11分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vdoXoPBsh8QY/",
+    "status": ""
+  },
+  {
+    "id": "V169",
+    "courseId": "C169",
+    "title": "ツイストクランチの考察",
+    "duration": "8分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "内腹斜筋",
+      "トレーニング",
+      "ツイストクランチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/9wL_bPHa-sb3/",
+    "status": ""
+  },
+  {
+    "id": "V170",
+    "courseId": "C170",
+    "title": "烏口腕筋の解剖学",
+    "duration": "13分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "烏口腕筋",
+      "肩関節",
+      "筋皮神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/fso6Kppr0dS4/",
+    "status": ""
+  },
+  {
+    "id": "V171",
+    "courseId": "C171",
+    "title": "筋皮神経障害の評価と介入",
+    "duration": "12分6秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "烏口腕筋",
+      "肩関節",
+      "筋皮神経障害"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ua5u9Hk1AanI/",
+    "status": ""
+  },
+  {
+    "id": "V172",
+    "courseId": "C172",
+    "title": "大胸筋の解剖学",
+    "duration": "15分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大胸筋",
+      "肩関節",
+      "トレーニング",
+      "ベンチプレス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/d8KyOn2kbir6/",
+    "status": ""
+  },
+  {
+    "id": "V173",
+    "courseId": "C173",
+    "title": "大胸筋と呼吸の応用",
+    "duration": "11分52秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大胸筋",
+      "呼吸",
+      "トレーニング",
+      "肩関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/KA9jgt_1ihkH/",
+    "status": ""
+  },
+  {
+    "id": "V174",
+    "courseId": "C174",
+    "title": "ハムストリングの解剖学①",
+    "duration": "15分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ハムストリング",
+      "膝",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/_9KAmMzncv_Y/",
+    "status": ""
+  },
+  {
+    "id": "V175",
+    "courseId": "C175",
+    "title": "ハムストリングによる膝伸展機能",
+    "duration": "12分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ハムストリング",
+      "膝",
+      "バイオメカニクス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ERufJpz1ZKYz/",
+    "status": ""
+  },
+  {
+    "id": "V176",
+    "courseId": "C176",
+    "title": "大円筋の解剖学",
+    "duration": "12分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大円筋",
+      "肩関節",
+      "広背筋",
+      "クアドリラテラルスペース"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/cl1CPRpvWP_M/",
+    "status": ""
+  },
+  {
+    "id": "V177",
+    "courseId": "C177",
+    "title": "大円筋の評価とアプローチ",
+    "duration": "8分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大円筋",
+      "肩関節",
+      "広背筋",
+      "クアドリラテラルスペース"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/z4hLJ0zq3CpK/",
+    "status": ""
+  },
+  {
+    "id": "V178",
+    "courseId": "C178",
+    "title": "腓骨筋の解剖学②",
+    "duration": "11分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓骨筋",
+      "足関節",
+      "捻挫"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/KD8wRRiJ8UlR/",
+    "status": ""
+  },
+  {
+    "id": "V179",
+    "courseId": "C179",
+    "title": "腓骨筋のトレーニング",
+    "duration": "8分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓骨筋",
+      "足関節",
+      "捻挫",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tdg4zU2u7EeE/",
+    "status": ""
+  },
+  {
+    "id": "V180",
+    "courseId": "C180",
+    "title": "サッカーにおけるスプリント・方向転換時について",
+    "duration": "25分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "サッカー",
+      "パフォーマンス",
+      "スプリント",
+      "方向転換"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/PaaCUCSUsJLn/",
+    "status": ""
+  },
+  {
+    "id": "V181",
+    "courseId": "C181",
+    "title": "ヒラメ筋の解剖学",
+    "duration": "11分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ヒラメ筋",
+      "足関節",
+      "膝関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/1XdWqAk2PQaK/",
+    "status": ""
+  },
+  {
+    "id": "V182",
+    "courseId": "C182",
+    "title": "足関節背屈可動域制限と日常生活動作",
+    "duration": "10分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ヒラメ筋",
+      "足関節",
+      "足関節背屈可動域制限"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/bAYDdPGb7L2G/",
+    "status": ""
+  },
+  {
+    "id": "V183",
+    "courseId": "C183",
+    "title": "膝窩筋の解剖学",
+    "duration": "11分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝窩筋",
+      "膝関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/DuuiWwBR1Fig/",
+    "status": ""
+  },
+  {
+    "id": "V184",
+    "courseId": "C184",
+    "title": "膝窩筋の運動療法",
+    "duration": "9分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝窩筋",
+      "膝関節",
+      "運動療法",
+      "歩行"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/G5Ko5toHkp6C/",
+    "status": ""
+  },
+  {
+    "id": "V185",
+    "courseId": "C185",
+    "title": "横隔膜の解剖学②",
+    "duration": "13分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "呼吸",
+      "腰痛",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/NBFYw_Un5Bk3/",
+    "status": ""
+  },
+  {
+    "id": "V186",
+    "courseId": "C186",
+    "title": "横隔膜の特性を活かした活用法",
+    "duration": "19分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "呼吸",
+      "腰痛",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/CH095d-SRGS8/",
+    "status": ""
+  },
+  {
+    "id": "V187",
+    "courseId": "C187",
+    "title": "腹横筋の特性",
+    "duration": "9分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹横筋",
+      "姿勢",
+      "インナーユニット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4GHD-TYtvfoJ/",
+    "status": ""
+  },
+  {
+    "id": "V188",
+    "courseId": "C188",
+    "title": "ドローインバリエーション",
+    "duration": "8分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹横筋",
+      "ドローイン",
+      "インナーユニット",
+      "呼吸",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/B0aa3JcJTjVZ/",
+    "status": ""
+  },
+  {
+    "id": "V189",
+    "courseId": "C189",
+    "title": "多裂筋と腰痛の関係",
+    "duration": "13分11秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "多裂筋",
+      "腰椎",
+      "椎間関節",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/GELuM-j913kz/",
+    "status": ""
+  },
+  {
+    "id": "V190",
+    "courseId": "C190",
+    "title": "椎間関節性腰痛の評価とアプローチ",
+    "duration": "17分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "多裂筋",
+      "腰痛",
+      "椎間関節",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LSJF8gvlgumk/",
+    "status": ""
+  },
+  {
+    "id": "V191",
+    "courseId": "C191",
+    "title": "菱形筋の解剖学②",
+    "duration": "7分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "菱形筋",
+      "トレーニング",
+      "肩甲骨",
+      "肩甲胸郭関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YDqdH1kwE0z2/",
+    "status": ""
+  },
+  {
+    "id": "V192",
+    "courseId": "C192",
+    "title": "菱形筋のあれこれ",
+    "duration": "11分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "菱形筋",
+      "トレーニング",
+      "肩甲骨",
+      "肩甲胸郭関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xv3bPv5VSgls/",
+    "status": ""
+  },
+  {
+    "id": "V193",
+    "courseId": "C193",
+    "title": "広背筋と姿勢改善",
+    "duration": "9分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "広背筋",
+      "姿勢",
+      "姿勢改善",
+      "胸椎",
+      "腰椎"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/F4hE24VSGAmf/",
+    "status": ""
+  },
+  {
+    "id": "V194",
+    "courseId": "C194",
+    "title": "左右の筋力差について",
+    "duration": "15分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "筋力差",
+      "評価",
+      "トレーニング",
+      "ユニラテラル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/UXGjyfnmccNU/",
+    "status": ""
+  },
+  {
+    "id": "V195",
+    "courseId": "C195",
+    "title": "前鋸筋の解剖学②",
+    "duration": "11分31秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前鋸筋",
+      "インピンジメント",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ZQivK3OVHR7w/",
+    "status": ""
+  },
+  {
+    "id": "V196",
+    "courseId": "C196",
+    "title": "大腿四頭筋の解釈",
+    "duration": "10分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿四頭筋",
+      "美脚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/K3PZTKRghGGF/",
+    "status": ""
+  },
+  {
+    "id": "V197",
+    "courseId": "C197",
+    "title": "後脛骨筋の解剖学②",
+    "duration": "15分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "後脛骨筋",
+      "トレーニング",
+      "シンスプリント",
+      "アーチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/eJg3A9N0Bx2e/",
+    "status": ""
+  },
+  {
+    "id": "V198",
+    "courseId": "C198",
+    "title": "チーム指導の極意とノウハウ",
+    "duration": "20分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "チーム指導",
+      "ストレングス",
+      "コーチング",
+      "グループトレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/FlqPtR77UuYe/",
+    "status": ""
+  },
+  {
+    "id": "V199",
+    "courseId": "C199",
+    "title": "腓腹筋内外側頭の違い",
+    "duration": "7分17秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓腹筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/N5jcQwXGctEo/",
+    "status": ""
+  },
+  {
+    "id": "V200",
+    "courseId": "C200",
+    "title": "歩行立脚後期の腓腹筋作用",
+    "duration": "9分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腓腹筋",
+      "歩行",
+      "歩行周期"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/EsJg816MLqre/",
+    "status": ""
+  },
+  {
+    "id": "V201",
+    "courseId": "C201",
+    "title": "大殿筋の解剖学②",
+    "duration": "10分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大殿筋",
+      "仙腸関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/l0u1N6GuX_-H/",
+    "status": ""
+  },
+  {
+    "id": "V202",
+    "courseId": "C202",
+    "title": "腰椎すべり症の病態と介入ポイント",
+    "duration": "14分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰椎",
+      "腰椎すべり症",
+      "多裂筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/FGPOaHIHcT7_/",
+    "status": ""
+  },
+  {
+    "id": "V203",
+    "courseId": "C203",
+    "title": "肋間筋の解剖学②｜内肋間筋は呼息筋ではないよ",
+    "duration": "10分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋間筋",
+      "内肋間筋",
+      "外肋間筋",
+      "呼吸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7LxqXraCuc-D/",
+    "status": ""
+  },
+  {
+    "id": "V204",
+    "courseId": "C204",
+    "title": "肋間筋のセルフエクササイズ大全集",
+    "duration": "8分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋間筋",
+      "内肋間筋",
+      "外肋間筋",
+      "呼吸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5_Kc77EJ7s9u/",
+    "status": ""
+  },
+  {
+    "id": "V205",
+    "courseId": "C205",
+    "title": "脊柱起立筋はローカル筋かグローバル筋か",
+    "duration": "11分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脊柱起立筋",
+      "脊柱",
+      "トレーニング",
+      "ローカル筋",
+      "グローバル筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2iifR4JockoI/",
+    "status": ""
+  },
+  {
+    "id": "V206",
+    "courseId": "C206",
+    "title": "脊柱の可動練習法の工夫",
+    "duration": "10分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脊柱起立筋",
+      "可動域"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/W-oYZhCQKbZh/",
+    "status": ""
+  },
+  {
+    "id": "V207",
+    "courseId": "C207",
+    "title": "外腹斜筋の解剖学②",
+    "duration": "8分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "呼吸",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/PZcaBkHBZ9GB/",
+    "status": ""
+  },
+  {
+    "id": "V208",
+    "courseId": "C208",
+    "title": "呼吸を意識した外腹斜筋トレーニング",
+    "duration": "10分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "呼吸",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/T7uGhlK-iXZh/",
+    "status": ""
+  },
+  {
+    "id": "V209",
+    "courseId": "C209",
+    "title": "上腕二頭筋の解剖学②",
+    "duration": "9分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "上腕二頭筋",
+      "肩痛",
+      "四十肩五十肩"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2ey11JTYtdRC/",
+    "status": ""
+  },
+  {
+    "id": "V210",
+    "courseId": "C210",
+    "title": "ジュニアアスリートのトレーニング指導の失敗ポイント",
+    "duration": "24分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ジュニアアスリート",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Vb8yMy2quhcT/",
+    "status": ""
+  },
+  {
+    "id": "V211",
+    "courseId": "C211",
+    "title": "三角筋の過緊張による不調",
+    "duration": "12分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "三角筋",
+      "肩こり",
+      "肩甲骨"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/o_Xve-vLaBh3/",
+    "status": ""
+  },
+  {
+    "id": "V212",
+    "courseId": "C212",
+    "title": "バランス感覚に関して",
+    "duration": "21分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "バランス",
+      "前庭覚",
+      "高齢者"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/w0pjxfTcqkiX/",
+    "status": ""
+  },
+  {
+    "id": "V213",
+    "courseId": "C213",
+    "title": "棘上筋の解剖学 ②｜筋電図研究から",
+    "duration": "11分6秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘上筋",
+      "腱板",
+      "腱板断裂"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/J96g8WCO1SmD/",
+    "status": ""
+  },
+  {
+    "id": "V214",
+    "courseId": "C214",
+    "title": "棘上筋の評価とアプローチ",
+    "duration": "13分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘上筋",
+      "評価",
+      "コンディショニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tMMssDDFs-5Q/",
+    "status": ""
+  },
+  {
+    "id": "V215",
+    "courseId": "C215",
+    "title": "中殿筋の解剖学②",
+    "duration": "13分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "中臀筋",
+      "トレンデレンブルグ",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/aMOaexk5wKxi/",
+    "status": ""
+  },
+  {
+    "id": "V216",
+    "courseId": "C216",
+    "title": "中殿筋を鍛えることと動かすことの違い",
+    "duration": "8分6秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "中臀筋",
+      "トレンデレンブルグ",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/U0xqNChFTBc2/",
+    "status": ""
+  },
+  {
+    "id": "V217",
+    "courseId": "C217",
+    "title": "大腿筋膜張筋のストレッチ法",
+    "duration": "8分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿筋膜張筋",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Dei8PUoQg5S4/",
+    "status": ""
+  },
+  {
+    "id": "V218",
+    "courseId": "C218",
+    "title": "股関節内旋トルクから考える股関節伸展可動域獲得の必要性",
+    "duration": "11分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿筋膜張筋",
+      "中殿筋",
+      "可動域",
+      "股関節",
+      "バイオメカニクス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/0exQZd0VX0MB/",
+    "status": ""
+  },
+  {
+    "id": "V219",
+    "courseId": "C219",
+    "title": "ハムストリングの解剖学②",
+    "duration": "11分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ハムストリング",
+      "肉離れ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BrjYjyyxA1Xf/",
+    "status": ""
+  },
+  {
+    "id": "V220",
+    "courseId": "C220",
+    "title": "ハムストリング肉離れのリハビリテーション",
+    "duration": "13分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ハムストリング",
+      "肉離れ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YjYYN1-0ar6g/",
+    "status": ""
+  },
+  {
+    "id": "V221",
+    "courseId": "C221",
+    "title": "解剖学を現場で活かせない人の2つの特徴",
+    "duration": "22分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "解剖学",
+      "現場活用",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/RO-M96OikCeW/",
+    "status": ""
+  },
+  {
+    "id": "V222",
+    "courseId": "C222",
+    "title": "姿勢分析ってなぁに？というアナタへ",
+    "duration": "31分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "姿勢分析",
+      "姿勢",
+      "姿勢改善",
+      "動作分析"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ZctNFSmxSZKQ/",
+    "status": ""
+  },
+  {
+    "id": "V223",
+    "courseId": "C223",
+    "title": "合蹟、胡座肢位制限と姿勢や動作からの情報の回収①",
+    "duration": "8分46秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "姿勢分析",
+      "姿勢",
+      "姿勢改善",
+      "動作分析",
+      "合蹟",
+      "胡座",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/L8974GCTof8V/",
+    "status": ""
+  },
+  {
+    "id": "V224",
+    "courseId": "C224",
+    "title": "合蹟、胡座肢位制限と姿勢や動作からの情報の回収②",
+    "duration": "13分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "姿勢分析",
+      "姿勢",
+      "姿勢改善",
+      "動作分析",
+      "合蹟",
+      "胡座",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5idTYRIEat5G/",
+    "status": ""
+  },
+  {
+    "id": "V225",
+    "courseId": "C225",
+    "title": "O、X、XO脚に対する基礎知識",
+    "duration": "11分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "O脚",
+      "X脚",
+      "XO脚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/jLkd3eN3dpds/",
+    "status": ""
+  },
+  {
+    "id": "V226",
+    "courseId": "C226",
+    "title": "O、X、XO脚に対する評価とアプローチ",
+    "duration": "11分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "O脚",
+      "X脚",
+      "XO脚",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/t7FSKENy3vlf/",
+    "status": ""
+  },
+  {
+    "id": "V227",
+    "courseId": "C227",
+    "title": "腹直筋離開について理解しよう",
+    "duration": "11分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹直筋",
+      "腹直筋離開",
+      "IAP（腹腔内圧）",
+      "尿漏れ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/u11sPgtoaYgR/",
+    "status": ""
+  },
+  {
+    "id": "V228",
+    "courseId": "C228",
+    "title": "腹直筋トレーニングマスター講座",
+    "duration": "12分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹直筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YOmbF0xyqVMB/",
+    "status": ""
+  },
+  {
+    "id": "V229",
+    "courseId": "C229",
+    "title": "腰方形筋とキャリー運動",
+    "duration": "8分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰方形筋",
+      "キャリー運動",
+      "ヒップハイク",
+      "脊柱"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/h9x5w5nRX-kY/",
+    "status": ""
+  },
+  {
+    "id": "V230",
+    "courseId": "C230",
+    "title": "猫背姿勢に対してのアプローチ",
+    "duration": "9分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "猫背",
+      "姿勢",
+      "姿勢改善",
+      "円背"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YtqBYx0KdzXj/",
+    "status": ""
+  },
+  {
+    "id": "V231",
+    "courseId": "C231",
+    "title": "骨盤底筋と股関節の関係性",
+    "duration": "12分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "骨盤底筋",
+      "股関節",
+      "内閉鎖筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zJFe18H0uVze/",
+    "status": ""
+  },
+  {
+    "id": "V232",
+    "courseId": "C232",
+    "title": "IAP（腹腔内圧）について",
+    "duration": "13分57秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "IAP（腹腔内圧）",
+      "体幹",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ULNLttsBnFAx/",
+    "status": ""
+  },
+  {
+    "id": "V233",
+    "courseId": "C233",
+    "title": "棘下筋の解剖学②",
+    "duration": "10分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "四十肩五十肩"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/D6Tu-d19RIA0/",
+    "status": ""
+  },
+  {
+    "id": "V234",
+    "courseId": "C234",
+    "title": "棘下筋のCKCトレーニング",
+    "duration": "6分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "四十肩五十肩",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tfcWgCjlNgYv/",
+    "status": ""
+  },
+  {
+    "id": "V235",
+    "courseId": "C235",
+    "title": "胸鎖乳突筋の解剖学②",
+    "duration": "8分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸鎖乳突筋",
+      "筋紡錘",
+      "めまい"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/GJnZUhMWblSh/",
+    "status": ""
+  },
+  {
+    "id": "V236",
+    "courseId": "C236",
+    "title": "頸部緊張のチェックと頭部変位の修正",
+    "duration": "9分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸鎖乳突筋",
+      "頭部前方変位",
+      "フォワードヘッド",
+      "過緊張",
+      "頸長筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/dIa2a4fxmwvL/",
+    "status": ""
+  },
+  {
+    "id": "V237",
+    "courseId": "C237",
+    "title": "肩甲下筋の解剖学②｜停止部の特徴と収縮ベクトル",
+    "duration": "14分11秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩甲下筋",
+      "腱板",
+      "腱板断裂",
+      "大胸筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/T_RkETkaPnUJ/",
+    "status": ""
+  },
+  {
+    "id": "V238",
+    "courseId": "C238",
+    "title": "産後トレーニングについて",
+    "duration": "23分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "産後トレーニング",
+      "女性指導",
+      "骨盤",
+      "骨盤底筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/TgV4AUv1Txfu/",
+    "status": ""
+  },
+  {
+    "id": "V239",
+    "courseId": "C239",
+    "title": "縫工筋のよくある故障",
+    "duration": "7分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "縫工筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/F5vWbm2_tHeB/",
+    "status": ""
+  },
+  {
+    "id": "V240",
+    "courseId": "C240",
+    "title": "柔軟性を高める考え方",
+    "duration": "7分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "柔軟性",
+      "可動域",
+      "足底",
+      "固有感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YeZ5iTY_KJCW/",
+    "status": ""
+  },
+  {
+    "id": "V241",
+    "courseId": "C241",
+    "title": "股関節角度による内転筋作用変化",
+    "duration": "8分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内転筋",
+      "内転筋群",
+      "股関節",
+      "大内転筋",
+      "長内転筋",
+      "短内転筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/0U_8CSuMiFkR/",
+    "status": ""
+  },
+  {
+    "id": "V242",
+    "courseId": "C242",
+    "title": "内転筋ストレッチ・トレーニング検討",
+    "duration": "8分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内転筋",
+      "内転筋群",
+      "ストレッチ",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/bX5AIdzEZs0U/",
+    "status": ""
+  },
+  {
+    "id": "V243",
+    "courseId": "C243",
+    "title": "下腿三頭筋の解剖学｜筋の特徴とカーフレイズの筋活動",
+    "duration": "14分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "下腿三頭筋",
+      "トレーニング",
+      "カーフレイズ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vuspslMg7xTn/",
+    "status": ""
+  },
+  {
+    "id": "V244",
+    "courseId": "C244",
+    "title": "足底腱膜症｜下腿三頭筋との関係",
+    "duration": "13分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "下腿三頭筋",
+      "足底腱膜症",
+      "足底腱膜炎",
+      "腓腹筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/G5bOufkM_YRI/",
+    "status": ""
+  },
+  {
+    "id": "V245",
+    "courseId": "C245",
+    "title": "腰椎分離症の基礎知識と対策｜理論編",
+    "duration": "10分41秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰痛",
+      "腰椎分離症",
+      "腰椎分離すべり症",
+      "坐骨神経痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/AZLADbRzyfmZ/",
+    "status": ""
+  },
+  {
+    "id": "V246",
+    "courseId": "C246",
+    "title": "腰椎分離症の基礎知識と対策｜実技編",
+    "duration": "10分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰痛",
+      "腰椎分離症",
+      "腰椎分離すべり症",
+      "坐骨神経痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/N1cDMZvx7Cin/",
+    "status": ""
+  },
+  {
+    "id": "V247",
+    "courseId": "C247",
+    "title": "腹直筋過剰優位性と内腹斜筋の関係",
+    "duration": "9分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腹直筋",
+      "内腹斜筋",
+      "腹横筋",
+      "外腹斜筋",
+      "ドローイン",
+      "呼吸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5dQfWJuqo2Sb/",
+    "status": ""
+  },
+  {
+    "id": "V248",
+    "courseId": "C248",
+    "title": "クランチ運動における腹直筋過剰優位性",
+    "duration": "9分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "クランチ",
+      "腹直筋",
+      "内腹斜筋",
+      "外腹斜筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tsgdZCU6Af7d/",
+    "status": ""
+  },
+  {
+    "id": "V249",
+    "courseId": "C249",
+    "title": "僧帽筋下部のエビデンスに基づくトレーニング",
+    "duration": "14分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "僧帽筋下部",
+      "僧帽筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JgmeyEBRWp6t/",
+    "status": ""
+  },
+  {
+    "id": "V250",
+    "courseId": "C250",
+    "title": "オスグットシュラッター病とシーバー病",
+    "duration": "17分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "オスグットシュラッター病",
+      "シーバー病",
+      "脛骨",
+      "踵骨"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/6IS4Oh4lWNJj/",
+    "status": ""
+  },
+  {
+    "id": "V251",
+    "courseId": "C251",
+    "title": "上腕三頭筋の解剖学②",
+    "duration": "15分31秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "上腕三頭筋",
+      "クアドリラテラルスペース",
+      "インピンジメント",
+      "肩痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7FdgYzmO5W4A/",
+    "status": ""
+  },
+  {
+    "id": "V252",
+    "courseId": "C252",
+    "title": "大円筋とリバーシブルアクション",
+    "duration": "8分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大円筋",
+      "チンニング",
+      "OKC",
+      "CKC"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2yWOLQIzQze5/",
+    "status": ""
+  },
+  {
+    "id": "V253",
+    "courseId": "C253",
+    "title": "チンニングにおけるリバーシブルアクション",
+    "duration": "10分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大円筋",
+      "広背筋",
+      "チンニング",
+      "ラットプルダウン",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/1ET9gFZB7oOB/",
+    "status": ""
+  },
+  {
+    "id": "V254",
+    "courseId": "C254",
+    "title": "ベンチプレスの筋活動を論文から紐解く",
+    "duration": "14分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大胸筋",
+      "ベンチプレス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/wKmhyno07lB4/",
+    "status": ""
+  },
+  {
+    "id": "V255",
+    "courseId": "C255",
+    "title": "ベンチプレスと怪我",
+    "duration": "15分35秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大胸筋",
+      "ベンチプレス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/o3HrQ-3W4RHQ/",
+    "status": ""
+  },
+  {
+    "id": "V256",
+    "courseId": "C256",
+    "title": "代償動作に対する基本的な考え方",
+    "duration": "9分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "解剖学",
+      "運動学",
+      "代償動作",
+      "ニーイン",
+      "トリックモーション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/jYtpdSXFe43y/",
+    "status": ""
+  },
+  {
+    "id": "V257",
+    "courseId": "C257",
+    "title": "前脛骨筋の解剖学②｜慢性足関節不安定症",
+    "duration": "13分8秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前脛骨筋",
+      "足関節",
+      "捻挫",
+      "慢性足関節不安定症",
+      "バランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Mx0Fq7cG69lj/",
+    "status": ""
+  },
+  {
+    "id": "V258",
+    "courseId": "C258",
+    "title": "前脛骨筋に対する評価とアプローチ",
+    "duration": "10分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前脛骨筋",
+      "足関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tHXiBtRggYCB/",
+    "status": ""
+  },
+  {
+    "id": "V259",
+    "courseId": "C259",
+    "title": "山路がサイドレイズをやらない理由",
+    "duration": "4分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "解剖学",
+      "サイドレイズ",
+      "肩甲上腕リズム",
+      "肩痛",
+      "三角筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Dx_Jm6R-EDcs/",
+    "status": ""
+  },
+  {
+    "id": "V260",
+    "courseId": "C260",
+    "title": "パーソナルトレーニングのテンプレ化の是非",
+    "duration": "6分56秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "パーソナルトレーニング",
+      "パーソナルトレーナー、セッション、テンプレート"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/anrteHAkESef/",
+    "status": ""
+  },
+  {
+    "id": "V261",
+    "courseId": "C261",
+    "title": "アキレス腱障害の疫学",
+    "duration": "10分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "アキレス腱障害",
+      "疫学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/__DsWOyGdUeG/",
+    "status": ""
+  },
+  {
+    "id": "V262",
+    "courseId": "C262",
+    "title": "アキレス腱障害の治療",
+    "duration": "10分17秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "アキレス腱障害",
+      "疫学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ovb_gEDLo7t1/",
+    "status": ""
+  },
+  {
+    "id": "V263",
+    "courseId": "C263",
+    "title": "歩行を基礎から学ぶ｜座学編",
+    "duration": "15分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "歩行"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/S-2gu_Bu8ajH/",
+    "status": ""
+  },
+  {
+    "id": "V264",
+    "courseId": "C264",
+    "title": "歩行を基礎から学ぶ｜実技編①",
+    "duration": "12分56秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "歩行"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8vDVhqvaZ_Qh/",
+    "status": ""
+  },
+  {
+    "id": "V265",
+    "courseId": "C265",
+    "title": "歩行を基礎から学ぶ｜実技編②",
+    "duration": "10分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "歩行"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tzDS_kwe_WAw/",
+    "status": ""
+  },
+  {
+    "id": "V266",
+    "courseId": "C266",
+    "title": "ボクシングパフォーマンスを科学する",
+    "duration": "11分59秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "パフォーマンス",
+      "ボクシング",
+      "パンチ力",
+      "筋力"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/TBV23QbCGn5Y/",
+    "status": ""
+  },
+  {
+    "id": "V267",
+    "courseId": "C267",
+    "title": "筋パワー向上のためのトレーニング",
+    "duration": "12分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "パフォーマンス",
+      "筋力トレーニング",
+      "筋パワー",
+      "筋力"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Kf_cjj5UJ_q3/",
+    "status": ""
+  },
+  {
+    "id": "V268",
+    "courseId": "C268",
+    "title": "運動指導に解剖学は必要なのか？",
+    "duration": "7分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "解剖学",
+      "運動指導",
+      "パーソナルトレーニング",
+      "パーソナルトレーナー"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/DZVqUxpHvYHF/",
+    "status": ""
+  },
+  {
+    "id": "V269",
+    "courseId": "C269",
+    "title": "トレーナー17年目でようやく気付いたランジのフォーム修正",
+    "duration": "8分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ランジ",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/oSE66mkde1At/",
+    "status": ""
+  },
+  {
+    "id": "V270",
+    "courseId": "C270",
+    "title": "ボランティアトレーナーは裏切り者",
+    "duration": "10分31秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "パーソナルトレーナー",
+      "トレーナー",
+      "チーム指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/gqUJnsUKq6Kt/",
+    "status": ""
+  },
+  {
+    "id": "V271",
+    "courseId": "C271",
+    "title": "疼痛減弱テストから考える腰痛①｜触診の基礎からアプローチ",
+    "duration": "9分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰痛",
+      "疼痛減弱テスト",
+      "疼痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/kNSVVEDJfFK8/",
+    "status": ""
+  },
+  {
+    "id": "V272",
+    "courseId": "C272",
+    "title": "疼痛減弱テストから考える腰痛②｜評価実践編",
+    "duration": "13分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰痛",
+      "疼痛減弱テスト",
+      "疼痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/WTChYC_dOiTq/",
+    "status": ""
+  },
+  {
+    "id": "V273",
+    "courseId": "C273",
+    "title": "開業って思ったより楽勝",
+    "duration": "8分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "開業"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zTqhVbv880RR/",
+    "status": ""
+  },
+  {
+    "id": "V274",
+    "courseId": "C274",
+    "title": "速攻で可動域を改善する方法｜理論編",
+    "duration": "3分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "柔軟性",
+      "可動域",
+      "SLR"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/B0ZTtyVD9gVF/",
+    "status": ""
+  },
+  {
+    "id": "V275",
+    "courseId": "C275",
+    "title": "股関節機能改善｜小臀筋に着目①",
+    "duration": "9分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小臀筋",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/91lETslr5TUz/",
+    "status": ""
+  },
+  {
+    "id": "V276",
+    "courseId": "C276",
+    "title": "股関節機能改善｜小臀筋に着目②",
+    "duration": "9分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "小臀筋",
+      "股関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/C1mR-T5FSYOF/",
+    "status": ""
+  },
+  {
+    "id": "V277",
+    "courseId": "C277",
+    "title": "ヒップスラストの知られざるリスク",
+    "duration": "8分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ヒップスラスト",
+      "ヒップアップ",
+      "骨盤",
+      "大臀筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/hB4ANpChQUen/",
+    "status": ""
+  },
+  {
+    "id": "V278",
+    "courseId": "C278",
+    "title": "ヒップスラストは最終奥義？",
+    "duration": "8分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ヒップスラスト",
+      "ヒップアップ",
+      "骨盤",
+      "大臀筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/aJTUv_GQt-W9/",
+    "status": ""
+  },
+  {
+    "id": "V279",
+    "courseId": "C279",
+    "title": "フロントスクワットを活用しよう",
+    "duration": "9分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "フロントスクワット",
+      "スクワット",
+      "胸椎",
+      "肩甲骨",
+      "フォーム",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LMu1eBozSFnZ/",
+    "status": ""
+  },
+  {
+    "id": "V280",
+    "courseId": "C280",
+    "title": "フロントスクワットのエラー",
+    "duration": "11分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "フロントスクワット",
+      "スクワット",
+      "胸椎",
+      "肩甲骨",
+      "フォーム",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xKbtvF0YzwMr/",
+    "status": ""
+  },
+  {
+    "id": "V281",
+    "courseId": "C281",
+    "title": "RDLで見るべき3つのポイント｜座学",
+    "duration": "9分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ルーマニアンデッドリフト",
+      "スクワット",
+      "トレーニング",
+      "動作分析",
+      "OKC",
+      "CKC"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/nEDR7aBRUNqF/",
+    "status": ""
+  },
+  {
+    "id": "V282",
+    "courseId": "C282",
+    "title": "スクワットにおける股関節伸展と膝伸展の違い｜実技",
+    "duration": "9分3秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ルーマニアンデッドリフト",
+      "スクワット",
+      "トレーニング",
+      "動作分析",
+      "OKC",
+      "CKC"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/epVqN5SNuNYa/",
+    "status": ""
+  },
+  {
+    "id": "V283",
+    "courseId": "C283",
+    "title": "ユニラテラルトレーニングを取り入れませんか？",
+    "duration": "6分57秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "片手トレーニング",
+      "片足トレーニング",
+      "片側トレーニング",
+      "ユニラテラル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ElmS5cj_kX_E/",
+    "status": ""
+  },
+  {
+    "id": "V284",
+    "courseId": "C284",
+    "title": "フロントランジの有効活用術",
+    "duration": "6分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ランジ",
+      "フロントランジ",
+      "パフォーマンス",
+      "片手トレーニング",
+      "片足トレーニング",
+      "片側トレーニング",
+      "ユニラテラル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/e4Z1KUw5HaYD/",
+    "status": ""
+  },
+  {
+    "id": "V285",
+    "courseId": "C285",
+    "title": "体幹トレーニングを再考する｜解説編",
+    "duration": "10分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "体幹",
+      "トレーニング",
+      "IAP（腹腔内圧）",
+      "呼吸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/sOVg36hacTn6/",
+    "status": ""
+  },
+  {
+    "id": "V286",
+    "courseId": "C286",
+    "title": "体幹トレーニングを再考する｜実技編",
+    "duration": "8分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "体幹",
+      "トレーニング",
+      "IAP（腹腔内圧）",
+      "呼吸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/0dDVn4Vx37LX/",
+    "status": ""
+  },
+  {
+    "id": "V287",
+    "courseId": "C287",
+    "title": "下肢の動脈に対する施術｜解説編",
+    "duration": "6分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "下肢",
+      "動脈",
+      "血行障害",
+      "血流促進",
+      "大腿動脈",
+      "血圧",
+      "冷え",
+      "足底感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/UZlZftKdPVcP/",
+    "status": ""
+  },
+  {
+    "id": "V288",
+    "courseId": "C288",
+    "title": "下肢の動脈に対する施術｜実技編",
+    "duration": "7分32秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "下肢",
+      "動脈",
+      "血行障害",
+      "血流促進",
+      "大腿動脈",
+      "血圧",
+      "冷え",
+      "足底感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/z7_XvCPmqCkj/",
+    "status": ""
+  },
+  {
+    "id": "V289",
+    "courseId": "C289",
+    "title": "自律神経の調整｜解説編",
+    "duration": "19分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "自律神経",
+      "交感神経",
+      "副交感神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xQQtkgrtqMRq/",
+    "status": ""
+  },
+  {
+    "id": "V290",
+    "courseId": "C290",
+    "title": "自律神経の調整｜実技編",
+    "duration": "9分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "自律神経",
+      "交感神経",
+      "副交感神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tWl56Kk9yFVl/",
+    "status": ""
+  },
+  {
+    "id": "V291",
+    "courseId": "C291",
+    "title": "急性腰痛に対する臀部からのアプローチ｜解説編",
+    "duration": "6分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "急性腰痛",
+      "腰痛",
+      "臀部",
+      "ギックリ腰",
+      "中殿筋",
+      "小殿筋",
+      "腸腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/m9AMDWKiy7ac/",
+    "status": ""
+  },
+  {
+    "id": "V292",
+    "courseId": "C292",
+    "title": "急性腰痛に対する臀部からのアプローチ｜実技編",
+    "duration": "7分8秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "急性腰痛",
+      "腰痛",
+      "臀部",
+      "ギックリ腰",
+      "中殿筋",
+      "小殿筋",
+      "腸腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/m0-A836xJ3oG/",
+    "status": ""
+  },
+  {
+    "id": "V293",
+    "courseId": "C293",
+    "title": "胸椎の可動性が低下している部位の特定と改善｜解説編",
+    "duration": "10分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸椎",
+      "可動域"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ejYPDz-DKvzE/",
+    "status": ""
+  },
+  {
+    "id": "V294",
+    "courseId": "C294",
+    "title": "胸椎の可動性が低下している部位の特定と改善｜実技編",
+    "duration": "12分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "胸椎",
+      "可動域"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v9a_Uy0pJQwH/",
+    "status": ""
+  },
+  {
+    "id": "V295",
+    "courseId": "C295",
+    "title": "PIRを用いた斜角筋への手技｜解説編",
+    "duration": "7分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "PIR",
+      "斜角筋",
+      "寝違い",
+      "しびれ",
+      "斜角筋症候群",
+      "Ib抑制"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/TJNNESJ8YzRd/",
+    "status": ""
+  },
+  {
+    "id": "V296",
+    "courseId": "C296",
+    "title": "PIRを用いた斜角筋への手技｜実技編",
+    "duration": "7分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "PIR",
+      "斜角筋",
+      "寝違い",
+      "しびれ",
+      "斜角筋症候群",
+      "Ib抑制"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/eV7Gp_wp4w3W/",
+    "status": ""
+  },
+  {
+    "id": "V297",
+    "courseId": "C297",
+    "title": "距骨下関節と距腿関節の矯正の分け方｜解説編",
+    "duration": "5分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "距骨下関節",
+      "距腿関節",
+      "矯正"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/HlJIPVzbmxX5/",
+    "status": ""
+  },
+  {
+    "id": "V298",
+    "courseId": "C298",
+    "title": "距骨下関節と距腿関節の矯正の分け方｜実技編",
+    "duration": "4分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "距骨下関節",
+      "距腿関節",
+      "矯正"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7UdiHBlmx5Oz/",
+    "status": ""
+  },
+  {
+    "id": "V299",
+    "courseId": "C299",
+    "title": "筋膜リリースのメカニズム解説",
+    "duration": "6分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "筋膜リリース",
+      "筋膜",
+      "チキソトロピー",
+      "ゲル化",
+      "ゾル化"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4lrvWg5MatCF/",
+    "status": ""
+  },
+  {
+    "id": "V300",
+    "courseId": "C300",
+    "title": "筋膜リリースを用いた三角筋のリリース",
+    "duration": "9分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "三角筋",
+      "筋膜リリース",
+      "筋膜",
+      "浅筋膜",
+      "深筋膜",
+      "肩関節周囲炎",
+      "肩関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vFkRRCSs0wdD/",
+    "status": ""
+  },
+  {
+    "id": "V301",
+    "courseId": "C301",
+    "title": "O脚、XO脚、X脚について｜解説編",
+    "duration": "5分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "O脚",
+      "X脚",
+      "XO脚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8Q9dzp-NBRW6/",
+    "status": ""
+  },
+  {
+    "id": "V302",
+    "courseId": "C302",
+    "title": "O脚、XO脚、X脚について｜実技編",
+    "duration": "7分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "O脚",
+      "X脚",
+      "XO脚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/b5Oj7832AEgV/",
+    "status": ""
+  },
+  {
+    "id": "V303",
+    "courseId": "C303",
+    "title": "顎関節症の施術｜解説編",
+    "duration": "9分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "顎関節",
+      "顎関節症",
+      "咀嚼筋",
+      "斜角筋",
+      "リトラクション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/6Lm-lTaQp0kN/",
+    "status": ""
+  },
+  {
+    "id": "V304",
+    "courseId": "C304",
+    "title": "顎関節症の施術｜実技編",
+    "duration": "15分31秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "顎関節",
+      "顎関節症",
+      "咀嚼筋",
+      "斜角筋",
+      "リトラクション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BO8YZZWhelgJ/",
+    "status": ""
+  },
+  {
+    "id": "V305",
+    "courseId": "C305",
+    "title": "側湾症アプローチ｜解説編",
+    "duration": "12分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "側湾症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/gkrgyZK-hIj4/",
+    "status": ""
+  },
+  {
+    "id": "V306",
+    "courseId": "C306",
+    "title": "側湾症アプローチ｜実技編",
+    "duration": "9分8秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "側湾症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/NlZsJIMDDEIL/",
+    "status": ""
+  },
+  {
+    "id": "V307",
+    "courseId": "C307",
+    "title": "肋骨のリリースについて｜解説編",
+    "duration": "7分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋骨",
+      "胸郭",
+      "胸椎",
+      "自律神経",
+      "ポンプハンドルモーション",
+      "バケットハンドルモーション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4_3hvtWeXMCL/",
+    "status": ""
+  },
+  {
+    "id": "V308",
+    "courseId": "C308",
+    "title": "肋骨のリリースについて｜実技編",
+    "duration": "12分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肋骨",
+      "胸郭",
+      "胸椎",
+      "自律神経",
+      "ポンプハンドルモーション",
+      "バケットハンドルモーション"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/F2klt_b_FUIR/",
+    "status": ""
+  },
+  {
+    "id": "V309",
+    "courseId": "C309",
+    "title": "スクワット時の足関節エラーの対処法｜解説編",
+    "duration": "11分52秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "スクワット",
+      "足関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/GkP1ZFQIuOn5/",
+    "status": ""
+  },
+  {
+    "id": "V310",
+    "courseId": "C310",
+    "title": "スクワット時の足関節エラーの対処法｜実技編",
+    "duration": "12分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "スクワット",
+      "足関節"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/3y71GyG97LvX/",
+    "status": ""
+  },
+  {
+    "id": "V311",
+    "courseId": "C311",
+    "title": "内閉鎖筋から見る膝内側部の痛み｜解説編",
+    "duration": "6分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内閉鎖筋",
+      "膝痛",
+      "深層外旋六筋",
+      "閉鎖神経",
+      "大腿神経",
+      "伏在神経",
+      "内転筋腱裂孔"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MHt_2lYAmRO7/",
+    "status": ""
+  },
+  {
+    "id": "V312",
+    "courseId": "C312",
+    "title": "内閉鎖筋から見る膝内側部の痛み｜実技編",
+    "duration": "9分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "内閉鎖筋",
+      "膝痛",
+      "深層外旋六筋",
+      "閉鎖神経",
+      "大腿神経",
+      "伏在神経",
+      "内転筋腱裂孔"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MvuWNjY9ylHC/",
+    "status": ""
+  },
+  {
+    "id": "V313",
+    "courseId": "C313",
+    "title": "膝裏圧迫痛対処法｜解説編",
+    "duration": "9分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝裏圧迫痛",
+      "膝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Rm8lLY64dxp9/",
+    "status": ""
+  },
+  {
+    "id": "V314",
+    "courseId": "C314",
+    "title": "膝裏圧迫痛対処法｜実技編",
+    "duration": "10分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝裏圧迫痛",
+      "膝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/3jJnahm2CDNY/",
+    "status": ""
+  },
+  {
+    "id": "V315",
+    "courseId": "C315",
+    "title": "肩甲上腕関節の骨頭の位置異常と制限因子について｜解説編",
+    "duration": "11分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩関節",
+      "肩甲上腕関節",
+      "四十肩五十肩",
+      "obligate translation"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/rLSK5jsMh-cw/",
+    "status": ""
+  },
+  {
+    "id": "V316",
+    "courseId": "C316",
+    "title": "肩甲上腕関節の骨頭の位置異常と制限因子について｜実技編",
+    "duration": "9分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩関節",
+      "肩甲上腕関節",
+      "四十肩五十肩",
+      "obligate translation"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/sIujn8wbifTQ/",
+    "status": ""
+  },
+  {
+    "id": "V317",
+    "courseId": "C317",
+    "title": "脊柱管狭窄症 60代女性の足の痺れ｜解説編",
+    "duration": "15分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "症例検討",
+      "脊柱管狭窄症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/9-sFv36GnyI7/",
+    "status": ""
+  },
+  {
+    "id": "V318",
+    "courseId": "C318",
+    "title": "脊柱管狭窄症 60代女性の足の痺れ｜実技編",
+    "duration": "15分46秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "症例検討",
+      "脊柱管狭窄症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xQQdgqlu5cj_/",
+    "status": ""
+  },
+  {
+    "id": "V319",
+    "courseId": "C319",
+    "title": "頸部の症状に対する頭・顔面部からのアプローチ｜解説編",
+    "duration": "8分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "頸部",
+      "胸鎖乳突筋",
+      "後頭下筋群",
+      "寝違え",
+      "自律神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vbGh7g9c7gnH/",
+    "status": ""
+  },
+  {
+    "id": "V320",
+    "courseId": "C320",
+    "title": "頸部の症状に対する頭・顔面部からのアプローチ｜実技編",
+    "duration": "10分12秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "頸部",
+      "胸鎖乳突筋",
+      "後頭下筋群",
+      "寝違え",
+      "自律神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/D9u1gVFglDSC/",
+    "status": ""
+  },
+  {
+    "id": "V321",
+    "courseId": "C321",
+    "title": "モートン病の解説｜解説編",
+    "duration": "9分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "モートン病",
+      "足部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7_QrVGURnHB0/",
+    "status": ""
+  },
+  {
+    "id": "V322",
+    "courseId": "C322",
+    "title": "モートン病の解説｜実技編",
+    "duration": "13分39秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "モートン病",
+      "足部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/qxEA3ivP9C2I/",
+    "status": ""
+  },
+  {
+    "id": "V323",
+    "courseId": "C323",
+    "title": "ホットフラッシュなど熱のこもりへの対処法｜解説編",
+    "duration": "12分11秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "更年期障害",
+      "ホットフラッシュ",
+      "ストレス",
+      "自律神経",
+      "不眠"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/QfKUA1mYZUKx/",
+    "status": ""
+  },
+  {
+    "id": "V324",
+    "courseId": "C324",
+    "title": "ホットフラッシュなど熱のこもりへの対処法｜実技編",
+    "duration": "11分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "更年期障害",
+      "ホットフラッシュ",
+      "ストレス",
+      "自律神経",
+      "不眠"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8F-e6BAkqIsB/",
+    "status": ""
+  },
+  {
+    "id": "V325",
+    "courseId": "C325",
+    "title": "足底腱膜炎について｜解説編",
+    "duration": "10分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "足底腱膜炎",
+      "足底"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MRrZwxq-cXrg/",
+    "status": ""
+  },
+  {
+    "id": "V326",
+    "courseId": "C326",
+    "title": "足底腱膜炎について｜実技編",
+    "duration": "12分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "足底腱膜炎",
+      "足底"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/VmAxzb7BLjTH/",
+    "status": ""
+  },
+  {
+    "id": "V327",
+    "courseId": "C327",
+    "title": "距骨と舟状骨に対するアプローチ｜解説編",
+    "duration": "7分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "距骨",
+      "舟状骨",
+      "ショパール関節",
+      "リスフラン関節",
+      "距腿関節",
+      "扁平足",
+      "ハイアーチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8vqWy2yfhJOs/",
+    "status": ""
+  },
+  {
+    "id": "V328",
+    "courseId": "C328",
+    "title": "距骨と舟状骨に対するアプローチ｜実技編",
+    "duration": "6分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "距骨",
+      "舟状骨",
+      "ショパール関節",
+      "リスフラン関節",
+      "距腿関節",
+      "扁平足",
+      "ハイアーチ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/uvshbcFkepVW/",
+    "status": ""
+  },
+  {
+    "id": "V329",
+    "courseId": "C329",
+    "title": "ドケルバン病の解説｜解説編",
+    "duration": "11分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ドケルバン病",
+      "手首"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/lDC9s5fehyzJ/",
+    "status": ""
+  },
+  {
+    "id": "V330",
+    "courseId": "C330",
+    "title": "ドケルバン病の解説｜実技編",
+    "duration": "9分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ドケルバン病",
+      "手首"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/IrzV6CidQMZe/",
+    "status": ""
+  },
+  {
+    "id": "V331",
+    "courseId": "C331",
+    "title": "舌骨上筋群と舌骨下筋群のアプローチについて｜解説編",
+    "duration": "10分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "嚥下",
+      "呼吸",
+      "咀嚼",
+      "低位舌",
+      "フォアードヘッド",
+      "舌骨上筋群",
+      "舌骨下筋群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/yvgrLt8Pz70u/",
+    "status": ""
+  },
+  {
+    "id": "V332",
+    "courseId": "C332",
+    "title": "舌骨上筋群と舌骨下筋群のアプローチについて｜実技編",
+    "duration": "14分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "嚥下",
+      "呼吸",
+      "咀嚼",
+      "低位舌",
+      "フォアードヘッド",
+      "舌骨上筋群",
+      "舌骨下筋群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/e4bqRE8onzTY/",
+    "status": ""
+  },
+  {
+    "id": "V333",
+    "courseId": "C333",
+    "title": "膝伸展時痛｜解説編",
+    "duration": "8分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝伸展時痛",
+      "膝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BNnD7WNFnRUl/",
+    "status": ""
+  },
+  {
+    "id": "V334",
+    "courseId": "C334",
+    "title": "膝伸展時痛｜実技編",
+    "duration": "10分3秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝伸展時痛",
+      "膝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vcttO7eVZWV7/",
+    "status": ""
+  },
+  {
+    "id": "V335",
+    "courseId": "C335",
+    "title": "股関節のつまりと痛みに対してのアプローチ｜解説編",
+    "duration": "8分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "股関節",
+      "股関節痛",
+      "股関節の詰まり",
+      "大腿直筋",
+      "反回頭",
+      "滑液包",
+      "腸骨大腿靱帯"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/58COtDLLsM4E/",
+    "status": ""
+  },
+  {
+    "id": "V336",
+    "courseId": "C336",
+    "title": "股関節のつまりと痛みに対してのアプローチ｜実技編",
+    "duration": "7分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "股関節",
+      "股関節痛",
+      "股関節の詰まり",
+      "大腿直筋",
+      "反回頭",
+      "滑液包",
+      "腸骨大腿靱帯"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/GfF7BV-Br9E5/",
+    "status": ""
+  },
+  {
+    "id": "V337",
+    "courseId": "C337",
+    "title": "手根管症候群｜解説編",
+    "duration": "7分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "手根管症候群",
+      "手部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/mhdBpyZNqifu/",
+    "status": ""
+  },
+  {
+    "id": "V338",
+    "courseId": "C338",
+    "title": "手根管症候群｜実技編",
+    "duration": "6分56秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "手根管症候群",
+      "手部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/lguqApnn6sQe/",
+    "status": ""
+  },
+  {
+    "id": "V339",
+    "courseId": "C339",
+    "title": "反り腰の原因とアプローチ（腹腔内圧）｜解説編",
+    "duration": "14分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "反り腰",
+      "姿勢",
+      "姿勢改善",
+      "IAP（腹腔内圧）",
+      "胸腔"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/lmHZp29qiKPS/",
+    "status": ""
+  },
+  {
+    "id": "V340",
+    "courseId": "C340",
+    "title": "反り腰の原因とアプローチ（腹腔内圧）｜実技編",
+    "duration": "8分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "反り腰",
+      "姿勢",
+      "姿勢改善",
+      "IAP（腹腔内圧）",
+      "胸腔"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/A_W0b3kffUAh/",
+    "status": ""
+  },
+  {
+    "id": "V341",
+    "courseId": "C341",
+    "title": "大腿部前面に対してのアプローチ法｜解説編",
+    "duration": "10分47秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿四頭筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MgjPwebk_3kW/",
+    "status": ""
+  },
+  {
+    "id": "V342",
+    "courseId": "C342",
+    "title": "大腿部前面に対してのアプローチ法｜実技編",
+    "duration": "9分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腿四頭筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/a_8JgAg-tcS8/",
+    "status": ""
+  },
+  {
+    "id": "V343",
+    "courseId": "C343",
+    "title": "knee-in toe-outに対してのアプローチ｜解説編",
+    "duration": "11分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ニーイン",
+      "膝",
+      "鵞足炎",
+      "回内足",
+      "扁平足",
+      "MCL",
+      "ACL",
+      "シンスプリント"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/K-5sygrNfNBb/",
+    "status": ""
+  },
+  {
+    "id": "V344",
+    "courseId": "C344",
+    "title": "knee-in toe-outに対してのアプローチ｜実技編",
+    "duration": "10分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ニーイン",
+      "膝",
+      "鵞足炎",
+      "回内足",
+      "扁平足",
+      "MCL",
+      "ACL",
+      "シンスプリント"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8ge9ZqTTzafm/",
+    "status": ""
+  },
+  {
+    "id": "V345",
+    "courseId": "C345",
+    "title": "外旋時肩関節前部痛（2ndポジション）｜解説編",
+    "duration": "9分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩関節",
+      "肩関節痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/DitZhIZWAlCJ/",
+    "status": ""
+  },
+  {
+    "id": "V346",
+    "courseId": "C346",
+    "title": "外旋時肩関節前部痛（2ndポジション）｜実技編",
+    "duration": "9分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩関節",
+      "肩関節痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/-0czS4ulIGBf/",
+    "status": ""
+  },
+  {
+    "id": "V347",
+    "courseId": "C347",
+    "title": "横隔神経からの頚部調整｜解説編",
+    "duration": "8分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "横隔神経",
+      "運動連鎖",
+      "胸郭",
+      "肋骨",
+      "猫背",
+      "円背",
+      "巻き肩",
+      "斜角筋症候群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zi7q5XSShUP1/",
+    "status": ""
+  },
+  {
+    "id": "V348",
+    "courseId": "C348",
+    "title": "横隔神経からの頚部調整｜実技編",
+    "duration": "7分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "横隔膜",
+      "横隔神経",
+      "運動連鎖",
+      "胸郭",
+      "肋骨",
+      "猫背",
+      "円背",
+      "巻き肩",
+      "斜角筋症候群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/6TjLLG5r3Nd4/",
+    "status": ""
+  },
+  {
+    "id": "V349",
+    "courseId": "C349",
+    "title": "前腕の張り解消法｜解説編",
+    "duration": "9分10秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前腕",
+      "張り"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/RP1MlA_Ch7-1/",
+    "status": ""
+  },
+  {
+    "id": "V350",
+    "courseId": "C350",
+    "title": "前腕の張り解消法｜実技編",
+    "duration": "8分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "前腕",
+      "張り"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/sj1aY8mdoOYQ/",
+    "status": ""
+  },
+  {
+    "id": "V351",
+    "courseId": "C351",
+    "title": "ギックリ腰に対してアプローチと3つのポイント｜解説編",
+    "duration": "10分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ギックリ腰",
+      "腰痛",
+      "中殿筋",
+      "大腰筋",
+      "脊柱起立筋",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tgqUB98C-qp_/",
+    "status": ""
+  },
+  {
+    "id": "V352",
+    "courseId": "C352",
+    "title": "ギックリ腰に対してアプローチと3つのポイント｜実技編",
+    "duration": "13分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ギックリ腰",
+      "腰痛",
+      "中殿筋",
+      "大腰筋",
+      "脊柱起立筋",
+      "骨盤"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/iqO5HPL8ovku/",
+    "status": ""
+  },
+  {
+    "id": "V353",
+    "courseId": "C353",
+    "title": "脊損への出力向上方法 / 70代動脈硬化へのアプローチ｜解説編",
+    "duration": "11分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "症例検討",
+      "脊損",
+      "動脈硬化",
+      "出力向上"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/jbGCq1XSZPbV/",
+    "status": ""
+  },
+  {
+    "id": "V354",
+    "courseId": "C354",
+    "title": "脊損への出力向上方法 / 70代動脈硬化へのアプローチ｜実技編",
+    "duration": "8分39秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "症例検討",
+      "脊損",
+      "動脈硬化",
+      "出力向上"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/NiEWSPGc6zGl/",
+    "status": ""
+  },
+  {
+    "id": "V355",
+    "courseId": "C355",
+    "title": "手の内在筋と外在筋のケアの必要性｜解説編",
+    "duration": "9分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "手部",
+      "浅指屈筋",
+      "深指屈筋",
+      "総指伸筋",
+      "虫様筋",
+      "掌側骨間筋",
+      "背側骨間筋",
+      "ばね指"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4qa6lNafzoIq/",
+    "status": ""
+  },
+  {
+    "id": "V356",
+    "courseId": "C356",
+    "title": "手の内在筋と外在筋のケアの必要性｜実技編",
+    "duration": "8分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "手部",
+      "浅指屈筋",
+      "深指屈筋",
+      "総指伸筋",
+      "虫様筋",
+      "掌側骨間筋",
+      "背側骨間筋",
+      "ばね指"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/quuRZtYqAtTz/",
+    "status": ""
+  },
+  {
+    "id": "V357",
+    "courseId": "C357",
+    "title": "股関節のobligate translationと腸骨関節包筋について｜解説編",
+    "duration": "6分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "股関節",
+      "obligate translation",
+      "腸骨関節包筋",
+      "深層外旋六筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/U2AO4fbrouT3/",
+    "status": ""
+  },
+  {
+    "id": "V358",
+    "courseId": "C358",
+    "title": "股関節のobligate translationと腸骨関節包筋について｜実技編",
+    "duration": "6分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "股関節",
+      "obligate translation",
+      "腸骨関節包筋",
+      "深層外旋六筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Farnx26pWhFF/",
+    "status": ""
+  },
+  {
+    "id": "V359",
+    "courseId": "C359",
+    "title": "眼精疲労と頭痛へのアプローチ｜解説編",
+    "duration": "8分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "眼精疲労",
+      "頭痛",
+      "帽状腱膜",
+      "前頭筋",
+      "後頭筋",
+      "皺皮筋",
+      "眉毛下制筋",
+      "眼輪筋",
+      "鼻根筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/o86-gzLQN89R/",
+    "status": ""
+  },
+  {
+    "id": "V360",
+    "courseId": "C360",
+    "title": "眼精疲労と頭痛へのアプローチ｜実技編",
+    "duration": "11分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "眼精疲労",
+      "頭痛",
+      "帽状腱膜",
+      "前頭筋",
+      "後頭筋",
+      "皺皮筋",
+      "眉毛下制筋",
+      "眼輪筋",
+      "鼻根筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Qmd5dYQcX7S1/",
+    "status": ""
+  },
+  {
+    "id": "V361",
+    "courseId": "C361",
+    "title": "母指に対してのアプローチ｜解説編",
+    "duration": "9分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "母指",
+      "手部",
+      "ドケルバン病",
+      "短母指伸筋",
+      "長母指伸筋",
+      "外側上顆炎",
+      "テニス肘"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Nhmw6TLAxXxL/",
+    "status": ""
+  },
+  {
+    "id": "V362",
+    "courseId": "C362",
+    "title": "母指に対してのアプローチ｜実技編",
+    "duration": "7分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "母指",
+      "手部",
+      "ドケルバン病",
+      "短母指伸筋",
+      "長母指伸筋",
+      "外側上顆炎",
+      "テニス肘"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v0eHy8tguvJr/",
+    "status": ""
+  },
+  {
+    "id": "V363",
+    "courseId": "C363",
+    "title": "ベンチプレス、ラットプルダウンの時に必要な準備運動について｜解説編",
+    "duration": "9分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ベンチプレス",
+      "ラットプルダウン",
+      "胸椎",
+      "肩甲骨盤リズム",
+      "前鋸筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/lOJg87614GAn/",
+    "status": ""
+  },
+  {
+    "id": "V364",
+    "courseId": "C364",
+    "title": "ベンチプレス、ラットプルダウンの時に必要な準備運動について｜実技編",
+    "duration": "6分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ベンチプレス",
+      "ラットプルダウン",
+      "胸椎",
+      "肩甲骨盤リズム",
+      "前鋸筋",
+      "トレーニング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/kt2FcB9QPWIm/",
+    "status": ""
+  },
+  {
+    "id": "V365",
+    "courseId": "C365",
+    "title": "野球肘における正中神経障害と尺骨神経脱臼について｜解説編",
+    "duration": "11分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "野球肘",
+      "離断性骨軟骨炎",
+      "正中神経",
+      "尺骨神経",
+      "手根管症候群",
+      "肘部管症候群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zdbaxjoftsel/",
+    "status": ""
+  },
+  {
+    "id": "V366",
+    "courseId": "C366",
+    "title": "野球肘における正中神経障害と尺骨神経脱臼について｜実技編",
+    "duration": "14分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "野球肘",
+      "離断性骨軟骨炎",
+      "正中神経",
+      "尺骨神経",
+      "手根管症候群",
+      "肘部管症候群"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/EB35dbFoKYTf/",
+    "status": ""
+  },
+  {
+    "id": "V367",
+    "courseId": "C367",
+    "title": "肩甲骨のポジションと肩凝りについて｜解説編",
+    "duration": "7分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩甲骨",
+      "肩甲胸郭関節",
+      "姿勢",
+      "巻き肩",
+      "肩こり",
+      "肩甲上腕リズム",
+      "僧帽筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/n97xw8cxlppV/",
+    "status": ""
+  },
+  {
+    "id": "V368",
+    "courseId": "C368",
+    "title": "肩甲骨のポジションと肩凝りについて｜実技編",
+    "duration": "8分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肩甲骨",
+      "肩甲胸郭関節",
+      "姿勢",
+      "巻き肩",
+      "肩こり",
+      "肩甲上腕リズム",
+      "僧帽筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YVQ342_QEipd/",
+    "status": ""
+  },
+  {
+    "id": "V369",
+    "courseId": "C369",
+    "title": "虚血性ニューロパチーについて｜解説編",
+    "duration": "8分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "血行不良",
+      "虚血性ニューロパチー",
+      "しびれ",
+      "肩こり",
+      "僧帽筋",
+      "肋骨"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2OoD0Q4CU3T1/",
+    "status": ""
+  },
+  {
+    "id": "V370",
+    "courseId": "C370",
+    "title": "虚血性ニューロパチーについて｜実技編",
+    "duration": "7分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "血行不良",
+      "虚血性ニューロパチー",
+      "しびれ",
+      "肩こり",
+      "僧帽筋",
+      "肋骨"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/t4T2b5anW9U_/",
+    "status": ""
+  },
+  {
+    "id": "V371",
+    "courseId": "C371",
+    "title": "スカルパ三角の詰まりと発生し得る症状｜解説編",
+    "duration": "11分39秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "スカルパ三角",
+      "詰まり",
+      "鼠径靭帯",
+      "長内転筋",
+      "縫工筋",
+      "大腿動脈",
+      "大腿静脈",
+      "大腿神経",
+      "腸腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/p4fR3cpUwspW/",
+    "status": ""
+  },
+  {
+    "id": "V372",
+    "courseId": "C372",
+    "title": "スカルパ三角の詰まりと発生し得る症状｜実技編",
+    "duration": "7分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "スカルパ三角",
+      "詰まり",
+      "鼠径靭帯",
+      "長内転筋",
+      "縫工筋",
+      "大腿動脈",
+      "大腿静脈",
+      "大腿神経",
+      "腸腰筋"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/DJgO25nyDSmz/",
+    "status": ""
+  },
+  {
+    "id": "V373",
+    "courseId": "C373",
+    "title": "腹斜筋を用いた腰痛へのアプローチ｜解説編",
+    "duration": "5分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "内腹斜筋",
+      "腹横筋",
+      "腰方形筋",
+      "腰背腱膜",
+      "腰痛",
+      "背部痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/WKx-nI-j53PN/",
+    "status": ""
+  },
+  {
+    "id": "V374",
+    "courseId": "C374",
+    "title": "腹斜筋を用いた腰痛へのアプローチ｜実技編",
+    "duration": "6分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外腹斜筋",
+      "内腹斜筋",
+      "腹横筋",
+      "腰方形筋",
+      "腰背腱膜",
+      "腰痛",
+      "背部痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/S9If3FBqp4Fh/",
+    "status": ""
+  },
+  {
+    "id": "V375",
+    "courseId": "C375",
+    "title": "棘下筋のトリガーポイントについて｜解説編",
+    "duration": "6分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "ローテータカフ",
+      "腱板",
+      "トリガーポイント"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JfM2d5dMXygl/",
+    "status": ""
+  },
+  {
+    "id": "V376",
+    "courseId": "C376",
+    "title": "棘下筋のトリガーポイントについて｜実技編",
+    "duration": "9分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "棘下筋",
+      "ローテータカフ",
+      "腱板",
+      "トリガーポイント"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/a6wW6Y_pVY9l/",
+    "status": ""
+  },
+  {
+    "id": "V377",
+    "courseId": "C377",
+    "title": "深臀部症候群について｜解説編",
+    "duration": "8分11秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "深臀部症候群",
+      "梨状筋症候群",
+      "坐骨神経痛",
+      "ハムストリングス",
+      "深層外旋六筋",
+      "臀部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/1XNeEe17BBVz/",
+    "status": ""
+  },
+  {
+    "id": "V378",
+    "courseId": "C378",
+    "title": "深臀部症候群について｜実技編",
+    "duration": "8分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "深臀部症候群",
+      "梨状筋症候群",
+      "坐骨神経痛",
+      "ハムストリングス",
+      "深層外旋六筋",
+      "臀部"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/9EO9AtLw7tsj/",
+    "status": ""
+  },
+  {
+    "id": "V379",
+    "courseId": "C379",
+    "title": "外反母趾と背屈制限について｜解説編",
+    "duration": "7分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外反母趾",
+      "長母趾屈筋腱",
+      "載距突起",
+      "絞扼障害",
+      "滑走障害",
+      "背屈制限"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/rwSQ8s_aCPjQ/",
+    "status": ""
+  },
+  {
+    "id": "V380",
+    "courseId": "C380",
+    "title": "外反母趾と背屈制限について｜実技編",
+    "duration": "6分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "外反母趾",
+      "長母趾屈筋腱",
+      "載距突起",
+      "絞扼障害",
+      "滑走障害",
+      "背屈制限"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/PbKXW-XzD7Iz/",
+    "status": ""
+  },
+  {
+    "id": "V381",
+    "courseId": "C381",
+    "title": "腰椎分離症とすべり症についてのアプローチ｜解説編",
+    "duration": "7分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰椎分離症",
+      "腰椎すべり症",
+      "偽関節",
+      "神経障害",
+      "反り腰",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JwG4X5GA1Qnl/",
+    "status": ""
+  },
+  {
+    "id": "V382",
+    "courseId": "C382",
+    "title": "腰椎分離症とすべり症についてのアプローチ｜実技編",
+    "duration": "7分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腰椎分離症",
+      "腰椎すべり症",
+      "偽関節",
+      "神経障害",
+      "反り腰",
+      "腰痛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MQH4PJlk5SyB/",
+    "status": ""
+  },
+  {
+    "id": "V383",
+    "courseId": "C383",
+    "title": "膝痛に関する膝蓋下脂肪体の見方と改善法｜解説編",
+    "duration": "7分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝蓋下脂肪体",
+      "スクリューフォームムーブメント",
+      "膝痛",
+      "OA"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/3mzSw1FBZ-_R/",
+    "status": ""
+  },
+  {
+    "id": "V384",
+    "courseId": "C384",
+    "title": "膝痛に関する膝蓋下脂肪体の見方と改善法｜実技編",
+    "duration": "8分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "膝蓋下脂肪体",
+      "スクリューフォームムーブメント",
+      "膝痛",
+      "OA"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/OLn9kZS_h0dc/",
+    "status": ""
+  },
+  {
+    "id": "V385",
+    "courseId": "C385",
+    "title": "反り腰の原因とアプローチ（胸椎）｜解説編",
+    "duration": "5分42秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "反り腰",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/50cCni0k2wnV/",
+    "status": ""
+  },
+  {
+    "id": "V386",
+    "courseId": "C386",
+    "title": "反り腰の原因とアプローチ（胸椎）｜実技編",
+    "duration": "6分47秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "反り腰",
+      "姿勢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/EizQxIt-agEl/",
+    "status": ""
+  },
+  {
+    "id": "V387",
+    "courseId": "C387",
+    "title": "つわり期の吐き気に対する評価と安全なアプローチ｜解説編",
+    "duration": "9分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "つわり",
+      "悪阻",
+      "妊娠",
+      "嘔吐中枢",
+      "内関",
+      "足三里"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/i4ghBaZ--rAe/",
+    "status": ""
+  },
+  {
+    "id": "V388",
+    "courseId": "C388",
+    "title": "つわり期の吐き気に対する評価と安全なアプローチ｜実技編",
+    "duration": "10分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "つわり",
+      "悪阻",
+      "妊娠",
+      "嘔吐中枢",
+      "内関",
+      "足三里"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/SoUTJKs-Kh9T/",
+    "status": ""
+  },
+  {
+    "id": "V389",
+    "courseId": "C389",
+    "title": "タイ古式マッサージ｜脚バリエーション①【全体】",
+    "duration": "6分59秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/AQC1wGFOvP9j/",
+    "status": ""
+  },
+  {
+    "id": "V390",
+    "courseId": "C390",
+    "title": "タイ古式マッサージ｜脚バリエーション②【大腿部外側】",
+    "duration": "7分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2KyQtA28NwBO/",
+    "status": ""
+  },
+  {
+    "id": "V391",
+    "courseId": "C391",
+    "title": "タイ古式マッサージ｜脚バリエーション③【全体】",
+    "duration": "7分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Y8j0q5ohceOJ/",
+    "status": ""
+  },
+  {
+    "id": "V392",
+    "courseId": "C392",
+    "title": "タイ古式マッサージ｜脚バリエーション④【ストレッチ】",
+    "duration": "9分36秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LumI8H77_M69/",
+    "status": ""
+  },
+  {
+    "id": "V393",
+    "courseId": "C393",
+    "title": "タイ古式マッサージ｜脚バリエーション⑤【仰臥位足部】",
+    "duration": "9分57秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/9OE9wXQUorS0/",
+    "status": ""
+  },
+  {
+    "id": "V394",
+    "courseId": "C394",
+    "title": "タイ古式マッサージ｜脚バリエーション⑥【伏臥位足部】",
+    "duration": "8分47秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/staDnFO4JlpP/",
+    "status": ""
+  },
+  {
+    "id": "V395",
+    "courseId": "C395",
+    "title": "タイ古式マッサージ｜脚バリエーション⑦【仰臥位大腿後面】",
+    "duration": "7分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/_O74U-VO1DFW/",
+    "status": ""
+  },
+  {
+    "id": "V396",
+    "courseId": "C396",
+    "title": "タイ古式マッサージ｜脚バリエーション⑧【仰臥位大腿後面】",
+    "duration": "7分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/EweFdG2FTPND/",
+    "status": ""
+  },
+  {
+    "id": "V397",
+    "courseId": "C397",
+    "title": "タイ古式マッサージ｜腕バリエーション①【feet press】",
+    "duration": "6分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/WTuQ17Ma7qQp/",
+    "status": ""
+  },
+  {
+    "id": "V398",
+    "courseId": "C398",
+    "title": "タイ古式マッサージ｜腕バリエーション②【横臥位】",
+    "duration": "9分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zLB7NJISU_65/",
+    "status": ""
+  },
+  {
+    "id": "V399",
+    "courseId": "C399",
+    "title": "タイ古式マッサージ｜横臥位バリエーション①【下半身】",
+    "duration": "6分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/_ggaDYqKQ7f7/",
+    "status": ""
+  },
+  {
+    "id": "V400",
+    "courseId": "C400",
+    "title": "タイ古式マッサージ｜横臥位バリエーション②【上半身】",
+    "duration": "7分4秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/lR_g8_64-SM_/",
+    "status": ""
+  },
+  {
+    "id": "V401",
+    "courseId": "C401",
+    "title": "タイ古式マッサージ｜伏臥位バリエーション①",
+    "duration": "6分39秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/RvXiqYxscUXM/",
+    "status": ""
+  },
+  {
+    "id": "V402",
+    "courseId": "C402",
+    "title": "タイ古式マッサージ｜伏臥位バリエーション②",
+    "duration": "13分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/V0y1B3k_KhDZ/",
+    "status": ""
+  },
+  {
+    "id": "V403",
+    "courseId": "C403",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション①",
+    "duration": "8分3秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/mq8geWhOMB19/",
+    "status": ""
+  },
+  {
+    "id": "V404",
+    "courseId": "C404",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション②【イントロ】",
+    "duration": "9分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Yue0AdlENYvS/",
+    "status": ""
+  },
+  {
+    "id": "V405",
+    "courseId": "C405",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション③【イントロ～脚】",
+    "duration": "14分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/uUvAUOf7ddWK/",
+    "status": ""
+  },
+  {
+    "id": "V406",
+    "courseId": "C406",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション④【フロー重視】",
+    "duration": "13分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tUVl_Kyk-EEn/",
+    "status": ""
+  },
+  {
+    "id": "V407",
+    "courseId": "C407",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション⑤ 【下半身と上半身を繋げる】",
+    "duration": "5分34秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/SwOgmQnXiROy/",
+    "status": ""
+  },
+  {
+    "id": "V408",
+    "courseId": "C408",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション⑥ 【上半身】",
+    "duration": "6分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/NE4UeW_ENyGB/",
+    "status": ""
+  },
+  {
+    "id": "V409",
+    "courseId": "C409",
+    "title": "タイ古式マッサージ｜仰臥位バリエーション⑦ 【下半身】",
+    "duration": "9分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/PHsjU3YGD3rJ/",
+    "status": ""
+  },
+  {
+    "id": "V410",
+    "courseId": "C410",
+    "title": "タイ古式マッサージ｜座位バリエーション①",
+    "duration": "6分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/jgZsj-AbYhRH/",
+    "status": ""
+  },
+  {
+    "id": "V411",
+    "courseId": "C411",
+    "title": "タイ古式マッサージ｜座位バリエーション②",
+    "duration": "9分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/M1iG8BzBD3em/",
+    "status": ""
+  },
+  {
+    "id": "V412",
+    "courseId": "C412",
+    "title": "タイ古式マッサージ｜座位バリエーション③",
+    "duration": "7分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/7G-tWC8DB324/",
+    "status": ""
+  },
+  {
+    "id": "V413",
+    "courseId": "C413",
+    "title": "タイ古式マッサージ｜座位バリエーション④",
+    "duration": "11分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/V62jWEhgIpbu/",
+    "status": ""
+  },
+  {
+    "id": "V414",
+    "courseId": "C414",
+    "title": "一般的なタイマッサージサロンの施術の流れや設備",
+    "duration": "5分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "タイ古式マッサージ"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BKnYD0yyQ_Sj/",
+    "status": ""
+  },
+  {
+    "id": "V415",
+    "courseId": "C415",
+    "title": "ダイエットにおける目標体重までの減量プログラム作成例の解説",
+    "duration": "9分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "消費カロリー",
+      "摂取カロリー",
+      "体重",
+      "プログラミング",
+      "食事指導",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Nv8RP2QRzIU_/",
+    "status": ""
+  },
+  {
+    "id": "V416",
+    "courseId": "C416",
+    "title": "咀嚼回数とエネルギー消費の関係",
+    "duration": "7分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "消費カロリー",
+      "代謝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v9nIMyFtoU5h/",
+    "status": ""
+  },
+  {
+    "id": "V417",
+    "courseId": "C417",
+    "title": "現代社会を考慮した食事戦略",
+    "duration": "10分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "食事指導",
+      "現代社会"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LwpmvauIabTp/",
+    "status": ""
+  },
+  {
+    "id": "V418",
+    "courseId": "C418",
+    "title": "指導における優先順位と影響力を考える",
+    "duration": "12分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "優先順位",
+      "食事指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/nLHpP8CGfSnF/",
+    "status": ""
+  },
+  {
+    "id": "V419",
+    "courseId": "C419",
+    "title": "栄養素の全体像",
+    "duration": "10分3秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "栄養素",
+      "エネルギー産生栄養素",
+      "微量栄養素",
+      "ファイトケミカル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4mFxC24my80W/",
+    "status": ""
+  },
+  {
+    "id": "V420",
+    "courseId": "C420",
+    "title": "脂質の選び方",
+    "duration": "10分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脂質",
+      "飽和脂肪酸",
+      "不飽和脂肪酸"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/aJ1IM6FiSoDI/",
+    "status": ""
+  },
+  {
+    "id": "V421",
+    "courseId": "C421",
+    "title": "オルトレキシアと健康について",
+    "duration": "15分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "オルトレキシア",
+      "新型摂食障害"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/W63rFEeXzTON/",
+    "status": ""
+  },
+  {
+    "id": "V422",
+    "courseId": "C422",
+    "title": "「冷え」と「ダイエット」",
+    "duration": "19分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "冷え",
+      "ダイエット",
+      "代謝",
+      "冷え性",
+      "体温"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/hxv00jvFNmFM/",
+    "status": ""
+  },
+  {
+    "id": "V423",
+    "courseId": "C423",
+    "title": "体内の抗酸化システムの概要",
+    "duration": "10分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "抗酸化",
+      "酸化ストレス",
+      "アンチエイジング",
+      "ファイトケミカル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/VEk1P-TnnC4F/",
+    "status": ""
+  },
+  {
+    "id": "V424",
+    "courseId": "C424",
+    "title": "女性の不妊と栄養",
+    "duration": "9分24秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "不妊",
+      "女性",
+      "妊娠"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/CsUF_3lSjftt/",
+    "status": ""
+  },
+  {
+    "id": "V425",
+    "courseId": "C425",
+    "title": "ダイエットの最適な時期",
+    "duration": "15分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "体重",
+      "プログラミング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ZLdHik9Dk6vA/",
+    "status": ""
+  },
+  {
+    "id": "V426",
+    "courseId": "C426",
+    "title": "水分摂取の重要性を改めて考える",
+    "duration": "11分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "水分摂取",
+      "栄養指導",
+      "健康管理",
+      "ダイエット",
+      "体温",
+      "体重",
+      "代謝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Cw6AsgGj_oI3/",
+    "status": ""
+  },
+  {
+    "id": "V427",
+    "courseId": "C427",
+    "title": "血圧コントロール①｜血圧に関する基礎知識",
+    "duration": "10分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "血圧",
+      "食事指導",
+      "運動指導",
+      "高血圧",
+      "肥満",
+      "生活習慣病",
+      "減塩"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/FVXliOfizkIH/",
+    "status": ""
+  },
+  {
+    "id": "V428",
+    "courseId": "C428",
+    "title": "血圧コントロール②｜食事と運動指導時のポイント",
+    "duration": "12分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "血圧",
+      "食事指導",
+      "運動指導",
+      "高血圧",
+      "肥満",
+      "生活習慣病",
+      "減塩"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/c-TkN5hT7N1e/",
+    "status": ""
+  },
+  {
+    "id": "V429",
+    "courseId": "C429",
+    "title": "サプリメントとエビデンス",
+    "duration": "11分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "サプリメント",
+      "エビデンス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Wwrcq8Ns6Fuc/",
+    "status": ""
+  },
+  {
+    "id": "V430",
+    "courseId": "C430",
+    "title": "腸内環境と肥満の関係",
+    "duration": "8分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腸内環境",
+      "肥満"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Cw_Sb4_9TlK0/",
+    "status": ""
+  },
+  {
+    "id": "V431",
+    "courseId": "C431",
+    "title": "脳腸相関の視点を持つ",
+    "duration": "14分39秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "脳腸相関",
+      "脳腸軸",
+      "腸内環境"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v5Bj2gWTFGuM/",
+    "status": ""
+  },
+  {
+    "id": "V432",
+    "courseId": "C432",
+    "title": "栄養の過程を阻害する要因と優先順位",
+    "duration": "8分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "優先順位"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/F5t6csMgLSWw/",
+    "status": ""
+  },
+  {
+    "id": "V433",
+    "courseId": "C433",
+    "title": "肥満の定義と分類",
+    "duration": "17分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "肥満",
+      "脂肪分類",
+      "内臓脂肪",
+      "生活習慣病",
+      "脂質異常症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/i8_-BXd6qvVQ/",
+    "status": ""
+  },
+  {
+    "id": "V434",
+    "courseId": "C434",
+    "title": "血糖コントロールの基礎知識",
+    "duration": "17分41秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "血糖値",
+      "糖尿病",
+      "生活習慣病",
+      "血糖値スパイク",
+      "高血糖",
+      "食事指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Q_eyMgjgK9Cy/",
+    "status": ""
+  },
+  {
+    "id": "V435",
+    "courseId": "C435",
+    "title": "食欲を司る要素",
+    "duration": "11分31秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "食欲",
+      "ホルモン",
+      "ダイエット",
+      "味覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/UdHSErDhyJ4i/",
+    "status": ""
+  },
+  {
+    "id": "V436",
+    "courseId": "C436",
+    "title": "炎症を抑える栄養戦略の考え方",
+    "duration": "8分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "炎症",
+      "食事指導",
+      "腸内環境",
+      "脂質"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/bRWEKg28u53_/",
+    "status": ""
+  },
+  {
+    "id": "V437",
+    "courseId": "C437",
+    "title": "短期減量の考え方",
+    "duration": "17分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/8r4ubJMdn-WO/",
+    "status": ""
+  },
+  {
+    "id": "V438",
+    "courseId": "C438",
+    "title": "停滞期の考え方",
+    "duration": "12分52秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "停滞期",
+      "リバウンド"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/p6pq39DiRLNZ/",
+    "status": ""
+  },
+  {
+    "id": "V439",
+    "courseId": "C439",
+    "title": "レジスタントスターチ 効果と活用方法",
+    "duration": "15分46秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "腸内環境",
+      "腸活",
+      "レジスタントスターチ",
+      "炭水化物",
+      "食物繊維"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/fIqJFqtVAv1y/",
+    "status": ""
+  },
+  {
+    "id": "V440",
+    "courseId": "C440",
+    "title": "便秘のタイプ別 評価と指導方法",
+    "duration": "13分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "便秘",
+      "ダイエット",
+      "腸内環境",
+      "デトックス",
+      "食物繊維"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/vjj4TL6fNxGi/",
+    "status": ""
+  },
+  {
+    "id": "V441",
+    "courseId": "C441",
+    "title": "更年期障害への栄養的アプローチ",
+    "duration": "13分23秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "更年期障害",
+      "女性",
+      "ファイトケミカル"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/akerDgQQH-DR/",
+    "status": ""
+  },
+  {
+    "id": "V442",
+    "courseId": "C442",
+    "title": "GI値とGL値の概要と考え方",
+    "duration": "7分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "GI値",
+      "GL値",
+      "血糖値",
+      "糖質"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/WI5fwutn1X_G/",
+    "status": ""
+  },
+  {
+    "id": "V443",
+    "courseId": "C443",
+    "title": "ファスティングの意義",
+    "duration": "14分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ファスティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/g2k9HrMVWvrH/",
+    "status": ""
+  },
+  {
+    "id": "V444",
+    "courseId": "C444",
+    "title": "薄毛と食を考える",
+    "duration": "14分26秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "薄毛"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/S_CkIzERThn6/",
+    "status": ""
+  },
+  {
+    "id": "V445",
+    "courseId": "C445",
+    "title": "代謝アップのための炭水化物の役割と選択",
+    "duration": "10分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "炭水化物",
+      "代謝",
+      "ダイエット",
+      "PFCバランス",
+      "痩せない",
+      "カロリー制限"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/X43GV3yt_MQf/",
+    "status": ""
+  },
+  {
+    "id": "V446",
+    "courseId": "C446",
+    "title": "体温の重要性とモニタリング方法",
+    "duration": "10分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "代謝アップ",
+      "代謝",
+      "免疫機能",
+      "評価指標",
+      "体温"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/g3sArPUsAxPT/",
+    "status": ""
+  },
+  {
+    "id": "V447",
+    "courseId": "C447",
+    "title": "日常生活における疲労",
+    "duration": "13分46秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "疲労",
+      "日常生活",
+      "健康",
+      "汎適応症候群",
+      "自律神経"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/fEE4Ye7SsgT9/",
+    "status": ""
+  },
+  {
+    "id": "V448",
+    "courseId": "C448",
+    "title": "運動時の疲労",
+    "duration": "16分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "疲労",
+      "運動",
+      "グリコーゲン",
+      "神経系"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ZFt-sbcRCMEQ/",
+    "status": ""
+  },
+  {
+    "id": "V449",
+    "courseId": "C449",
+    "title": "肥満の現状①",
+    "duration": "17分27秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/s4kUxsCqf6A2/",
+    "status": ""
+  },
+  {
+    "id": "V450",
+    "courseId": "C450",
+    "title": "肥満の現状②",
+    "duration": "15分33秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/pEq6GEniFaZX/",
+    "status": ""
+  },
+  {
+    "id": "V451",
+    "courseId": "C451",
+    "title": "遺伝と体質①｜歴史的背景と特徴",
+    "duration": "12分54秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "遺伝子",
+      "エピジェネティクス",
+      "遺伝",
+      "体質",
+      "体質改善"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/t9BTUE8knb9K/",
+    "status": ""
+  },
+  {
+    "id": "V452",
+    "courseId": "C452",
+    "title": "遺伝と体質②｜遺伝子とエピジェネティクス",
+    "duration": "10分11秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "遺伝子",
+      "エピジェネティクス",
+      "遺伝",
+      "体質",
+      "体質改善"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/1wAzM7IDgvkp/",
+    "status": ""
+  },
+  {
+    "id": "V453",
+    "courseId": "C453",
+    "title": "カロリー計算はいるのか・いらないのか",
+    "duration": "9分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/LClyz_iU21lI/",
+    "status": ""
+  },
+  {
+    "id": "V454",
+    "courseId": "C454",
+    "title": "効率的・安全なダイエットプログラム構築のために必要なエネルギー計算",
+    "duration": "12分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "カロリー",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4hChcgXKPq9e/",
+    "status": ""
+  },
+  {
+    "id": "V455",
+    "courseId": "C455",
+    "title": "肥満化する世界",
+    "duration": "17分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/OoZEVrhqm03c/",
+    "status": ""
+  },
+  {
+    "id": "V456",
+    "courseId": "C456",
+    "title": "肥満を吟味する",
+    "duration": "17分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/JRcPizZVlxNq/",
+    "status": ""
+  },
+  {
+    "id": "V457",
+    "courseId": "C457",
+    "title": "牛乳に対する考え方①｜メリットとリスク因子",
+    "duration": "9分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "牛乳",
+      "乳糖不耐症",
+      "アレルギー",
+      "脂質",
+      "カゼイン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/k7IVYl6goXyO/",
+    "status": ""
+  },
+  {
+    "id": "V458",
+    "courseId": "C458",
+    "title": "牛乳に対する考え方②｜選ぶポイントと総合的な評価",
+    "duration": "8分45秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "牛乳",
+      "乳糖不耐症",
+      "アレルギー",
+      "脂質",
+      "カゼイン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ePXuNPSbI1vB/",
+    "status": ""
+  },
+  {
+    "id": "V459",
+    "courseId": "C459",
+    "title": "酸塩基平衡｜身体の酸性とアルカリ性のバランスの取り方",
+    "duration": "7分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "酸性",
+      "アルカリ性",
+      "pH",
+      "酸塩基平衡",
+      "生理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/RFzTvqqis1uS/",
+    "status": ""
+  },
+  {
+    "id": "V460",
+    "courseId": "C460",
+    "title": "食事と体内PHの関係",
+    "duration": "7分0秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "酸性",
+      "アルカリ性",
+      "pH",
+      "酸塩基平衡",
+      "生理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/DLmY8hZ1qmxF/",
+    "status": ""
+  },
+  {
+    "id": "V461",
+    "courseId": "C461",
+    "title": "先進国で日本だけ低体重化①",
+    "duration": "10分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "低体重",
+      "ルッキズム"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xLz9jeKBdfMh/",
+    "status": ""
+  },
+  {
+    "id": "V462",
+    "courseId": "C462",
+    "title": "先進国で日本だけ低体重化②",
+    "duration": "15分22秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "低体重",
+      "ルッキズム"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/nuw1YRAiEFfI/",
+    "status": ""
+  },
+  {
+    "id": "V463",
+    "courseId": "C463",
+    "title": "胃の機能と役割｜食べても良くならない原因は胃かも？",
+    "duration": "12分49秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "消化",
+      "吸収",
+      "胃",
+      "胃腸機能",
+      "栄養不足",
+      "食事指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ySxNF4nxhfRA/",
+    "status": ""
+  },
+  {
+    "id": "V464",
+    "courseId": "C464",
+    "title": "食事による精神的影響",
+    "duration": "14分8秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "メンタル",
+      "精神安定",
+      "ダイエット"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/cZdgpgUKoVRf/",
+    "status": ""
+  },
+  {
+    "id": "V465",
+    "courseId": "C465",
+    "title": "PMSが姿勢バランスと運動感覚に与える影響",
+    "duration": "5分50秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "月経",
+      "PMS",
+      "姿勢",
+      "女性",
+      "体性感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/wa1iKSBxNzSe/",
+    "status": ""
+  },
+  {
+    "id": "V466",
+    "courseId": "C466",
+    "title": "月経周期における姿勢制御の変化",
+    "duration": "7分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "月経",
+      "PMS",
+      "姿勢",
+      "女性",
+      "体性感覚"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2YN6yGgg-BGA/",
+    "status": ""
+  },
+  {
+    "id": "V467",
+    "courseId": "C467",
+    "title": "ルッキズムの弊害とメンタルヘルス",
+    "duration": "11分9秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ルッキズム",
+      "メンタルヘルス",
+      "行動変容"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/oL9DR7m4ZVN_/",
+    "status": ""
+  },
+  {
+    "id": "V468",
+    "courseId": "C468",
+    "title": "ルッキズムの弊害に対する指導のポイント",
+    "duration": "11分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ルッキズム",
+      "メンタルヘルス",
+      "行動変容"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MyjX79HqZwsE/",
+    "status": ""
+  },
+  {
+    "id": "V469",
+    "courseId": "C469",
+    "title": "朝食は必要なのか？①｜基本的な食事の回数とタイミング",
+    "duration": "6分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "朝食",
+      "食事回数",
+      "低血糖",
+      "自律神経",
+      "ファスティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/nobun2jBSJKG/",
+    "status": ""
+  },
+  {
+    "id": "V470",
+    "courseId": "C470",
+    "title": "朝食は必要なのか？②｜朝食の役割と内容",
+    "duration": "10分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "朝食",
+      "食事回数",
+      "低血糖",
+      "自律神経",
+      "ファスティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/OkyAYpsCnHD2/",
+    "status": ""
+  },
+  {
+    "id": "V471",
+    "courseId": "C471",
+    "title": "減量中におけるリフィードの効果",
+    "duration": "17分20秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "リフィード",
+      "ダイエットブレイク"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/b0UCMLYSP2ZI/",
+    "status": ""
+  },
+  {
+    "id": "V472",
+    "courseId": "C472",
+    "title": "糖尿病に関連する筋の生理学",
+    "duration": "14分6秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "生理学",
+      "血糖値",
+      "糖尿病",
+      "骨格筋",
+      "ミトコンドリア",
+      "生理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/s2XvNIHyOMY7/",
+    "status": ""
+  },
+  {
+    "id": "V473",
+    "courseId": "C473",
+    "title": "暦年齢と生物学的年齢",
+    "duration": "9分52秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "年齢",
+      "生物学的年齢",
+      "アンチエイジング",
+      "食事指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/OCOBF2NGIz7d/",
+    "status": ""
+  },
+  {
+    "id": "V474",
+    "courseId": "C474",
+    "title": "生物学的年齢に影響を与える食事とは",
+    "duration": "11分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "年齢",
+      "生物学的年齢",
+      "アンチエイジング",
+      "食事指導"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/v82Z0k_93Wt0/",
+    "status": ""
+  },
+  {
+    "id": "V475",
+    "courseId": "C475",
+    "title": "鉄欠乏の評価｜鉄の役割と評価指標",
+    "duration": "11分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "鉄分",
+      "鉄欠乏",
+      "貧血",
+      "月経",
+      "ミネラル",
+      "倦怠感",
+      "体力"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/5DnF2IgaLuOl/",
+    "status": ""
+  },
+  {
+    "id": "V476",
+    "courseId": "C476",
+    "title": "鉄欠乏の改善｜食品の選択と食べ合わせ",
+    "duration": "11分43秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "鉄分",
+      "鉄欠乏",
+      "貧血",
+      "月経",
+      "ミネラル",
+      "倦怠感",
+      "体力"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YcxVtvEEdEQk/",
+    "status": ""
+  },
+  {
+    "id": "V477",
+    "courseId": "C477",
+    "title": "摂取カロリーは1日単位でみるべき？1食単位でみるべき？",
+    "duration": "7分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "カロリー",
+      "朝食",
+      "ファスティング"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/hyQBCh-kJ33J/",
+    "status": ""
+  },
+  {
+    "id": "V478",
+    "courseId": "C478",
+    "title": "筋肥大と健康",
+    "duration": "6分41秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "筋肥大",
+      "長寿",
+      "ミトコンドリア",
+      "生理学"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/-kxrfVEGaNid/",
+    "status": ""
+  },
+  {
+    "id": "V479",
+    "courseId": "C479",
+    "title": "甲状腺機能について｜基礎知識",
+    "duration": "8分2秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "甲状腺",
+      "甲状腺ホルモン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/u6F-EqSjzW3K/",
+    "status": ""
+  },
+  {
+    "id": "V480",
+    "courseId": "C480",
+    "title": "甲状腺機能亢進症について",
+    "duration": "18分55秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "バセドウ病",
+      "甲状腺",
+      "甲状腺機能",
+      "甲状腺機能亢進症",
+      "疲労",
+      "甲状腺ホルモン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zK8BVjv0gSTN/",
+    "status": ""
+  },
+  {
+    "id": "V481",
+    "courseId": "C481",
+    "title": "甲状腺機能低下症について",
+    "duration": "12分32秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "甲状腺",
+      "甲状腺機能",
+      "甲状腺機能低下症",
+      "疲労",
+      "甲状腺ホルモン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/YJUXk8wfI3Dx/",
+    "status": ""
+  },
+  {
+    "id": "V482",
+    "courseId": "C482",
+    "title": "甘いものがやめられない原因と対策",
+    "duration": "14分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "甲状腺",
+      "甲状腺機能",
+      "甲状腺機能低下症",
+      "疲労",
+      "甲状腺ホルモン"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/mpNX4rst1Eae/",
+    "status": ""
+  },
+  {
+    "id": "V483",
+    "courseId": "C483",
+    "title": "赤血球の凝集①｜運動のパフォーマンス低下との関連",
+    "duration": "7分57秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "赤血球",
+      "血液",
+      "持久力",
+      "運動パフォーマンス",
+      "血栓",
+      "エネルギー代謝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/0MweWH_Plw2C/",
+    "status": ""
+  },
+  {
+    "id": "V484",
+    "courseId": "C484",
+    "title": "赤血球の凝集②｜運動のパフォーマンス低下との関連",
+    "duration": "15分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "赤血球",
+      "血液",
+      "持久力",
+      "運動パフォーマンス",
+      "血栓",
+      "エネルギー代謝"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/_QxCC4n4gAsG/",
+    "status": ""
+  },
+  {
+    "id": "V485",
+    "courseId": "C485",
+    "title": "脳腸軸から見る肥満へのアプローチ①",
+    "duration": "16分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満",
+      "ダイエット",
+      "脳腸軸",
+      "腸内環境",
+      "脳腸相関"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MOdBOGMaC3rR/",
+    "status": ""
+  },
+  {
+    "id": "V486",
+    "courseId": "C486",
+    "title": "脳腸軸から見る肥満へのアプローチ②",
+    "duration": "10分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "肥満",
+      "ダイエット",
+      "脳腸軸",
+      "腸内環境",
+      "脳腸相関"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/IFworMD_EIRq/",
+    "status": ""
+  },
+  {
+    "id": "V487",
+    "courseId": "C487",
+    "title": "大腸の働きと下痢｜基礎知識",
+    "duration": "8分53秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腸",
+      "下痢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/evaCyjWP89LN/",
+    "status": ""
+  },
+  {
+    "id": "V488",
+    "courseId": "C488",
+    "title": "下痢の分類｜原因と対策",
+    "duration": "11分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "大腸",
+      "下痢"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/N3M6CUf7Tt7S/",
+    "status": ""
+  },
+  {
+    "id": "V489",
+    "courseId": "C489",
+    "title": "カフェインと運動パフォーマンス",
+    "duration": "10分5秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "カフェイン",
+      "運動パフォーマンス",
+      "持久力",
+      "筋力向上"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/fS9S2lNHMXI0/",
+    "status": ""
+  },
+  {
+    "id": "V490",
+    "courseId": "C490",
+    "title": "コーヒーがやめられないクライアントの評価ポイント",
+    "duration": "12分28秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "カフェイン",
+      "低血糖",
+      "鉄欠乏",
+      "貧血",
+      "ダイエット",
+      "女性"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/cqaZLaGb3sJ3/",
+    "status": ""
+  },
+  {
+    "id": "V491",
+    "courseId": "C491",
+    "title": "若年化するがんの罹患①",
+    "duration": "11分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Ez7ZQrCYaxUO/",
+    "status": ""
+  },
+  {
+    "id": "V492",
+    "courseId": "C492",
+    "title": "若年化するがんの罹患②",
+    "duration": "14分38秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/06wSMFTAKwOw/",
+    "status": ""
+  },
+  {
+    "id": "V493",
+    "courseId": "C493",
+    "title": "若年化するがんの罹患③",
+    "duration": "14分51秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/nNDklYz03nR7/",
+    "status": ""
+  },
+  {
+    "id": "V494",
+    "courseId": "C494",
+    "title": "若年化するがんの罹患④",
+    "duration": "14分14秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ruvNY-qAUsc9/",
+    "status": ""
+  },
+  {
+    "id": "V495",
+    "courseId": "C495",
+    "title": "若年化するがんの罹患⑤",
+    "duration": "12分19秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4xrO0gmzP7Ua/",
+    "status": ""
+  },
+  {
+    "id": "V496",
+    "courseId": "C496",
+    "title": "若年化するがんの罹患⑥",
+    "duration": "12分40秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/2e5LIvJ5RaO5/",
+    "status": ""
+  },
+  {
+    "id": "V497",
+    "courseId": "C497",
+    "title": "若年化するがんの罹患⑦｜大腸がん",
+    "duration": "14分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "大腸がん",
+      "乳がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/yVu2_k77LiG5/",
+    "status": ""
+  },
+  {
+    "id": "V498",
+    "courseId": "C498",
+    "title": "若年化するがんの罹患⑧｜乳がん",
+    "duration": "20分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "大腸がん",
+      "乳がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/6y7tA8hiEnG0/",
+    "status": ""
+  },
+  {
+    "id": "V499",
+    "courseId": "C499",
+    "title": "若年化するがん罹患⑨｜肝臓がん(1)",
+    "duration": "20分18秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "肝臓がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/428cceHPQhu1/",
+    "status": ""
+  },
+  {
+    "id": "V500",
+    "courseId": "C500",
+    "title": "若年化するがん罹患⑩｜肝臓がん(2)",
+    "duration": "18分16秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "肝臓がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/BROBSAvzS1Th/",
+    "status": ""
+  },
+  {
+    "id": "V501",
+    "courseId": "C501",
+    "title": "若年化するがん罹患⑪｜肝臓がん(3)",
+    "duration": "4分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "肝臓がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/xvgyMKWZDFTg/",
+    "status": ""
+  },
+  {
+    "id": "V502",
+    "courseId": "C502",
+    "title": "若年化するがん罹患⑫｜肝臓がん(4)",
+    "duration": "13分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "がん",
+      "肝臓がん"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/Wn6ReDZoELNW/",
+    "status": ""
+  },
+  {
+    "id": "V503",
+    "courseId": "C503",
+    "title": "30代女性の晩酌について①",
+    "duration": "14分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "飲酒",
+      "晩酌",
+      "女性"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/f4QIcMF7kKtq/",
+    "status": ""
+  },
+  {
+    "id": "V504",
+    "courseId": "C504",
+    "title": "30代女性の晩酌について②",
+    "duration": "13分1秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "飲酒",
+      "晩酌",
+      "女性"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/MERbP5d1gMUJ/",
+    "status": ""
+  },
+  {
+    "id": "V505",
+    "courseId": "C505",
+    "title": "体重減少しないクライアントの原因と対策①",
+    "duration": "22分15秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/tkWWY-zHu19n/",
+    "status": ""
+  },
+  {
+    "id": "V506",
+    "courseId": "C506",
+    "title": "体重減少しないクライアントの原因と対策②",
+    "duration": "12分46秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/owlXoy90qqx5/",
+    "status": ""
+  },
+  {
+    "id": "V507",
+    "courseId": "C507",
+    "title": "体重減少しないクライアントの原因と対策③",
+    "duration": "21分7秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/aWBA-a9cb5g7/",
+    "status": ""
+  },
+  {
+    "id": "V508",
+    "courseId": "C508",
+    "title": "体重減少しないクライアントの原因と対策④",
+    "duration": "15分58秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "PFCバランス"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/pua34GK8fuJR/",
+    "status": ""
+  },
+  {
+    "id": "V509",
+    "courseId": "C509",
+    "title": "尿酸の生理学｜基礎知識",
+    "duration": "11分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "尿酸",
+      "痛風",
+      "腎機能",
+      "インスリン抵抗性",
+      "生理学",
+      "高尿酸血症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/yHAJ8FotTobr/",
+    "status": ""
+  },
+  {
+    "id": "V510",
+    "courseId": "C510",
+    "title": "高尿酸血症｜原因と対策",
+    "duration": "17分13秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "尿酸",
+      "痛風",
+      "腎機能",
+      "インスリン抵抗性",
+      "生理学",
+      "高尿酸血症"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/NYVyxDosz6H7/",
+    "status": ""
+  },
+  {
+    "id": "V511",
+    "courseId": "C511",
+    "title": "浮腫みの原因と対策①",
+    "duration": "10分29秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "浮腫み",
+      "ナトリウム",
+      "カリウム"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/jztk-6C_z6Vu/",
+    "status": ""
+  },
+  {
+    "id": "V512",
+    "courseId": "C512",
+    "title": "浮腫みの原因と対策②",
+    "duration": "15分21秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "浮腫み",
+      "ナトリウム",
+      "カリウム"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/fGjpuwFjUB9J/",
+    "status": ""
+  },
+  {
+    "id": "V513",
+    "courseId": "C513",
+    "title": "炎症反応に対する評価｜急性炎症",
+    "duration": "11分3秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "炎症反応",
+      "急性炎症",
+      "ダイエット",
+      "内臓脂肪"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/zGLuM2-ZKJ0y/",
+    "status": ""
+  },
+  {
+    "id": "V514",
+    "courseId": "C514",
+    "title": "炎症反応に対する評価｜慢性炎症",
+    "duration": "12分37秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "炎症反応",
+      "慢性炎症",
+      "ダイエット",
+      "内臓脂肪"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/52C81BgfQwn6/",
+    "status": ""
+  },
+  {
+    "id": "V515",
+    "courseId": "C515",
+    "title": "酵素栄養学①｜酵素のはたらき",
+    "duration": "13分41秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "酵素",
+      "酵素栄養学",
+      "ダイエット",
+      "代謝",
+      "酵素ドリンク"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/4rOyJBpMRIUK/",
+    "status": ""
+  },
+  {
+    "id": "V516",
+    "courseId": "C516",
+    "title": "酵素栄養学②｜食物酵素と体内酵素",
+    "duration": "12分30秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "酵素",
+      "酵素栄養学",
+      "食物酵素",
+      "体内酵素",
+      "ダイエット",
+      "代謝",
+      "酵素ドリンク"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/kgxs0kzo3Y3Z/",
+    "status": ""
+  },
+  {
+    "id": "V517",
+    "courseId": "C517",
+    "title": "食べていないのに痩せない理由｜基礎知識編",
+    "duration": "6分44秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "代謝",
+      "PFCバランス",
+      "体温"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/ys44tmsFttQM/",
+    "status": ""
+  },
+  {
+    "id": "V518",
+    "courseId": "C518",
+    "title": "食べていないのに痩せない人への指導法｜実践編",
+    "duration": "10分25秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "減量",
+      "代謝",
+      "PFCバランス",
+      "体温"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/q3mYkWxhl1mc/",
+    "status": ""
+  },
+  {
+    "id": "V519",
+    "courseId": "C519",
+    "title": "クライアントのダイエットについて｜50代女性トレーニング歴３年",
+    "duration": "9分48秒",
+    "videoDescription": "NEXT短編コンテンツの視聴ページです。",
+    "individualTags": [
+      "ダイエット",
+      "停滞",
+      "行動管理"
+    ],
+    "thumbnailUrl": "",
+    "videogUrl": "https://vdg.jp/a-5yDnjifu1r/",
+    "status": ""
   }
 ]

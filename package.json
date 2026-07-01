@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update-data": "node scripts/update-data.mjs"
+    "update-data": "node scripts/update-data.mjs",
+    "update-tags": "python scripts/generate-tag-categories.py"
   },
   "dependencies": {
     "next": "16.2.6",
