@@ -1,10 +1,14 @@
 export default function SearchBar({
   value,
   onChange,
+  onCompositionStart,
+  onCompositionEnd,
   className = "mb-8",
 }: {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onCompositionStart?: (e: React.CompositionEvent<HTMLInputElement>) => void;
+  onCompositionEnd?: (e: React.CompositionEvent<HTMLInputElement>) => void;
   className?: string;
 }) {
   return (
@@ -32,6 +36,8 @@ export default function SearchBar({
         placeholder="例：解剖学、栄養学、コンディショニング"
         value={value}
         onChange={onChange}
+        onCompositionStart={onCompositionStart}
+        onCompositionEnd={onCompositionEnd}
         required
       />
     </div>

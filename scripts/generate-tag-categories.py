@@ -4,6 +4,7 @@ import os
 def main():
     excel_path = r"c:\Users\kajik\OneDrive\Desktop\BAL_STUDIO_SEARCH\data\config\NEXT_all_tags_classified.xlsx"
     ts_path = r"c:\Users\kajik\OneDrive\Desktop\BAL_STUDIO_SEARCH\src\data\tagCategories.ts"
+    json_path = r"c:\Users\kajik\OneDrive\Desktop\BAL_STUDIO_SEARCH\src\data\nextTagCategories.json"
 
     wb = openpyxl.load_workbook(excel_path, data_only=True)
     
@@ -79,7 +80,12 @@ def main():
     with open(ts_path, "w", encoding="utf-8") as f:
         f.write(ts_content)
 
-    print(f"Generated {len(tag_categories)} tag categories at {ts_path}")
+    import json
+    os.makedirs(os.path.dirname(json_path), exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(tag_categories, f, indent=2, ensure_ascii=False)
+
+    print(f"Generated {len(tag_categories)} tag categories at {ts_path} and {json_path}")
 
 if __name__ == "__main__":
     main()

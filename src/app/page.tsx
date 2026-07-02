@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, Suspense, useEffect, useRef } from "react";
+import { useState, useMemo, Suspense, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
 import SearchTags from "@/components/SearchTags";
@@ -119,7 +119,7 @@ const nextTagCategories: NextTagCategoryEntry[] = nextTagCategoriesData as NextT
 // NEXTカテゴリタブの順序
 const NEXT_TAG_CATEGORY_ORDER = [
   "部位",
-  "筋・組織",
+  "骨・筋・関節・組織",
   "症状・悩み",
   "動作・トレーニング",
   "コンディショニング・施術",
@@ -199,7 +199,7 @@ const containsTagWithSynonyms = (normalizedTags: string[], selectedTag: string):
   return normalizedTags.some(t => t.toLowerCase() === normSelected);
 };
 
-const matchesTag = (video: VideoData, course: CourseData, tag: string) => {
+const matchesTag = (video: any, course: any, tag: string) => {
   const normalizedTag = tag.trim().toLowerCase();
   
   if (ALL_INSTRUCTORS.includes(tag)) {
@@ -211,7 +211,7 @@ const matchesTag = (video: VideoData, course: CourseData, tag: string) => {
   }
 
   if (SERIES_NAMES.some(s => s.toLowerCase() === normalizedTag)) {
-    const courseSeries = course?.series || "";
+    const courseSeries = video.normalizedSeries || course?.series || "";
     return courseSeries.toLowerCase() === normalizedTag;
   }
 
@@ -222,33 +222,21 @@ const matchesTag = (video: VideoData, course: CourseData, tag: string) => {
 
   // NEXT専用分野：courses.subSeries の完全一致のみ
   if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) {
-    return (course as unknown as Record<string, string>)?.subSeries === tag;
+    const subSeries = video.normalizedSubSeries || course?.subSeries || "";
+    return subSeries === tag;
   }
 
-  // Exact matching for theme/individual tags via normalizedTags
-  const normalizedTags = normalizeTags([
-    ...(course?.commonTags || []),
-    ...(video.individualTags || [])
-  ]);
+  // Exact matching for theme/individual tags using pre-computed tags array
+  const normalizedTags = video.allNormalizedTags || [];
 
   return containsTagWithSynonyms(normalizedTags, tag);
 };
 
-const matchesQuery = (video: VideoData, course: CourseData, queryText: string) => {
+const matchesQuery = (video: any, queryText: string) => {
   if (!queryText.trim()) return true;
-  const keywords = queryText.toLowerCase().split(/\s+/).filter(Boolean);
-  
-  const combinedText = [
-    course.title,
-    course.instructor,
-    course.category,
-    course.level,
-    ...(course.commonTags || []),
-    video.title,
-    ...(video.individualTags || [])
-  ].filter(Boolean).join(" ").toLowerCase();
-
-  return keywords.every(keyword => combinedText.includes(keyword));
+  const keywords = queryText.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean);
+  const searchIndex = video.searchIndex || "";
+  return keywords.every(keyword => searchIndex.includes(keyword));
 };
 
 interface CarouselSectionProps {
@@ -634,6 +622,7 @@ function CarouselSection({
   );
 }
 function SearchContent() {
+  const [inputValue, setInputValue] = useState("");
   const [query, setQuery] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [isTagsExpanded, setIsTagsExpanded] = useState(false);
@@ -658,9 +647,165 @@ function SearchContent() {
     return () => mediaQuery.removeEventListener("change", listener);
   }, []);
 
+  // IME Composition state & Debounce effect
+  const [isComposing, setIsComposing] = useState(false);
+  const isComposingRef = useRef(false);
+
+  useEffect(() => {
+    if (isComposing) return;
+    if (!inputValue.trim()) {
+      setQuery("");
+      return;
+    }
+    const timer = setTimeout(() => {
+      setQuery(inputValue);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [inputValue, isComposing]);
+
+  // Pre-generate course lookup & searchIndex on videos Data
   const publicVideos = useMemo(() => {
-    return videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
+    const courseMap = new Map<string, CourseData>();
+    coursesData.forEach(c => {
+      courseMap.set(c.id, c as unknown as CourseData);
+    });
+
+    const videos = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
+
+    return videos.map(video => {
+      const course = courseMap.get(video.courseId);
+      
+      const normalizedIndividualTags = normalizeTags(video.individualTags || []);
+      const normalizedCommonTags = normalizeTags(course?.commonTags || []);
+      const allNormalizedTags = Array.from(new Set([
+        ...normalizedCommonTags,
+        ...normalizedIndividualTags
+      ]));
+      const normalizedSubSeries = course?.subSeries ? course.subSeries.trim() : "";
+      const normalizedSeries = course?.series ? course.series.trim() : "";
+
+      const components = [
+        course?.title,
+        course?.instructor,
+        course?.category,
+        course?.level,
+        course?.series,
+        course?.subSeries,
+        course?.description,
+        video.title,
+        video.videoDescription,
+        ...normalizedCommonTags,
+        ...normalizedIndividualTags
+      ];
+
+      const searchIndex = components
+        .filter((s): s is string => !!s)
+        .map(s => s.trim().toLowerCase().normalize("NFKC"))
+        .join(" ");
+
+      return {
+        ...video,
+        course,
+        searchIndex,
+        normalizedIndividualTags,
+        normalizedCommonTags,
+        allNormalizedTags,
+        normalizedSubSeries,
+        normalizedSeries
+      };
+    }) as any[];
   }, []);
+
+  // Pre-calculate index structures for NEXT fields to make NEXT selections instant
+  const nextFieldData = useMemo(() => {
+    const fields = ["解剖学", "栄養学", "コンディショニング"] as const;
+    
+    const videosByField: Record<string, any[]> = {
+      "解剖学": [],
+      "栄養学": [],
+      "コンディショニング": []
+    };
+    
+    const tagsByField: Record<string, string[]> = {
+      "解剖学": [],
+      "栄養学": [],
+      "コンディショニング": []
+    };
+    
+    const tagCountsByField: Record<string, Map<string, number>> = {
+      "解剖学": new Map(),
+      "栄養学": new Map(),
+      "コンディショニング": new Map()
+    };
+
+    const rawTagPools: Record<string, Set<string>> = {
+      "解剖学": new Set(),
+      "栄養学": new Set(),
+      "コンディショニング": new Set()
+    };
+
+    publicVideos.forEach(video => {
+      const course = video.course;
+      if (!course) return;
+      if (course.series !== "NEXT（短編コンテンツ）") return;
+
+      fields.forEach(field => {
+        if (course.subSeries === field) {
+          videosByField[field].push(video);
+          
+          const videoTags = video.normalizedIndividualTags || [];
+          videoTags.forEach((t: string) => {
+            rawTagPools[field].add(t);
+            const countMap = tagCountsByField[field];
+            countMap.set(t, (countMap.get(t) ?? 0) + 1);
+          });
+        }
+      });
+    });
+
+    fields.forEach(field => {
+      tagsByField[field] = nextTagCategories
+        .filter(tc => rawTagPools[field].has(tc.tag))
+        .map(tc => tc.tag)
+        .filter((v, i, a) => a.indexOf(v) === i);
+    });
+
+    return {
+      videosByField,
+      tagsByField,
+      tagCountsByField
+    };
+  }, [publicVideos]);
+
+  // Pre-calculate related videos grouped by setId
+  const videosBySetId = useMemo(() => {
+    const map = new Map<string, any[]>();
+    
+    publicVideos.forEach(video => {
+      const setId = video.course?.setId;
+      if (setId) {
+        if (!map.has(setId)) {
+          map.set(setId, []);
+        }
+        map.get(setId)!.push(video);
+      }
+    });
+
+    for (const [_, vids] of map.entries()) {
+      vids.sort((a, b) => {
+        const orderA = a.course?.sortOrder ? parseInt(a.course.sortOrder, 10) : null;
+        const orderB = b.course?.sortOrder ? parseInt(b.course.sortOrder, 10) : null;
+        if (orderA !== null && orderB !== null) return orderA - orderB;
+        if (orderA !== null) return -1;
+        if (orderB !== null) return 1;
+        const idxA = videosData.findIndex(v => v.id === a.id);
+        const idxB = videosData.findIndex(v => v.id === b.id);
+        return idxA - idxB;
+      });
+    }
+
+    return map;
+  }, [publicVideos]);
 
   const allBodyThemeTags = useMemo(() => {
     const rawTags = new Set<string>();
@@ -670,17 +815,10 @@ function SearchContent() {
       rawTags.add(tc.tag);
     });
 
-    // Add all tags from videos' individualTags
     publicVideos.forEach((video) => {
-      if (video.individualTags) {
-        video.individualTags.forEach((rawTag) => {
-          const parts = rawTag.split(/[,，、]/);
-          parts.forEach((part) => {
-            const cleaned = part.trim();
-            if (cleaned) {
-              rawTags.add(cleaned);
-            }
-          });
+      if (video.normalizedIndividualTags) {
+        video.normalizedIndividualTags.forEach((t: string) => {
+          rawTags.add(t);
         });
       }
     });
@@ -699,7 +837,7 @@ function SearchContent() {
   }, [publicVideos]);
 
   // Helper resolver for category auto-expansion in SearchTags
-  const getCategoryTitle = (tag: string) => {
+  const getCategoryTitle = useCallback((tag: string) => {
     // 長編テーマ
     if ((LONG_THEMES as readonly string[]).includes(tag)) return "テーマから探す";
     // NEXT分野
@@ -712,7 +850,7 @@ function SearchContent() {
     if (cat) return cat.title;
     if (ALL_INSTRUCTORS.includes(tag)) return "講師から探す";
     return "";
-  };
+  }, [allBodyThemeTags]);
 
   // Reset visibleCount when query or selected tags change
   useEffect(() => {
@@ -721,8 +859,8 @@ function SearchContent() {
 
   const newestVideos = useMemo(() => {
     return [...publicVideos].sort((a, b) => {
-      const courseA = coursesData.find((c) => c.id === a.courseId);
-      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const courseA = a.course;
+      const courseB = b.course;
       const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
       const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
       return orderB - orderA;
@@ -731,12 +869,11 @@ function SearchContent() {
 
   const firstWatchVideos = useMemo(() => {
     const filtered = publicVideos.filter((video) => {
-      const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
-      return course?.commonTags?.includes("はじめての方へ｜まず見るべき動画");
+      return video.course?.commonTags?.includes("はじめての方へ｜まず見るべき動画");
     });
     return filtered.sort((a, b) => {
-      const courseA = coursesData.find((c) => c.id === a.courseId);
-      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const courseA = a.course;
+      const courseB = b.course;
       const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
       const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
       return orderA - orderB;
@@ -753,21 +890,47 @@ function SearchContent() {
     return () => clearInterval(interval);
   }, [isHowToOpen]);
 
+  const matchesSelectedTags = useCallback((video: VideoData, course: CourseData, tags: string[]) => {
+    if (tags.length === 0) return true;
+    
+    const grouped = tags.reduce((acc, tag) => {
+      const title = getCategoryTitle(tag) || "その他";
+      if (!acc[title]) acc[title] = [];
+      acc[title].push(tag);
+      return acc;
+    }, {} as Record<string, string[]>);
+
+    return Object.entries(grouped).every(([catTitle, catTags]) => {
+      if (catTitle === "部位・テーマから探す") {
+        return catTags.every(tag => matchesTag(video, course, tag));
+      } else {
+        return catTags.some(tag => matchesTag(video, course, tag));
+      }
+    });
+  }, [getCategoryTitle]);
+
   // Process data
   const filteredVideos = useMemo(() => {
+    const trimmedQuery = query.trim();
+    const keywords = trimmedQuery
+      ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
+      : [];
+
     const result = publicVideos.filter((video) => {
-      const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
+      const course = video.course;
       if (!course) return false;
       
-      const matchesAllTags = selectedTags.every(tag => matchesTag(video, course, tag));
+      const matchesAllTags = matchesSelectedTags(video, course, selectedTags);
       if (!matchesAllTags) return false;
 
-      return matchesQuery(video, course, query);
+      if (keywords.length === 0) return true;
+      const searchIndex = video.searchIndex || "";
+      return keywords.every(keyword => searchIndex.includes(keyword));
     });
 
     return [...result].sort((a, b) => {
-      const courseA = coursesData.find((c) => c.id === a.courseId);
-      const courseB = coursesData.find((c) => c.id === b.courseId);
+      const courseA = a.course;
+      const courseB = b.course;
       const orderA = courseA ? parseInt(courseA.sortOrder || "0", 10) || 0 : 0;
       const orderB = courseB ? parseInt(courseB.sortOrder || "0", 10) || 0 : 0;
       
@@ -777,7 +940,70 @@ function SearchContent() {
         return orderA - orderB;
       }
     });
-  }, [query, selectedTags, sortBy, publicVideos]);
+  }, [query, selectedTags, sortBy, publicVideos, matchesSelectedTags]);
+
+  // Videos matching query + selectedTags (except series tags)
+  const videosMatchingQueryAndNonSeriesTags = useMemo(() => {
+    const nonSeriesTags = selectedTags.filter(x => !SERIES_NAMES.includes(x));
+    const trimmedQuery = query.trim();
+    const keywords = trimmedQuery
+      ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
+      : [];
+
+    return publicVideos.filter(video => {
+      const course = video.course;
+      if (!course) return false;
+      if (!matchesSelectedTags(video, course, nonSeriesTags)) return false;
+      if (keywords.length > 0) {
+        const searchIndex = video.searchIndex || "";
+        if (!keywords.every(keyword => searchIndex.includes(keyword))) return false;
+      }
+      return true;
+    });
+  }, [query, selectedTags, publicVideos, matchesSelectedTags]);
+
+  // Videos matching query + selectedTags (except NEXT subseries tags)
+  const videosMatchingQueryAndNonSubSeriesTags = useMemo(() => {
+    const nonSubSeriesTags = selectedTags.filter(t => !(NEXT_SUB_SERIES as readonly string[]).includes(t));
+    const trimmedQuery = query.trim();
+    const keywords = trimmedQuery
+      ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
+      : [];
+
+    return publicVideos.filter(video => {
+      const course = video.course;
+      if (!course) return false;
+      if (!matchesSelectedTags(video, course, nonSubSeriesTags)) return false;
+      if (keywords.length > 0) {
+        const searchIndex = video.searchIndex || "";
+        if (!keywords.every(keyword => searchIndex.includes(keyword))) return false;
+      }
+      return true;
+    });
+  }, [query, selectedTags, publicVideos, matchesSelectedTags]);
+
+  // Videos matching query + selectedTags (except body/theme tags)
+  const videosMatchingQueryAndNonBodyThemeTags = useMemo(() => {
+    const nonBodyThemeTags = selectedTags.filter(t => 
+      !nextTagCategories.some(tc => tc.tag === t) && 
+      !allBodyThemeTags.includes(t)
+    );
+    const trimmedQuery = query.trim();
+    const keywords = trimmedQuery
+      ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
+      : [];
+
+    return publicVideos.filter(video => {
+      const course = video.course;
+      if (!course) return false;
+      if (!matchesSelectedTags(video, course, nonBodyThemeTags)) return false;
+      if (keywords.length > 0) {
+        const searchIndex = video.searchIndex || "";
+        if (!keywords.every(keyword => searchIndex.includes(keyword))) return false;
+      }
+      return true;
+    });
+  }, [query, selectedTags, publicVideos, allBodyThemeTags, matchesSelectedTags]);
 
   const isSearchActive = useMemo(() => !!(query.trim() || selectedTags.length > 0), [query, selectedTags]);
 
@@ -795,6 +1021,33 @@ function SearchContent() {
     const selectedNextSubSeries = selectedTags.filter(t => (NEXT_SUB_SERIES as readonly string[]).includes(t));
     const hasNextSubSeriesSelected = selectedNextSubSeries.length > 0;
 
+    // Pre-calculate present tags for fast O(1) lookups
+    const presentTags = new Set<string>();
+    filteredVideos.forEach(video => {
+      (video.allNormalizedTags || []).forEach((t: string) => presentTags.add(t));
+    });
+
+    const hasTag = (tag: string) => {
+      const group = SYNONYMS[tag];
+      if (group) {
+        return group.some(t => presentTags.has(t));
+      }
+      return presentTags.has(tag);
+    };
+
+    const presentTagsForTabs = new Set<string>();
+    videosMatchingQueryAndNonBodyThemeTags.forEach(video => {
+      (video.allNormalizedTags || []).forEach((t: string) => presentTagsForTabs.add(t));
+    });
+
+    const hasTagForTabs = (tag: string) => {
+      const group = SYNONYMS[tag];
+      if (group) {
+        return group.some(t => presentTagsForTabs.has(t));
+      }
+      return presentTagsForTabs.has(tag);
+    };
+
     // --- 長編コンテンツ選択時 ---
     if (isLongSelected) {
       const seriesCategory = {
@@ -802,13 +1055,15 @@ function SearchContent() {
         tags: SERIES_NAMES.filter(t => {
           if (selectedTags.includes(t)) return true;
           if (selectedTags.length === 0 && !query.trim()) return true;
-          const candidateTags = [...selectedTags, t];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return filteredVideos.some(video => matchesTag(video, video.course, t));
+        })
+      };
+
+      const purposeCategory = {
+        title: "目的から探す",
+        tags: TAG_CATEGORIES[1].tags.filter(t => {
+          if (selectedTags.includes(t)) return true;
+          return hasTag(t);
         })
       };
 
@@ -817,13 +1072,7 @@ function SearchContent() {
         title: "テーマから探す",
         tags: (LONG_THEMES as readonly string[]).filter(theme => {
           if (selectedTags.includes(theme)) return true;
-          const candidateTags = [...selectedTags, theme];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return filteredVideos.some(video => matchesTag(video, video.course, theme));
         }) as string[]
       };
 
@@ -831,13 +1080,7 @@ function SearchContent() {
         title: "レベルから探す",
         tags: LEVEL_NAMES.filter(t => {
           if (selectedTags.includes(t)) return true;
-          const candidateTags = [...selectedTags, t];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return filteredVideos.some(video => matchesTag(video, video.course, t));
         })
       };
 
@@ -845,17 +1088,11 @@ function SearchContent() {
         title: "講師から探す",
         tags: ALL_INSTRUCTORS.filter(t => {
           if (selectedTags.includes(t)) return true;
-          const candidateTags = [...selectedTags, t];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return filteredVideos.some(video => matchesTag(video, video.course, t));
         })
       };
 
-      return [seriesCategory, levelCategory, themeCategory, instructorCategory];
+      return [seriesCategory, purposeCategory, levelCategory, themeCategory, instructorCategory];
     }
 
     // --- NEXT選択時 ---
@@ -864,13 +1101,7 @@ function SearchContent() {
         title: "シリーズから探す",
         tags: SERIES_NAMES.filter(t => {
           if (selectedTags.includes(t)) return true;
-          const candidateTags = [...selectedTags.filter(x => !SERIES_NAMES.includes(x)), t];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return videosMatchingQueryAndNonSeriesTags.some(video => matchesTag(video, video.course, t));
         })
       };
 
@@ -879,48 +1110,33 @@ function SearchContent() {
         title: "NEXTの分野から探す",
         tags: (NEXT_SUB_SERIES as readonly string[]).filter(subSeries => {
           if (selectedTags.includes(subSeries)) return true;
-          // OR挑動：現在の選択済み分野を隣に置いた候補タグで検索
+          // OR条件：現在の選択済み分野を隣に置いた候補タグで検索
           const otherSubSeries = selectedNextSubSeries.filter(x => x !== subSeries);
-          const baseTags = selectedTags.filter(t => !(NEXT_SUB_SERIES as readonly string[]).includes(t));
-          const candidateTags = [...baseTags, subSeries];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            // シリーズが一致することを確認
-            const seriesTags = candidateTags.filter(t => SERIES_NAMES.includes(t) || (NEXT_SUB_SERIES as readonly string[]).includes(t));
-            const otherTags = candidateTags.filter(t => !SERIES_NAMES.includes(t) && !(NEXT_SUB_SERIES as readonly string[]).includes(t));
-            const seriesOk = matchesTag(video, course, "NEXT（短編コンテンツ）") &&
-              // subSeriesはOR条件
-              matchesTag(video, course, subSeries);
-            if (!seriesOk) return false;
-            const otherOk = otherTags.every(t => matchesTag(video, course, t));
-            if (!otherOk) return false;
-            return matchesQuery(video, course, query);
-          }) || otherSubSeries.length > 0; // 既に別の分野選択済なら常に表示
+          return otherSubSeries.length > 0 || videosMatchingQueryAndNonSubSeriesTags.some(video => {
+            const course = video.course;
+            return matchesTag(video, course, "NEXT（短編コンテンツ）") && matchesTag(video, course, subSeries);
+          });
         }) as string[]
       };
 
+      const purposeCategory = {
+        title: "目的から探す",
+        tags: TAG_CATEGORIES[1].tags.filter(t => {
+          if (selectedTags.includes(t)) return true;
+          return hasTag(t);
+        })
+      };
+
       if (!hasNextSubSeriesSelected) {
-        // NEXT分野未選択：分野3項目のみ
-        return [seriesCategory, nextSubCategory];
+        // NEXT分野未選択：分野3項目のみ + 目的から探す
+        return [seriesCategory, nextSubCategory, purposeCategory];
       }
 
       // NEXT分野選択済：部位・テーマを動的に生成
-      // 選択済分野に属する動画のindividualTagsからタグ抽出
       const nextTagPool = new Set<string>();
-      publicVideos.forEach(video => {
-        const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-        if (!course) return;
-        if (!matchesTag(video, course, "NEXT（短編コンテンツ）")) return;
-        // 選択済分野のOR条件を満たす動画のみ対象
-        const subSeriesMatch = selectedNextSubSeries.some(sub => matchesTag(video, course, sub));
-        if (!subSeriesMatch) return;
-        (video.individualTags || []).forEach(rawTag => {
-          rawTag.split(/[,，、]/).forEach(p => {
-            const cleaned = p.trim();
-            if (cleaned) nextTagPool.add(cleaned);
-          });
-        });
+      selectedNextSubSeries.forEach(sub => {
+        const fieldTags = nextFieldData.tagsByField[sub] || [];
+        fieldTags.forEach(t => nextTagPool.add(t));
       });
 
       // nextTagCategoriesの順序でソート
@@ -933,41 +1149,28 @@ function SearchContent() {
       // 現在の検索条件で実際にヒットするタグのみ
       const filteredNextBodyTags = nextBodyTags.filter(tag => {
         if (selectedTags.includes(tag)) return true;
-        const candidateTags = [...selectedTags, tag];
-        return publicVideos.some(video => {
-          const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-          if (!course) return false;
-          if (!matchesTag(video, course, "NEXT（短編コンテンツ）")) return false;
-          const subSeriesMatch = selectedNextSubSeries.some(sub => matchesTag(video, course, sub));
-          if (!subSeriesMatch) return false;
-          const otherTags = candidateTags.filter(t =>
-            !SERIES_NAMES.includes(t) && !(NEXT_SUB_SERIES as readonly string[]).includes(t)
-          );
-          if (!otherTags.every(t => matchesTag(video, course, t))) return false;
-          return matchesQuery(video, course, query);
-        });
+        return hasTag(tag);
+      });
+
+      const filteredNextBodyTagsForTabs = nextBodyTags.filter(tag => {
+        return hasTagForTabs(tag);
       });
 
       const nextBodyCategory = {
         title: "部位・テーマから探す",
-        tags: filteredNextBodyTags
+        tags: filteredNextBodyTags,
+        tabTags: filteredNextBodyTagsForTabs
       };
 
       const instructorCategory = {
         title: "講師から探す",
         tags: ALL_INSTRUCTORS.filter(t => {
           if (selectedTags.includes(t)) return true;
-          const candidateTags = [...selectedTags, t];
-          return publicVideos.some(video => {
-            const course = coursesData.find(c => c.id === video.courseId) as unknown as CourseData;
-            if (!course) return false;
-            return candidateTags.every(tag => matchesTag(video, course, tag)) &&
-              matchesQuery(video, course, query);
-          });
+          return filteredVideos.some(video => matchesTag(video, video.course, t));
         })
       };
 
-      return [seriesCategory, nextSubCategory, nextBodyCategory, instructorCategory];
+      return [seriesCategory, nextSubCategory, purposeCategory, nextBodyCategory, instructorCategory];
     }
 
     // --- シリーズ未選択時（既存の動作）---
@@ -975,6 +1178,10 @@ function SearchContent() {
       {
         title: "シリーズから探す",
         tags: SERIES_NAMES
+      },
+      {
+        title: "目的から探す",
+        tags: TAG_CATEGORIES[1].tags
       },
       {
         title: "レベルから探す",
@@ -994,59 +1201,149 @@ function SearchContent() {
       const filteredTags = category.tags.filter((tag) => {
         if (selectedTags.includes(tag)) return true;
         if (selectedTags.length === 0 && !query.trim()) return true;
-        const candidateTags = [...selectedTags, tag];
-        return publicVideos.some((video) => {
-          const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
-          if (!course) return false;
-          const matchesAllCandidateTags = candidateTags.every(t => matchesTag(video, course, t));
-          if (!matchesAllCandidateTags) return false;
-          return matchesQuery(video, course, query);
-        });
+        
+        // Fast paths for small categories
+        if (category.title === "シリーズから探す" || category.title === "レベルから探す" || category.title === "講師から探す") {
+          return filteredVideos.some(video => matchesTag(video, video.course, tag));
+        }
+        
+        // Detailed tags: O(1) set lookup
+        return hasTag(tag);
       });
       return {
         title: category.title,
         tags: filteredTags
       };
     });
-  }, [query, selectedTags, allBodyThemeTags, publicVideos]);
+  }, [
+    query,
+    selectedTags,
+    allBodyThemeTags,
+    publicVideos,
+    filteredVideos,
+    videosMatchingQueryAndNonSeriesTags,
+    videosMatchingQueryAndNonSubSeriesTags,
+    videosMatchingQueryAndNonBodyThemeTags,
+    nextFieldData
+  ]);
 
   const hasAnyAvailableTags = useMemo(() => {
     return availableTagCategories.some(cat => cat.tags.length > 0);
   }, [availableTagCategories]);
 
 
-  const handleTagClick = (tag: string) => {
+  const handleTagClick = useCallback((tag: string) => {
     setSelectedTags((prev) => {
       const isSeriesSwitch = SERIES_NAMES.includes(tag) && prev.some(t => SERIES_NAMES.includes(t) && t !== tag);
 
+      let nextTags = [...prev];
       if (isSeriesSwitch) {
-        // シリーズ切り替え：前のシリーズ専用条件をクリア
         const prevSeries = prev.find(t => SERIES_NAMES.includes(t));
         let cleaned = prev.filter(t => !SERIES_NAMES.includes(t));
 
         if (prevSeries === "長編コンテンツ") {
-          // 長編テーマを除去
           cleaned = cleaned.filter(t => !(LONG_THEMES as readonly string[]).includes(t));
-          // レベルも除去
           cleaned = cleaned.filter(t => !LEVEL_NAMES.includes(t));
         } else if (prevSeries === "NEXT（短編コンテンツ）") {
-          // NEXT分野を除去
           cleaned = cleaned.filter(t => !(NEXT_SUB_SERIES as readonly string[]).includes(t));
-          // NEXT部位タグを除去（nextTagCategoriesに存在するタグ）
           cleaned = cleaned.filter(t => !nextTagCategories.some(tc => tc.tag === t));
         }
-
-        return [...cleaned, tag];
-      }
-
-      if (prev.includes(tag)) {
-        return prev.filter((t) => t !== tag);
+        nextTags = [...cleaned, tag];
+      } else if (prev.includes(tag)) {
+        let cleaned = prev.filter((t) => t !== tag);
+        if (tag === "長編コンテンツ") {
+          cleaned = cleaned.filter(t => 
+            !(LONG_THEMES as readonly string[]).includes(t) &&
+            !LEVEL_NAMES.includes(t)
+          );
+        } else if (tag === "NEXT（短編コンテンツ）") {
+          cleaned = cleaned.filter(t => 
+            !(NEXT_SUB_SERIES as readonly string[]).includes(t) &&
+            !nextTagCategories.some(tc => tc.tag === t)
+          );
+        }
+        nextTags = cleaned;
       } else {
-        return [...prev, tag];
+        nextTags = [...prev, tag];
       }
+
+      // Check if the new state contains a series
+      const hasActiveSeries = nextTags.some(t => t === "長編コンテンツ" || t === "NEXT（短編コンテンツ）");
+      if (!hasActiveSeries) {
+        setIsTagsExpanded(false);
+      }
+
+      return nextTags;
     });
+  }, []);
+
+  // 1. Auto-expand panel when series is selected
+  const prevSeriesRef = useRef<string[]>([]);
+  useEffect(() => {
+    const currentSeries = selectedTags.filter(t => SERIES_NAMES.includes(t));
+    const hasAutoSeries = currentSeries.some(s => s === "長編コンテンツ" || s === "NEXT（短編コンテンツ）");
+    const hadAutoSeries = prevSeriesRef.current.some(s => s === "長編コンテンツ" || s === "NEXT（短編コンテンツ）");
+    const changed = JSON.stringify(currentSeries) !== JSON.stringify(prevSeriesRef.current);
+    
+    if (changed && hasAutoSeries) {
+      setIsTagsExpanded(true);
+    }
+    prevSeriesRef.current = currentSeries;
+  }, [selectedTags]);
+
+  // 2. Clean invalid NEXT tags when NEXT sub-series are switched
+  useEffect(() => {
+    const selectedSeriesTag = selectedTags.find(t => SERIES_NAMES.includes(t));
+    if (selectedSeriesTag !== "NEXT（短編コンテンツ）") return;
+
+    const selectedNextSubSeries = selectedTags.filter(t => (NEXT_SUB_SERIES as readonly string[]).includes(t));
+    if (selectedNextSubSeries.length === 0) {
+      // If no sub-series is selected, clear any next body tags!
+      const selectedBodyTags = selectedTags.filter(t => nextTagCategories.some(tc => tc.tag === t));
+      if (selectedBodyTags.length > 0) {
+        setSelectedTags(prev => prev.filter(t => !selectedBodyTags.includes(t)));
+      }
+      return;
+    }
+
+    const bodyThemeCat = availableTagCategories.find(cat => cat.title === "部位・テーマから探す");
+    if (!bodyThemeCat) return;
+
+    const availableBodyTags = new Set(bodyThemeCat.tags);
+    const selectedBodyTags = selectedTags.filter(t => nextTagCategories.some(tc => tc.tag === t));
+    const invalidTags = selectedBodyTags.filter(t => !availableBodyTags.has(t));
+
+    if (invalidTags.length > 0) {
+      setSelectedTags(prev => prev.filter(t => !invalidTags.includes(t)));
+    }
+  }, [selectedTags, availableTagCategories]);
+
+  const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setInputValue(val);
+    if (!val.trim()) {
+      setQuery("");
+      if (selectedTags.length === 0) {
+        setIsTagsExpanded(false);
+      }
+    }
+  }, [selectedTags]);
+
+  const handleCompositionStart = useCallback(() => {
+    isComposingRef.current = true;
+    setIsComposing(true);
+  }, []);
+
+  const handleCompositionEnd = useCallback((e: React.CompositionEvent<HTMLInputElement>) => {
+    isComposingRef.current = false;
+    setIsComposing(false);
+    setInputValue(e.currentTarget.value);
+  }, []);
+
+  const handleClearAll = useCallback(() => {
+    setSelectedTags([]);
     setIsTagsExpanded(false);
-  };
+  }, []);
 
   const combinedSearchQuery = [...selectedTags, query.trim()].filter(Boolean).join(" + ");
 
@@ -1209,14 +1506,10 @@ function SearchContent() {
         </div>
 
         <SearchBar 
-          value={query} 
-          onChange={(e) => {
-            const val = e.target.value;
-            setQuery(val);
-            if (!val.trim() && selectedTags.length === 0) {
-              setIsTagsExpanded(false);
-            }
-          }} 
+          value={inputValue} 
+          onChange={handleSearchChange}
+          onCompositionStart={handleCompositionStart}
+          onCompositionEnd={handleCompositionEnd}
           className="mb-8"
         />
 
@@ -1233,13 +1526,7 @@ function SearchContent() {
                   >
                     {tag}
                     <button
-                      onClick={() => {
-                        const newTags = selectedTags.filter((t) => t !== tag);
-                        setSelectedTags(newTags);
-                        if (newTags.length === 0 && !query.trim()) {
-                          setIsTagsExpanded(false);
-                        }
-                      }}
+                      onClick={() => handleTagClick(tag)}
                       className="hover:text-foreground text-accent/60 ml-1 font-bold text-sm focus:outline-none transition-colors"
                       aria-label={`${tag}を解除`}
                     >
@@ -1249,10 +1536,7 @@ function SearchContent() {
                 ))}
               </div>
               <button
-                onClick={() => {
-                  setSelectedTags([]);
-                  setIsTagsExpanded(false);
-                }}
+                onClick={handleClearAll}
                 className="text-xs text-muted hover:text-accent font-medium px-3 py-1.5 rounded-lg border border-border/50 bg-card/30 transition-colors"
               >
                 条件をクリア
@@ -1410,7 +1694,8 @@ function SearchContent() {
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {displayedVideos.map((video) => {
-                const course = coursesData.find((c) => c.id === video.courseId) as unknown as CourseData;
+                const course = (video as any).course;
+                const relatedVids = course?.setId ? videosBySetId.get(course.setId) || [] : [];
                 return (
                   <VideoCard
                     key={video.id}
@@ -1418,6 +1703,7 @@ function SearchContent() {
                     course={course}
                     onTagClick={handleTagClick}
                     selectedTags={selectedTags}
+                    relatedVideos={relatedVids}
                   />
                 );
               })}

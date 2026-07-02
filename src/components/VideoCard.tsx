@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import videosData from "@/data/videos.json";
 import coursesData from "@/data/courses.json";
 
@@ -67,16 +67,18 @@ export interface VideoData {
   status: string;
 }
 
-export default function VideoCard({ 
+const VideoCard = React.memo(function VideoCard({ 
   video, 
   course, 
   onTagClick,
-  selectedTags = []
+  selectedTags = [],
+  relatedVideos: relatedVideosProp
 }: { 
   video: VideoData; 
   course: CourseData;
   onTagClick?: (tag: string) => void;
   selectedTags?: string[];
+  relatedVideos?: VideoData[];
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [imgHasError, setImgHasError] = useState(false);
@@ -89,34 +91,31 @@ export default function VideoCard({
 
   const currentSetId = course?.setId || "";
   const relatedVideos = useMemo(() => {
-    if (!isNext || !currentSetId) return [];
+    if (relatedVideosProp) return relatedVideosProp;
+    if (!isModalOpen || !isNext || !currentSetId) return [];
+    
+    // Fallback if not passed: filter and sort
     const publicVids = videosData.filter(v => v.status !== "非公開" && v.status !== "準備中") as VideoData[];
-    return publicVids.filter(v => {
+    const filtered = publicVids.filter(v => {
       const c = coursesData.find(c => c.id === v.courseId);
       return c && c.setId === currentSetId;
     });
-  }, [isNext, currentSetId]);
 
-  const sortedRelatedVideos = useMemo(() => {
-    if (relatedVideos.length < 2) return [];
-    return [...relatedVideos].sort((a, b) => {
+    return [...filtered].sort((a, b) => {
       const courseA = coursesData.find(c => c.id === a.courseId);
       const courseB = coursesData.find(c => c.id === b.courseId);
       const orderA = courseA && courseA.sortOrder ? parseInt(courseA.sortOrder, 10) : null;
       const orderB = courseB && courseB.sortOrder ? parseInt(courseB.sortOrder, 10) : null;
-
-      if (orderA !== null && orderB !== null) {
-        return orderA - orderB;
-      }
+      if (orderA !== null && orderB !== null) return orderA - orderB;
       if (orderA !== null) return -1;
       if (orderB !== null) return 1;
-
-      // Preserve original order in videosData
       const indexA = videosData.findIndex(v => v.id === a.id);
       const indexB = videosData.findIndex(v => v.id === b.id);
       return indexA - indexB;
     });
-  }, [relatedVideos]);
+  }, [relatedVideosProp, isModalOpen, isNext, currentSetId]);
+
+  const sortedRelatedVideos = relatedVideos;
 
   // Modal event listeners
   useEffect(() => {
@@ -533,4 +532,6 @@ export default function VideoCard({
       </div>
     </div>
   );
-}
+});
+
+export default VideoCard;
