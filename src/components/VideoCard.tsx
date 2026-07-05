@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import videosData from "@/data/videos.json";
 import coursesData from "@/data/courses.json";
+import { RatingBadge, RatingInput } from "@/components/StarRating";
 
 const SYNONYMS: Record<string, string[]> = {
   "中殿筋": ["中臀筋", "中殿筋"],
@@ -67,18 +68,24 @@ export interface VideoData {
   status: string;
 }
 
-const VideoCard = React.memo(function VideoCard({ 
-  video, 
-  course, 
+const VideoCard = React.memo(function VideoCard({
+  video,
+  course,
   onTagClick,
   selectedTags = [],
-  relatedVideos: relatedVideosProp
-}: { 
-  video: VideoData; 
+  relatedVideos: relatedVideosProp,
+  ratingSummary,
+  myRating,
+  onRate
+}: {
+  video: VideoData;
   course: CourseData;
   onTagClick?: (tag: string) => void;
   selectedTags?: string[];
   relatedVideos?: VideoData[];
+  ratingSummary?: { average: number; count: number };
+  myRating?: number;
+  onRate?: (courseId: string, rating: number) => void;
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [imgHasError, setImgHasError] = useState(false);
@@ -218,9 +225,22 @@ const VideoCard = React.memo(function VideoCard({
             </h3>
 
             {/* Instructor Area */}
-            <div className="text-xs text-muted mb-4 select-none">
+            <div className="text-xs text-muted mb-2 select-none">
               {course?.instructor || "講師未定"}
             </div>
+
+            {/* Rating Area */}
+            {course?.id && (
+              <div className="flex flex-col gap-1 mb-3">
+                <RatingBadge
+                  average={ratingSummary?.average ?? 0}
+                  count={ratingSummary?.count ?? 0}
+                />
+                {onRate && course?.id && (
+                  <RatingInput myRating={myRating} onRate={(rating) => onRate(course.id, rating)} />
+                )}
+              </div>
+            )}
 
             {/* Tags Area */}
             <div className="flex flex-wrap gap-1.5 mb-4">
@@ -479,11 +499,21 @@ const VideoCard = React.memo(function VideoCard({
           )}
         </div>
         {!isNext && video.duration && (
-          <div className="text-[10px] text-muted/70 mb-4">
+          <div className="text-[10px] text-muted/70 mb-3">
             総再生時間：{video.duration}
           </div>
         )}
-        
+
+        {/* Rating Area */}
+        {course?.id && (
+          <div className="flex flex-col gap-1 mb-3">
+            <RatingBadge average={ratingSummary?.average ?? 0} count={ratingSummary?.count ?? 0} />
+            {onRate && course?.id && (
+              <RatingInput myRating={myRating} onRate={(rating) => onRate(course.id, rating)} />
+            )}
+          </div>
+        )}
+
         <div className={`mt-auto flex flex-wrap gap-1.5 mb-4 ${isExpanded ? "" : "max-h-[64px] overflow-hidden"}`}>
           {tagsToDisplay.map((tag) => (
             <button

@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
 import SearchTags from "@/components/SearchTags";
 import VideoCard, { VideoData, CourseData } from "@/components/VideoCard";
+import { useCourseRatings, RatingSummary } from "@/hooks/useCourseRatings";
 
 // Import dummy data
 import coursesData from "@/data/courses.json";
@@ -245,14 +246,9 @@ interface CarouselSectionProps {
   videos: VideoData[];
   coursesData: CourseData[];
   handleTagClick: (tag: string) => void;
-}
-
-interface CarouselSectionProps {
-  title: string;
-  badge: string;
-  videos: VideoData[];
-  coursesData: CourseData[];
-  handleTagClick: (tag: string) => void;
+  ratingSummaries: Record<string, RatingSummary>;
+  myRatings: Record<string, number>;
+  onRate: (courseId: string, rating: number) => void;
 }
 
 function CarouselSection({
@@ -260,7 +256,10 @@ function CarouselSection({
   badge,
   videos,
   coursesData,
-  handleTagClick
+  handleTagClick,
+  ratingSummaries,
+  myRatings,
+  onRate
 }: CarouselSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -575,6 +574,9 @@ function CarouselSection({
                   course={course}
                   onTagClick={handleTagClick}
                   selectedTags={[]}
+                  ratingSummary={course?.id ? ratingSummaries[course.id] : undefined}
+                  myRating={course?.id ? myRatings[course.id] : undefined}
+                  onRate={course?.id ? onRate : undefined}
                 />
               </div>
             );
@@ -633,6 +635,8 @@ function SearchContent() {
   const isEmbed = searchParams.get("embed") === "true";
 
   const [visibleCount, setVisibleCount] = useState(12);
+
+  const { summaries: ratingSummaries, mine: myRatings, rate: rateCourse } = useCourseRatings();
 
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
@@ -1008,8 +1012,11 @@ function SearchContent() {
   const isSearchActive = useMemo(() => !!(query.trim() || selectedTags.length > 0), [query, selectedTags]);
 
   const displayedVideos = useMemo(() => {
-    return isSearchActive ? filteredVideos : filteredVideos.slice(0, visibleCount);
-  }, [filteredVideos, isSearchActive, visibleCount]);
+    // 検索/絞り込み時も表示件数はページネーションする。
+    // NEXT（短編コンテンツ）は472本中420本を占めるため、絞り込み時に全件を
+    // 一度に描画すると画面が著しく重くなっていた。
+    return filteredVideos.slice(0, visibleCount);
+  }, [filteredVideos, visibleCount]);
 
   // Dynamically filter tag list based on search matches
   const availableTagCategories = useMemo(() => {
@@ -1645,6 +1652,9 @@ function SearchContent() {
             videos={newestVideos}
             coursesData={coursesData as unknown as CourseData[]}
             handleTagClick={handleTagClick}
+            ratingSummaries={ratingSummaries}
+            myRatings={myRatings}
+            onRate={rateCourse}
           />
         )}
 
@@ -1656,6 +1666,9 @@ function SearchContent() {
             videos={firstWatchVideos}
             coursesData={coursesData as unknown as CourseData[]}
             handleTagClick={handleTagClick}
+            ratingSummaries={ratingSummaries}
+            myRatings={myRatings}
+            onRate={rateCourse}
           />
         )}
 
@@ -1704,13 +1717,16 @@ function SearchContent() {
                     onTagClick={handleTagClick}
                     selectedTags={selectedTags}
                     relatedVideos={relatedVids}
+                    ratingSummary={course?.id ? ratingSummaries[course.id] : undefined}
+                    myRating={course?.id ? myRatings[course.id] : undefined}
+                    onRate={course?.id ? rateCourse : undefined}
                   />
                 );
               })}
             </div>
 
             {/* Pagination control */}
-            {!isSearchActive && visibleCount < filteredVideos.length && (
+            {visibleCount < filteredVideos.length && (
               <div className="flex justify-center mt-12 mb-6">
                 <button
                   onClick={() => setVisibleCount(prev => prev + 12)}
