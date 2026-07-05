@@ -856,6 +856,13 @@ function SearchContent() {
     return "";
   }, [allBodyThemeTags]);
 
+  const isBodyThemeTag = useCallback((tag: string) => {
+    if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) {
+      return false;
+    }
+    return nextTagCategories.some(tc => tc.tag === tag) || allBodyThemeTags.includes(tag);
+  }, [allBodyThemeTags]);
+
   // Reset visibleCount when query or selected tags change
   useEffect(() => {
     setVisibleCount(12);
@@ -988,10 +995,7 @@ function SearchContent() {
 
   // Videos matching query + selectedTags (except body/theme tags)
   const videosMatchingQueryAndNonBodyThemeTags = useMemo(() => {
-    const nonBodyThemeTags = selectedTags.filter(t => 
-      !nextTagCategories.some(tc => tc.tag === t) && 
-      !allBodyThemeTags.includes(t)
-    );
+    const nonBodyThemeTags = selectedTags.filter(t => !isBodyThemeTag(t));
     const trimmedQuery = query.trim();
     const keywords = trimmedQuery
       ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
@@ -1007,7 +1011,7 @@ function SearchContent() {
       }
       return true;
     });
-  }, [query, selectedTags, publicVideos, allBodyThemeTags, matchesSelectedTags]);
+  }, [query, selectedTags, publicVideos, isBodyThemeTag, matchesSelectedTags]);
 
   const isSearchActive = useMemo(() => !!(query.trim() || selectedTags.length > 0), [query, selectedTags]);
 
@@ -1306,7 +1310,7 @@ function SearchContent() {
     const selectedNextSubSeries = selectedTags.filter(t => (NEXT_SUB_SERIES as readonly string[]).includes(t));
     if (selectedNextSubSeries.length === 0) {
       // If no sub-series is selected, clear any next body tags!
-      const selectedBodyTags = selectedTags.filter(t => nextTagCategories.some(tc => tc.tag === t));
+      const selectedBodyTags = selectedTags.filter(t => isBodyThemeTag(t));
       if (selectedBodyTags.length > 0) {
         setSelectedTags(prev => prev.filter(t => !selectedBodyTags.includes(t)));
       }
@@ -1317,13 +1321,13 @@ function SearchContent() {
     if (!bodyThemeCat) return;
 
     const availableBodyTags = new Set(bodyThemeCat.tags);
-    const selectedBodyTags = selectedTags.filter(t => nextTagCategories.some(tc => tc.tag === t));
+    const selectedBodyTags = selectedTags.filter(t => isBodyThemeTag(t));
     const invalidTags = selectedBodyTags.filter(t => !availableBodyTags.has(t));
 
     if (invalidTags.length > 0) {
       setSelectedTags(prev => prev.filter(t => !invalidTags.includes(t)));
     }
-  }, [selectedTags, availableTagCategories]);
+  }, [selectedTags, availableTagCategories, isBodyThemeTag]);
 
   const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
