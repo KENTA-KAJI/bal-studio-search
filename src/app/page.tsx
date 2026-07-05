@@ -216,8 +216,8 @@ const matchesTag = (video: any, course: any, tag: string) => {
     return courseSeries.toLowerCase() === normalizedTag;
   }
 
-  // 長編コンテンツ専用テーマ：courses.category の完全一致のみ
-  if ((LONG_THEMES as readonly string[]).includes(tag)) {
+  // 長編コンテンツ専用テーマ：courses.category の完全一致のみ（長編コンテンツのみ適用）
+  if (course?.series === "長編コンテンツ" && (LONG_THEMES as readonly string[]).includes(tag)) {
     return course?.category === tag;
   }
 
@@ -842,19 +842,23 @@ function SearchContent() {
 
   // Helper resolver for category auto-expansion in SearchTags
   const getCategoryTitle = useCallback((tag: string) => {
-    // 長編テーマ
-    if ((LONG_THEMES as readonly string[]).includes(tag)) return "テーマから探す";
-    // NEXT分野
-    if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) return "NEXTの分野から探す";
-    // NEXT部位タグ
-    if (nextTagCategories.some(tc => tc.tag === tag)) return "部位・テーマから探す";
-    // allBodyThemeTags
-    if (allBodyThemeTags.includes(tag)) return "部位・テーマから探す";
+    const isNextSelected = selectedTags.includes("NEXT（短編コンテンツ）");
+    if (isNextSelected) {
+      if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) return "NEXTの分野から探す";
+      if (nextTagCategories.some(tc => tc.tag === tag)) return "部位・テーマから探す";
+      if (allBodyThemeTags.includes(tag)) return "部位・テーマから探す";
+      if ((LONG_THEMES as readonly string[]).includes(tag)) return "部位・テーマから探す";
+    } else {
+      if ((LONG_THEMES as readonly string[]).includes(tag)) return "テーマから探す";
+      if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) return "NEXTの分野から探す";
+      if (nextTagCategories.some(tc => tc.tag === tag)) return "部位・テーマから探す";
+      if (allBodyThemeTags.includes(tag)) return "部位・テーマから探す";
+    }
     const cat = TAG_CATEGORIES.find(c => c.tags.includes(tag));
     if (cat) return cat.title;
     if (ALL_INSTRUCTORS.includes(tag)) return "講師から探す";
     return "";
-  }, [allBodyThemeTags]);
+  }, [selectedTags, allBodyThemeTags]);
 
   const isBodyThemeTag = useCallback((tag: string) => {
     if ((NEXT_SUB_SERIES as readonly string[]).includes(tag)) {
@@ -993,26 +997,6 @@ function SearchContent() {
     });
   }, [query, selectedTags, publicVideos, matchesSelectedTags]);
 
-  // Videos matching query + selectedTags (except body/theme tags)
-  const videosMatchingQueryAndNonBodyThemeTags = useMemo(() => {
-    const nonBodyThemeTags = selectedTags.filter(t => !isBodyThemeTag(t));
-    const trimmedQuery = query.trim();
-    const keywords = trimmedQuery
-      ? trimmedQuery.toLowerCase().normalize("NFKC").split(/\s+/).filter(Boolean)
-      : [];
-
-    return publicVideos.filter(video => {
-      const course = video.course;
-      if (!course) return false;
-      if (!matchesSelectedTags(video, course, nonBodyThemeTags)) return false;
-      if (keywords.length > 0) {
-        const searchIndex = video.searchIndex || "";
-        if (!keywords.every(keyword => searchIndex.includes(keyword))) return false;
-      }
-      return true;
-    });
-  }, [query, selectedTags, publicVideos, isBodyThemeTag, matchesSelectedTags]);
-
   const isSearchActive = useMemo(() => !!(query.trim() || selectedTags.length > 0), [query, selectedTags]);
 
   const displayedVideos = useMemo(() => {
@@ -1044,19 +1028,6 @@ function SearchContent() {
         return group.some(t => presentTags.has(t));
       }
       return presentTags.has(tag);
-    };
-
-    const presentTagsForTabs = new Set<string>();
-    videosMatchingQueryAndNonBodyThemeTags.forEach(video => {
-      (video.allNormalizedTags || []).forEach((t: string) => presentTagsForTabs.add(t));
-    });
-
-    const hasTagForTabs = (tag: string) => {
-      const group = SYNONYMS[tag];
-      if (group) {
-        return group.some(t => presentTagsForTabs.has(t));
-      }
-      return presentTagsForTabs.has(tag);
     };
 
     // --- 長編コンテンツ選択時 ---
@@ -1150,9 +1121,9 @@ function SearchContent() {
         fieldTags.forEach(t => nextTagPool.add(t));
       });
 
-      // nextTagCategoriesの順序でソート
+      // nextTagCategoriesの順序でソート（分野名自体は除外）
       const nextBodyTags = nextTagCategories
-        .filter(tc => nextTagPool.has(tc.tag))
+        .filter(tc => nextTagPool.has(tc.tag) && !(NEXT_SUB_SERIES as readonly string[]).includes(tc.tag))
         .map(tc => tc.tag)
         // 重複除去
         .filter((v, i, a) => a.indexOf(v) === i);
@@ -1163,14 +1134,13 @@ function SearchContent() {
         return hasTag(tag);
       });
 
-      const filteredNextBodyTagsForTabs = nextBodyTags.filter(tag => {
-        return hasTagForTabs(tag);
-      });
-
+      // カテゴリタブは選択中のNEXT分野に絞り込んだ nextBodyTags を基準に算出する。
+      // （以前は videosMatchingQueryAndNonBodyThemeTags 経由の別集計を使っており、
+      //   分野を切り替えてもタブの並びがほぼ変わらなかった）
       const nextBodyCategory = {
         title: "部位・テーマから探す",
         tags: filteredNextBodyTags,
-        tabTags: filteredNextBodyTagsForTabs
+        tabTags: nextBodyTags
       };
 
       const instructorCategory = {
@@ -1234,7 +1204,6 @@ function SearchContent() {
     filteredVideos,
     videosMatchingQueryAndNonSeriesTags,
     videosMatchingQueryAndNonSubSeriesTags,
-    videosMatchingQueryAndNonBodyThemeTags,
     nextFieldData
   ]);
 
